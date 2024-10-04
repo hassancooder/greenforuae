@@ -167,8 +167,8 @@ if (empty($pageKey)) {
                     <div class="-my-6 divide-y divide-gray-500/10 bg-bgPrimary z-40">
                         <div class="space-y-2 py-6 bg-bgPrimary z-40">
                             <div class="lang-english">
-                            <?php foreach ($EnglishLinks as $name => $link) {
-                                echo <<<HTML
+                                <?php foreach ($EnglishLinks as $name => $link) {
+                                    echo <<<HTML
                             <a
                                 @click="open = false; $('body').removeClass('overflow-hidden')"
                                 href='{$link}'
@@ -176,12 +176,12 @@ if (empty($pageKey)) {
                                 {$name}
                             </a>
                             HTML;
-                            }
-                            ?>
+                                }
+                                ?>
                             </div>
                             <div class="lang-arabic">
-                            <?php foreach ($ArabicLinks as $name => $link) {
-                                echo <<<HTML
+                                <?php foreach ($ArabicLinks as $name => $link) {
+                                    echo <<<HTML
                             <a
                                 @click="open = false; $('body').removeClass('overflow-hidden')"
                                 href='{$link}'
@@ -189,8 +189,8 @@ if (empty($pageKey)) {
                                 {$name}
                             </a>
                             HTML;
-                            }
-                            ?>
+                                }
+                                ?>
                             </div>
                             <!-- <div class="py-6">
                                 <a
@@ -223,111 +223,59 @@ if (empty($pageKey)) {
     <?php include PUBLIC_PAGES . $pageDetails['file']; ?>
 
     <!-- ====== Footer Section Start -->
-<footer class="relative bg-bgSecondary/30 pt-16 mt-10">
-    <div class="container mx-auto xss:px-0 md:px-4">
-        <div class="flex flex-wrap text-left lg:text-left">
-            <div class="w-full lg:w-6/12 xss:px-3 md:px-4 -mt-[1.82rem]">
-                <a href="/" class="flex gap-2 ml-4 md:mt-8 text-textPrimary font-semibold text-2xl lang-english" aria-label="Footer Logo">
-                    LOGO
-                </a>
-                <a href="/" class="flex gap-2 ml-4 md:mt-8 text-textPrimary font-semibold text-2xl lang-arabic hidden" aria-label="Footer Logo">
-                    الشعار
-                </a>
-
-                <p class="text-md m-4 text-textSecondary text-justify lang-english">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi animi, assumenda similique accusamus optio recusandae cumque ex. Beatae quam eius commodi doloribus optio eveniet asperiores obcaecati minus aliquid maxime.
-                </p>
-
-                <p class="text-md m-4 text-textSecondary text-justify lang-arabic hidden">
-                    لوريم إيبسوم دولور سيت، أميت كونسكتتور أديبيسيسينغ إيليت. كوميودي أنيمي، أسوميندا سيميليكيه أكوساموس أوبتيوم ريكوساندي كومك إكس. بيتاي كوام إييوس كوميودي دولوريوس أوبتيوم إيفينيت أسبرiores أوبكاكاتي مينيك أليغيد ماكسيما.
-                </p>
-                <div class="h-auto ml-4 flex items-center justify-start gap-3 flex-wrap">
-                    <!-- Phone Call Icon -->
-                    <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                        <div class="w-8 h-8 bg-green-600 rounded-md flex items-center justify-center">
-                            <i class="fas fa-phone text-white text-md"></i>
-                        </div>
-                    </a>
-                    <!-- Facebook Icon -->
-                    <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                        <div class="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center">
-                            <i class="fab fa-facebook-f text-white text-md"></i>
-                        </div>
-                    </a>
-                    <!-- WhatsApp Icon -->
-                    <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                        <div class="w-8 h-8 bg-green-500 rounded-md flex items-center justify-center">
-                            <i class="fab fa-whatsapp text-white text-md"></i>
-                        </div>
-                    </a>
-                    <!-- Instagram Icon -->
-                    <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                        <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-md flex items-center justify-center">
-                            <i class="fab fa-instagram text-white text-md"></i>
-                        </div>
-                    </a>
-                    <!-- Mail Icon -->
-                    <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-md flex items-center justify-center">
-                            <i class="fas fa-envelope text-white text-md"></i>
-                        </div>
-                    </a>
+    <footer class="relative bg-textPrimary pt-16 mt-10">
+        <div class="container mx-auto xss:px-0 md:px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 xss:px-3 md:px-4 -mt-[1.82rem]"> <a href="/" class="flex gap-2 md:mt-8 text-2xl font-bold text-bgPrimary ml-4" aria-label="Footer Logo">GreenFortUAE</a>
+                    <p class="text-md m-4 text-bgSecondary text-justify"> We capture your most precious moments with passion and precision. From weddings to portfolios, our team is dedicated to delivering high-quality photography that tells your unique story. Trust us to make your memories last a lifetime. </p>
+                    <div class="h-auto ml-4 flex items-center justify-start gap-3 flex-wrap"> <!-- Phone Call Icon --> 
+                        <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-green-600 rounded-md flex items-center justify-center"> <i class="fas fa-phone text-white text-md"></i> </div>
+                        </a>
+                         <!-- Facebook Icon --> 
+                        <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center"> <i class="fab fa-facebook-f text-white text-md"></i> </div>
+                        </a>
+                         <!-- WhatsApp Icon --> 
+                        <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-green-500 rounded-md flex items-center justify-center"> <i class="fab fa-whatsapp text-white text-md"></i> </div>
+                        </a> 
+                        <!-- Instagram Icon --> 
+                         <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-md flex items-center justify-center"> <i class="fab fa-instagram text-white text-md"></i> </div>
+                        </a> 
+                        <!-- Mail Icon -->
+                          <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-md flex items-center justify-center"> <i class="fas fa-envelope text-white text-md"></i> </div>
+                        </a></div>
                 </div>
-            </div>
-
-            <div class="w-full lg:w-6/12 xss:px-0 md:px-4">
-                <div class="flex flex-wrap items-top mb-6">
-                    <div class="w-full lg:w-4/12 px-4 ml-auto">
-                        <span class="block uppercase text-textPrimary text-sm font-semibold mb-2 lang-english">
-                            Site Navigation 
-                        </span>
-                        <span class="block uppercase text-textPrimary text-sm font-semibold mb-2 lang-arabic hidden">
-                            تنقل الموقع
-                        </span>
-                        <ul class="list-unstyled">
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/#services">Services</a></li>
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/portfolio">Portfolio</a></li>
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/pricing-plans">Pricing</a></li>
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/get-a-quote" target="_blank">Get a Quote</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/#services">الخدمات</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/portfolio">محفظة الأعمال</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/pricing-plans">التسعير</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/get-a-quote" target="_blank">احصل على عرض سعر</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full lg:w-4/12 px-4 xss:mt-3 md:mt-0">
-                        <span class="block uppercase text-textPrimary text-sm font-semibold mb-2 lang-english">
-                            Info Links 
-                        </span>
-                        <span class="block uppercase text-textPrimary text-sm font-semibold mb-2 lang-arabic hidden">
-                            روابط المعلومات
-                        </span>
-                        <ul class="list-unstyled">
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/#about">About Us</a></li>
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/#contact">Contact Us</a></li>
-                            <li><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm lang-english" href="/terms-and-policies">Privacy Policy</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/#about">من نحن</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/#contact">اتصل بنا</a></li>
-                            <li class="hidden lang-arabic"><a class="text-textPrimary hover:text-textSecondary block pb-2 text-sm" href="/terms-and-policies">سياسة الخصوصية</a></li>
-                        </ul>
+                <div class="w-full lg:w-6/12 xss:px-0 md:px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto"> <span class="block uppercase text-bgPrimary text-sm font-semibold mb-2"> Site Navigation </span>
+                            <ul class="list-unstyled">
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/services">Services</a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/portfolio">Blogs</a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#reviews">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4 xss:mt-3 md:mt-0"> <span class="block uppercase text-gray-100 text-sm font-semibold mb-2"> Info Links </span>
+                            <ul class="list-unstyled">
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#about">About Us</a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#contact">Contact Us</a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/terms-and-policies">Privacy Policy</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr class="my-3 border-textSecondary/40">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
-        <div class="w-full md:w-4/12 px-4 pb-3 mx-auto text-center">
-            <div class="text-sm text-textSecondary/80 font-semibold py-1 lang-english">
-                Copyright © <span id="currentYear"></span>
-                <a href="/" class="text-textPrimary underline hover:text-textSecondary capitalize" aria-label="Website Name">
-                    GreenFortUAE</a>.
-                <span class="text-sm lang-arabic hidden">حقوق الطبع والنشر © <span id="currentYear"></span> <a href="/" class="text-textPrimary underline hover:text-textSecondary capitalize" aria-label="اسم الموقع">GreenFortUAE</a>.</span>
+        <hr class="my-3 border-textSecondary">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 py-2 mx-auto text-center">
+                <div class="text-sm text-bgSecondary/80 font-semibold py-1"> Copyright © <span id="currentYear"></span> <a href="/" class="text-bgPrimary underline hover:text-bgSecondary capitalize" aria-label="Website Name"> GreenFortUAE</a>.</div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- ====== Footer Section End -->
+    </footer>
 
     <?php include INCLUDES . "footer.php"; ?>
 </body>
