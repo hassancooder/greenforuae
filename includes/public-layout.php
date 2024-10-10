@@ -4,64 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($pageDetails['title']); ?></title>
-    <meta name="description" content="<?= htmlspecialchars($pageDetails['description']); ?>">
+    <?= $pageDetails['meta']; ?>
     <?php include INCLUDES . "header.php"; ?>
 </head>
 <?php
 $EnglishLinks = [
-    "About" => "/#about",
-    "Services" => "/#services",
-    "Portfolio" => "/#portfolio",
-    "Pricing" => "/pricing-plans",
-    "Contact" => "/#contact",
+    "About" => "/about",
+    "Services" => "/services",
+    "Portfolio" => "/portfolio",
+    "Contact" => "/contact",
 ];
 
 $ArabicLinks = [
-    "من نحن" => "/#about",          // About
-    "الخدمات" => "/#services",      // Services
-    "المعرض" => "/#portfolio",       // Portfolio
-    "التسعير" => "/pricing-plans",   // Pricing
-    "اتصل بنا" => "/#contact",       // Contact
+    "من نحن" => "/about",          // About
+    "الخدمات" => "/services",      // Services
+    "المعرض" => "/portfolio",      // Portfolio
+    "اتصل بنا" => "/contact",      // Contact
 ];
 
-$EnglishLinksFooter1 = [
-    "Pricing" => "/pricing-plans",
-    "Get a Quote" => "/get-a-quote",
-    "Contact Us" => "/#contact",
-    "Privacy Policy" => "/terms-and-policies",
-];
+$MobileENGARLinks = [];
 
-$EnglishLinksFooter2 = [
-    "About Us" => "/#about",
-    "Services" => "/#services",
-    "Portfolio" => "/#portfolio",
-];
-$ArabicLinksFooter1 = [     // Portfolio
-    "التسعير" => "/pricing-plans",   // Pricing
-    "احصل على عرض" => "/get-a-quote",
-    "اتصل بنا" => "/#contact",
-    "سياسة الخصوصية" => "/terms-and-policies", // Privacy Policy
-];
-
-$ArabicLinksFooter2 = [
-    "من نحن" => "/#about",          // About Us
-    "الخدمات" => "/#services",      // Services
-    "المعرض" => "/#portfolio",       // Portfolio
-];
-
+foreach ($EnglishLinks as $englishText => $link) {
+    foreach ($ArabicLinks as $arabicText => $arabicLink) {
+        if ($link == $arabicLink) {
+            $MobileENGARLinks[] = [
+                'link' => $link,
+                'text' => $englishText . ' ' . $arabicText
+            ];
+        }
+    }
+}
 if (empty($pageKey)) {
     $textColor = "text-white";
 } else {
     $textColor = "text-textPrimary";
 }
 ?>
+<script>
+    let isHome = false;
+</script>
 
 
 
-<body>
+<body class="overflow-x-hidden">
     <!-- <body class="overflow-hidden bg-bgPrimary"> use this with preloader -->
-    <!-- <div id="preloader" class="w-screen z-50 bg-bgPrimary fixed flex flex-col justify-center items-center h-screen <?php echo ($pageKey === 'pricing-plans' || $pageKey === 'blogs' || $pageKey === 'blog' || $pageKey === 'terms-and-policies') ? '-mt-[39px]' : ''; ?>">
+    <!-- <div id="preloader" class="w-screen z-50 bg-bgPrimary fixed flex flex-col justify-center items-center h-screen <?php echo ($pageKey === 'services' || $pageKey === 'portfolio' || $pageKey === 'contact') ? '-mt-[39px]' : ''; ?>">
         <div class="container mt-24">
             <svg class="w-8 h-8 mx-auto text-textPrimary animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -79,9 +66,11 @@ if (empty($pageKey)) {
         <nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="/" class="-m-1.5 p-1.5">
-                    <span class="text-xl font-bold <?= $textColor; ?> hero-text lang-english">GreenFortUAE</span>
-                    <span class="text-xl font-bold <?= $textColor; ?> hero-text lang-arabic hidden">جرين فور الإمارات</span>
+                    <!-- <span class="text-xl font-bold <?= $textColor; ?> hero-text lang-english">Green Fort UAE</span>
+                    <span class="text-xl font-bold <?= $textColor; ?> hero-text lang-arabic hidden">جرين فور الإمارات</span> -->
+                    <img src="<?= $pageKey === '' ? getAsset("weblogo-white.webp", 'images/') : getAsset("logo.webp", 'images/'); ?>" id="logoImg" alt="Website LOGO (Green Fort UAE)" class="w-[200px]">
                 </a>
+
 
             </div>
             <div class="flex lg:hidden">
@@ -92,14 +81,14 @@ if (empty($pageKey)) {
                     </svg>
                 </button>
             </div>
-            <div class="hidden lg:flex lg:gap-x-12 lang-english">
+            <div class="desktop-nav hidden lg:flex lg:gap-x-12 lang-english">
                 <?php foreach ($EnglishLinks as $name => $link) {
                     echo '<a href="' . $link . '" class="text-sm font-semibold leading-6 ' . $textColor . ' hero-text">' . $name . '</a>';
                 }
                 ?>
             </div>
 
-            <div class="hidden lg:flex lg:gap-x-12 lang-arabic">
+            <div class="desktop-nav hidden lg:flex lg:gap-x-12 lang-arabic">
                 <?php foreach ($ArabicLinks as $name => $link) {
                     echo '<a href="' . $link . '" class="text-sm font-semibold leading-6 ' . $textColor . ' hero-text">' . $name . '</a>';
                 }
@@ -142,7 +131,8 @@ if (empty($pageKey)) {
                 x-transition:leave-end="translate-x-full">
                 <div class="flex items-center justify-between">
                     <a href="/" class="-m-1.5 p-1.5">
-                        <span class="text-xl font-bold text-textPrimary">SUMAN STUDIO & Films</span>
+                        <!-- <span class="text-xl font-bold text-textPrimary">Green Fort UAE</span> -->
+                        <img src="<?= getAsset("logo.webp", 'images/'); ?>" id="logoImg" alt="Website LOGO (Green Fort UAE)" class="w-[200px]">
                     </a>
                     <button
                         @click="open = false; $('body').removeClass('overflow-hidden')"
@@ -166,20 +156,26 @@ if (empty($pageKey)) {
                 <div class="mt-6 flow-root bg-bgPrimary z-40">
                     <div class="-my-6 divide-y divide-gray-500/10 bg-bgPrimary z-40">
                         <div class="space-y-2 py-6 bg-bgPrimary z-40">
-                            <div class="lang-english">
-                                <?php foreach ($EnglishLinks as $name => $link) {
+                            <div class="mobile-nav">
+                                <?php foreach ($MobileENGARLinks as $item) {
+                                    $link = $item['link'];
+                                    $englishText = explode(' ', $item['text'])[0]; // Get the English text
+                                    $arabicText = explode(' ', $item['text'])[1];  // Get the Arabic text
                                     echo <<<HTML
-                            <a
-                                @click="open = false; $('body').removeClass('overflow-hidden')"
-                                href='{$link}'
-                                class='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-textPrimary hover:bg-bgSecondary'>
-                                {$name}
-                            </a>
-                            HTML;
+        <a
+            @click="open = false; $('body').removeClass('overflow-hidden')"
+            href='{$link}'
+            class='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-textPrimary hover:bg-bgSecondary'>
+            <span class='lang-english'>{$englishText}</span>
+            <span class='lang-arabic hidden'>{$arabicText}</span>
+        </a>
+        HTML;
                                 }
                                 ?>
                             </div>
-                            <div class="lang-arabic">
+
+
+                            <!-- <div class="mobile-nav lang-arabic">
                                 <?php foreach ($ArabicLinks as $name => $link) {
                                     echo <<<HTML
                             <a
@@ -191,7 +187,7 @@ if (empty($pageKey)) {
                             HTML;
                                 }
                                 ?>
-                            </div>
+                            </div> -->
                             <!-- <div class="py-6">
                                 <a
                                     href="/get-a-quote"
@@ -223,46 +219,83 @@ if (empty($pageKey)) {
     <?php include PUBLIC_PAGES . $pageDetails['file']; ?>
 
     <!-- ====== Footer Section Start -->
-    <footer class="relative bg-textPrimary pt-16 mt-10">
+    <footer class="relative bg-zinc-800 pt-16 mt-10">
         <div class="container mx-auto xss:px-0 md:px-4">
             <div class="flex flex-wrap text-left lg:text-left">
-                <div class="w-full lg:w-6/12 xss:px-3 md:px-4 -mt-[1.82rem]"> <a href="/" class="flex gap-2 md:mt-8 text-2xl font-bold text-bgPrimary ml-4" aria-label="Footer Logo">GreenFortUAE</a>
-                    <p class="text-md m-4 text-bgSecondary text-justify"> We capture your most precious moments with passion and precision. From weddings to portfolios, our team is dedicated to delivering high-quality photography that tells your unique story. Trust us to make your memories last a lifetime. </p>
-                    <div class="h-auto ml-4 flex items-center justify-start gap-3 flex-wrap"> <!-- Phone Call Icon --> 
-                        <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                            <div class="w-8 h-8 bg-green-600 rounded-md flex items-center justify-center"> <i class="fas fa-phone text-white text-md"></i> </div>
+                <div class="w-full lg:w-6/12 xss:px-3 md:px-4 -mt-[1.82rem]">
+                    <a href="/" class="flex gap-2 md:mt-8" aria-label="Footer Logo">
+                        <img src="<?= getAsset('weblogo-white.webp', 'images/'); ?>" alt="Logo" class="w-52 brightness-110 rounded-full object-contain ml-4">
+                    </a>
+                    <p class="text-md m-4 text-bgSecondary text-justify">
+                        <span class="lang-english">We specialize in building luxurious, sustainable homes that blend modern design with comfort. Our attention to detail and commitment to quality ensures every residence is a masterpiece, crafted to meet the highest standards of living.</span>
+                        <span class="lang-arabic hidden">نحن متخصصون في بناء منازل فاخرة ومستدامة تجمع بين التصميم الحديث والراحة. يضمن انتباهنا إلى التفاصيل والتزامنا بالجودة أن تكون كل إقامة تحفة فنية تلبي أعلى معايير المعيشة.</span>
+                    </p>
+                    <div class="h-auto ml-4 flex items-center justify-start gap-3 flex-wrap">
+                        <!-- WhatsApp Icon -->
+                        <a href="https://wa.me/+971504235865" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-green-500 rounded-md flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-white text-md"></i>
+                            </div>
                         </a>
-                         <!-- Facebook Icon --> 
-                        <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                            <div class="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center"> <i class="fab fa-facebook-f text-white text-md"></i> </div>
+
+                        <!-- Instagram Icon -->
+                        <a href="https://www.instagram.com/greenfortdubai/" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-md flex items-center justify-center">
+                                <i class="fab fa-instagram text-white text-md"></i>
+                            </div>
                         </a>
-                         <!-- WhatsApp Icon --> 
-                        <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                            <div class="w-8 h-8 bg-green-500 rounded-md flex items-center justify-center"> <i class="fab fa-whatsapp text-white text-md"></i> </div>
-                        </a> 
-                        <!-- Instagram Icon --> 
-                         <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                            <div class="w-8 h-8 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-md flex items-center justify-center"> <i class="fab fa-instagram text-white text-md"></i> </div>
-                        </a> 
+
+                        <!-- Facebook Icon -->
+                        <a href="https://www.facebook.com/ConstructionWorksinDubai" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center">
+                                <i class="fab fa-facebook-f text-white text-md"></i>
+                            </div>
+                        </a>
+
+                        <!-- TikTok Icon -->
+                        <a href="https://www.tiktok.com/@green.fort3" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-black rounded-md flex items-center justify-center">
+                                <i class="fab fa-tiktok text-white text-md"></i>
+                            </div>
+                        </a>
+
+                        <!-- YouTube Icon -->
+                        <a href="https://www.youtube.com/@GreenFortBuildingContracting" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-red-600 rounded-md flex items-center justify-center">
+                                <i class="fab fa-youtube text-white text-md"></i>
+                            </div>
+                        </a>
+
                         <!-- Mail Icon -->
-                          <a href="#" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
-                            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-md flex items-center justify-center"> <i class="fas fa-envelope text-white text-md"></i> </div>
-                        </a></div>
+                        <a href="mailto:info@greenfortuae.com" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
+                            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-md flex items-center justify-center">
+                                <i class="fas fa-envelope text-white text-md"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="w-full lg:w-6/12 xss:px-0 md:px-4">
+                <div class="w-full lg:w-6/12 xss:px-0 md:px-4 md:mt-0 mt-3">
                     <div class="flex flex-wrap items-top mb-6">
-                        <div class="w-full lg:w-4/12 px-4 ml-auto"> <span class="block uppercase text-bgPrimary text-sm font-semibold mb-2"> Site Navigation </span>
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-bgPrimary text-sm font-semibold mb-2">
+                                <span class="lang-english">Site Navigation</span>
+                                <span class="lang-arabic hidden">تصفح الموقع</span>
+                            </span>
                             <ul class="list-unstyled">
-                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/services">Services</a></li>
-                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/portfolio">Blogs</a></li>
-                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#reviews">Pricing</a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/services"><span class="lang-english">Services</span><span class="lang-arabic hidden">خدمات</span></a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/Portfolio"><span class="lang-english">Portfolio</span><span class="lang-arabic hidden">معرض الأعمال</span></a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/contact"><span class="lang-english">Contact Us</span><span class="lang-arabic hidden">اتصل بنا</span></a></li>
                             </ul>
                         </div>
-                        <div class="w-full lg:w-4/12 px-4 xss:mt-3 md:mt-0"> <span class="block uppercase text-gray-100 text-sm font-semibold mb-2"> Info Links </span>
+                        <div class="w-full lg:w-4/12 px-4 xss:mt-3 md:mt-0">
+                            <span class="block uppercase text-bgPrimary text-sm font-semibold mb-2">
+                                <span class="lang-english">Info Links</span>
+                                <span class="lang-arabic hidden">روابط المعلومات</span>
+                            </span>
                             <ul class="list-unstyled">
-                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#about">About Us</a></li>
-                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#contact">Contact Us</a></li>
-                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/terms-and-policies">Privacy Policy</a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/about"><span class="lang-english">About Us</span><span class="lang-arabic hidden">معلومات عنا</span></a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#vision"><span class="lang-english">Our Vision</span><span class="lang-arabic hidden">رؤيتنا</span></a></li>
+                                <li><a class="text-bgPrimary hover:text-bgSecondary block pb-2 text-sm" href="/#reviews"><span class="lang-english">Reviews</span><span class="lang-arabic hidden">مراجعات</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -272,12 +305,104 @@ if (empty($pageKey)) {
         <hr class="my-3 border-textSecondary">
         <div class="flex flex-wrap items-center md:justify-between justify-center">
             <div class="w-full md:w-4/12 px-4 py-2 mx-auto text-center">
-                <div class="text-sm text-bgSecondary/80 font-semibold py-1"> Copyright © <span id="currentYear"></span> <a href="/" class="text-bgPrimary underline hover:text-bgSecondary capitalize" aria-label="Website Name"> GreenFortUAE</a>.</div>
+                <div class="text-sm text-bgSecondary/80 font-semibold py-1">
+                    ©2024 <span class="lang-english">All Right Reserved. Powered By</span> <span class="lang-arabic hidden">جميع الحقوق محفوظة. بتطوير</span>
+                    <a href="https://upsoltech.com/" target="_blank" rel="dofollow" class="text-bgPrimary underline hover:text-bgSecondary capitalize" aria-label="Website Created by Upsol Techologies">Upsol Technologies</a>.
+                </div>
             </div>
         </div>
     </footer>
+    <!-- ====== Footer Section End ====== -->
+
 
     <?php include INCLUDES . "footer.php"; ?>
+    <script>
+        function toggleDropdown(dropdown) {
+            $(dropdown).toggleClass('hidden');
+        }
+
+        function updateLanguage(dropdownId, selectedLangId, lang) {
+            $('#' + selectedLangId).text(lang);
+            toggleDropdown(dropdownId);
+            // Array of element tags that might contain language-specific text
+            const elementsToCheck = ['a', 'p', 'td', 'div', 'span', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'i'];
+
+            const isMobile = window.innerWidth < 1024;
+            elementsToCheck.forEach(tag => {
+                if (!(isMobile && $(tag).hasClass('desktop-nav'))) {
+                    const isEnglishSelected = lang !== 'العربية';
+                    if (isMobile) {
+                        $(tag + '.lang-english').toggle(isEnglishSelected);
+                        $(tag + '.lang-arabic').toggle(lang === 'العربية');
+                    } else {
+                        // Show/Hide logic for desktop elements
+                        $(tag + '.lang-english').toggle(isEnglishSelected);
+                        $(tag + '.lang-arabic').toggle(!isEnglishSelected);
+                    }
+                }
+            });
+
+
+
+
+
+
+            if (lang === 'العربية') {
+                $('body').css('direction', 'rtl');
+                $('body').addClass('arabic');
+                $('.fa').css('margin-left', '10px').css('margin-right', '0'); // Adjust icon margin for RTL
+            } else {
+                $('body').css('direction', 'ltr');
+                $('body').removeClass('arabic');
+                $('.fa').css('margin-right', '10px').css('margin-left', '0'); // Adjust icon margin for LTR
+            }
+
+        }
+
+        // Language dropdown functionality for desktop
+        $('#langDropdownBtnDesktop').click(function(e) {
+            e.stopPropagation();
+            toggleDropdown('#langDropdownDesktop');
+        });
+
+        // Language selection for desktop
+        $('#langDropdownDesktop a').click(function(e) {
+            e.preventDefault();
+            const selectedLang = $(this).text();
+            updateLanguage('#langDropdownDesktop', 'selectedLangDesktop', selectedLang);
+        });
+
+        // Language dropdown functionality for mobile
+        $('#langDropdownBtnMobile').click(function(e) {
+            e.stopPropagation();
+            toggleDropdown('#langDropdownMobile');
+        });
+
+        // Language selection for mobile
+        $('#langDropdownMobile a').click(function(e) {
+            e.preventDefault();
+            const selectedLang = $(this).text();
+            updateLanguage('#langDropdownMobile', 'selectedLangMobile', selectedLang);
+        });
+
+        // Close dropdown when clicking outside
+        $(document).click(function() {
+            $('#langDropdownDesktop').addClass('hidden');
+            $('#langDropdownMobile').addClass('hidden');
+        });
+
+        // Prevent closing dropdown when clicking inside
+        $('#langDropdownDesktop, #langDropdownMobile').click(function(e) {
+            e.stopPropagation();
+        });
+
+        // Default language display on page load
+        $(document).ready(function() {
+            const defaultLang = 'English'; // Set your default language here
+            updateLanguage('', 'selectedLangDesktop', defaultLang); // Update default for desktop
+            updateLanguage('', 'selectedLangMobile', defaultLang); // Update default for mobile
+        });
+    </script>
 </body>
 
 </html>

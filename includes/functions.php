@@ -40,10 +40,10 @@ function set_color_scheme()
         $colorScheme = [
             'bgPrimary' => "#ffffff",
             'bgSecondary' => "#e5e7eb",
-            'textPrimary' => "#0f172a",
-            'textSecondary' => "#6B728F",
-            'primary' => "#e11d48",
-            'secondary' => "#ffb300"
+            'textPrimary' => "#414041",
+            'textSecondary' => "#5A5D65",
+            'primary' => "#DE8F29",
+            'secondary' => "#DE8F29"
         ];
     }
     return $colorScheme;

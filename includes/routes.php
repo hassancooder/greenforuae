@@ -3,35 +3,64 @@
 $routes = [
     '' => [
         'file' => 'home.php',
-        'title' => 'Welcome to homepage',
-        'description' => 'This is the landing page',
+        'meta' => '<title>Green Fort UAE | Welcome to Our Homepage</title>
+                   <meta name="description" content="Welcome to Green Fort UAE, a leader in sustainable construction in Dubai.">
+                   <meta name="keywords" content="Green Fort UAE, homepage, sustainable construction, Dubai">',
     ],
-    'get-a-quote' => [
-        'file' => 'get-a-quote.php',
-        'title' => 'Get Quote Form',
-        'description' => 'This is the Get Quote Form page',
+    'about' => [
+        'file' => 'about.php',
+        'meta' => '<title>About Us | Green Fort UAE</title>
+                   <meta name="description" content="Learn more about Green Fort UAE, our values, vision, and mission.">
+                   <meta name="keywords" content="about us, Green Fort UAE, company values, vision, mission">',
     ],
-    'pricing-plans' => [
-        'file' => 'pricing-plans.php',
-        'title' => 'Pricing & Plans | Suman Studio & Films',
-        'description' => 'Pricing & Plans',
+    'portfolio' => [
+        'file' => 'portfolio.php',
+        'meta' => '<title>Our Portfolio | Green Fort UAE</title>
+                   <meta name="description" content="Explore our portfolio showcasing various construction projects completed by Green Fort UAE.">
+                   <meta name="keywords" content="portfolio, projects, construction, Green Fort UAE">',
     ],
-    'terms-and-policies' => [
-        'file' => 'terms-and-policies.php',
-        'title' => 'Our Terms & Policies',
-        'description' => 'This is our Terms & Policies Page',
+    'services' => [
+        'file' => 'services.php',
+        'meta' => '<title>Our Services | Green Fort UAE</title>
+                   <meta name="description" content="Discover the wide range of construction services offered by Green Fort UAE.">
+                   <meta name="keywords" content="services, construction, building, Green Fort UAE">',
     ],
-    'blogs' => [
-        'file' => 'blogs.php',
-        'title' => 'Blogs List Page',
-        'description' => 'List of all blogs',
+    'service-project-management' => [
+        'file' => 'project-management.php',
+        'meta' => '<title>Project Management | Green Fort UAE</title>
+                   <meta name="description" content="Efficient planning and execution of projects to ensure on-time delivery and exceptional quality.">
+                   <meta name="keywords" content="project management, construction planning, project execution">',
     ],
-    'blog' => [
-        'file' => 'single-blog.php',
-        'title' => '',
-        'description' => '',
-        'blog_content' => '',
+    'service-architectural-design' => [
+        'file' => 'architectural-design.php',
+        'meta' => '<title>Architectural Design | Green Fort UAE</title>
+                   <meta name="description" content="Innovative designs that reflect our clients\' visions, balancing aesthetics and functionality.">
+                   <meta name="keywords" content="architectural design, innovative design, aesthetics, functionality">',
     ],
+    'service-general-contracting' => [
+        'file' => 'general-contracting.php',
+        'meta' => '<title>General Contracting | Green Fort UAE</title>
+                   <meta name="description" content="Full-scale construction services from foundation to finish, delivering comprehensive building solutions.">
+                   <meta name="keywords" content="general contracting, construction services, building solutions">',
+    ],
+    'service-renovations-and-fit-outs' => [
+        'file' => 'renovations-fit-outs.php',
+        'meta' => '<title>Renovations and Fit-Outs | Green Fort UAE</title>
+                   <meta name="description" content="Transforming spaces to meet modern standards, tailored to your specific requirements.">
+                   <meta name="keywords" content="renovations, fit-outs, modern standards, construction">',
+    ],
+    'service-consulting-services' => [
+        'file' => 'consulting-services.php',
+        'meta' => '<title>Consulting Services | Green Fort UAE</title>
+                   <meta name="description" content="Expert advice on construction best practices and regulations to ensure smooth project execution.">
+                   <meta name="keywords" content="consulting services, construction advice, best practices, regulations">',
+    ],
+    'contact' => [
+        'file' => 'contact.php',
+        'meta' => '<title>Contact Us | Green Fort UAE</title>
+                   <meta name="description" content="Get in touch with Green Fort UAE for inquiries and quotes.">
+                   <meta name="keywords" content="contact, inquiries, Green Fort UAE, quote">',
+    ]
 ];
 
 $adminRoutes = [
@@ -134,6 +163,7 @@ $apiRoutes = [
 // Default 404 route
 $defaultRoute = [
     'file' => '404.php',
-    'title' => '404 Not Found',
-    'description' => 'Page not found',
+    'meta' => '<title>Welcome to homepage</title>
+                   <meta name="description" content="This is the landing page">
+                   <meta name="keywords" content="homepage, welcome, landing page">'
 ];

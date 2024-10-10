@@ -14,6 +14,7 @@ $(document).ready(() => {
     let countersStarted = false;
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 0) {
+            $('#logoImg').attr('src', 'assets/images/logo.webp');
             $('.navbar').addClass('backdrop-blur-md border-b bg-bgPrimary/30');
             if (isHome) {
                 $('.navbar .hero-text').addClass('text-textPrimary').removeClass('text-white');
@@ -22,6 +23,9 @@ $(document).ready(() => {
             $('.navbar').removeClass('backdrop-blur-md border-b bg-bgPrimary/30');
             if (isHome) {
                 $('.navbar .hero-text').addClass('text-white').removeClass('text-textPrimary');
+            $('#logoImg').attr('src', 'assets/images/weblogo-white.webp');
+            }else{
+            $('#logoImg').attr('src', 'assets/images/logo.webp');
             }
         }
 
