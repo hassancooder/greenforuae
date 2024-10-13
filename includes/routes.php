@@ -144,20 +144,7 @@ $adminRoutes = [
 
 
 $apiRoutes = [
-    "fetchtheme" => "fetchtheme.php",
-    "loginform" => "handlelogin.php",
-    "logout" => "logout.php",
-    "updateaccount" => "updateaccount.php",
-    "contactform" => "addcontactformdata.php",
-    "getquoteform" => "addgetquoteformdata.php",
-    "addcategory" => "addcategory.php",
-    "deleterecord" => "deleterecord.php",
-    "deleteblogpost" => "deleteblogpost.php",
-    "addimage" => "addimage.php",
-    "blogpost" => "blogpost.php",
-    "updateviewscount" => "updateviewscount.php",
-    "updatetheme" => "updatetheme.php",
-    "settings" => "settings.php",
+    "send-mail" => "send-mail.php",
 ];
 
 // Default 404 route

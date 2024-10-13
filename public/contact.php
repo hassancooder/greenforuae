@@ -1,7 +1,7 @@
 <!-- HERO SECTION -->
 <div class="relative isolate px-6 lg:px-8">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-secondary to-primary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-amber-500 to-rose-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
     </div>
     <div class="mx-auto h-2/4 max-w-2xl mt-10 py-32 sm:py-48 lg:py-36">
         <div class="text-center">
@@ -46,11 +46,11 @@
                     <div class="flex min-w-10 min-h-10 max-w-10 max-h-10 items-center justify-center rounded bg-primary text-bgPrimary"> <i class="fas fa-headset"></i> </div>
                     <div class="mx-4 mb-4">
                         <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">Reach Us</h3>
-                        <p class="text-textSecondary my-2">We’re here to capture your special moments. Contact us <br>to discuss your wedding photography needs and get a personalized quote.</p>
+                        <p class="text-textSecondary my-2">We're here to bring your construction vision to life. Contact us to discuss your project needs and receive a personalized quote.</p>
                         <p class="text-textSecondary my-2">Website: <a href="https://greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">GreenFortUAE.com</a></p>
-                        <p class="text-textSecondary my-2">WhatsApp: <a href="https://wa.me/+97145543260" class="text-primary font-medium hover:underline" target="_blank">+971-45543260</a></p>
-                        <p class="text-textSecondary my-2">Phone Call: <a href="tel:+97145543260" class="text-primary font-medium hover:underline" target="_blank">+971-45543260</a>, <a href="tel:+97145543260" class="text-primary font-medium hover:underline" target="_blank">+971 4 554 3260</a></p>
-                        <p class="text-textSecondary my-2">E-Mail: <a href="mailto:info@greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">info@greenfortuae.com</a>, <a href="mailto:waleed@greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">waleed@greenfortuae.com</a></p>
+                        <p class="text-textSecondary my-2">WhatsApp: <a href="https://wa.me/+971504235865" class="text-primary font-medium hover:underline" target="_blank">0504235865</a></p>
+                        <p class="text-textSecondary my-2">Phone Call: <a href="tel:+97145543260" class="text-primary font-medium hover:underline" target="_blank">045543260</a>, <a href="tel:+971504235865" class="text-primary font-medium hover:underline" target="_blank">0504235865</a></p>
+                        <p class="text-textSecondary my-2">E-Mail: <a href="mailto:info@greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">info@greenfortuae.com</a></p>
                     </div>
                 </li>
                 <li class="flex my-4">

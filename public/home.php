@@ -1,118 +1,84 @@
 <!-- HERO SECTION -->
 <style>
-    #hero-section.zoom-in {
-        animation: zoomIn 1s forwards;
-    }
-
-    #hero-section.zoom-out {
-        animation: zoomOut 1s forwards;
-    }
-
-    @keyframes zoomIn {
-        from {
-            transform: scale(1.05);
-            opacity: 0;
-        }
-
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes zoomOut {
-        from {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        to {
-            transform: scale(1.05);
-            opacity: 0;
-        }
-    }
-
-    @media only screen and (min-width: 992px) {
-        .hero-image {
-            background-position-y: -150px;
-        }
+    .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
     }
 </style>
-<div id="hero-section" class="relative hero-image h-screen isolate bg-cover bg-no-repeat cursor-pointer overflow-hidden" style="background-image: url('assets/images/hero1.webp');" ondblclick="changeBackgroundImage()">
+
+<div id="hero-section" class="relative hero-image h-screen isolate bg-cover bg-no-repeat overflow-hidden">
+    <!-- Video Background -->
+    <video class="video-background absolute top-0 left-0 w-full h-full object-cover -z-10" autoplay muted loop playsinline>
+        <source src="<?= getAsset('home-bg.mp4', 'videos/'); ?>" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <div class="w-full h-full bg-slate-950/30 px-6 lg:px-8">
         <div class="mx-auto max-w-2xl py-16 sm:py-20 lg:py-12">
             <div class="text-center">
                 <!-- Logo -->
-                <img src="<?= getAsset('weblogo-white.webp', 'images/'); ?>" alt="Logo" class="w-64 mb-5 mt-16 brightness-125 mx-auto rounded-full object-contain" data-aos="fade-up" data-aos-delay="100">
+                <img src="<?= getAsset('weblogo-white.webp', 'images/'); ?>" alt="Logo" class="w-64 mb-5 mt-16 brightness-125 mx-auto rounded-full object-cover" data-aos="fade-up" data-aos-delay="100">
 
                 <!-- English Version -->
                 <h1 id="heading-english" class="text-4xl font-bold tracking-tight text-white sm:text-6xl lang-english" data-aos="fade-up" data-aos-delay="200"></h1>
+                <!-- English Version -->
                 <p class="mt-4 text-md leading-5 text-white/90 lang-english" data-aos="fade-up" data-aos-delay="300">
-                    Inspired by the 20th century construction, we’re committed to delivering a high distinctive quality of construction to the owner and the end user.
+                    At Green Fort, we shape Dubai's skyline with leading construction solutions focused on innovation, quality, and sustainability.
                 </p>
+
+
+
+
 
                 <!-- Arabic Version -->
                 <h1 id="heading-arabic" class="text-4xl font-bold tracking-tight text-white sm:text-6xl lang-arabic hidden" data-aos="fade-up" data-aos-delay="200"></h1>
+                <!-- Arabic Version -->
                 <p class="mt-4 text-md leading-5 text-white/90 lang-arabic hidden" data-aos="fade-up" data-aos-delay="300">
-                    مستوحى من بناء القرن العشرين، نحن ملتزمون بتقديم جودة بناء مميزة لصاحب المشروع والمستخدم النهائي.
+                    في جرين فورت، نسهم في تشكيل أفق دبي من خلال حلول بناء رائدة، مع التركيز على الابتكار والجودة والاستدامة.
                 </p>
             </div>
 
             <!-- Buttons -->
             <div class="mt-8 flex items-center justify-center gap-x-6" data-aos="fade-up" data-aos-delay="400">
-                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-english">Learn more
+                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-english">
+                    Learn more
                     <i class="fa fa-arrow-down ml-2 transition-transform duration-300 transform group-hover:translate-y-1"></i>
                 </a>
-                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-arabic hidden">اعرف المزيد
+                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-arabic hidden">
+                    اعرف المزيد
                     <i class="fa fa-arrow-down ml-2 transition-transform duration-300 transform group-hover:translate-y-1"></i>
                 </a>
             </div>
 
             <!-- Scroll Indicator -->
-            <div class="flex items-center justify-center absolute bottom-16 left-[50%] transform -translate-x-[45%]">
+            <div class="flex items-center justify-center absolute bottom-5 left-[50%] transform -translate-x-[45%]">
                 <div class="mt-20 text-center ring-1 ring-white rounded-full w-8 h-12 flex items-center justify-center">
                     <div class="w-3 h-3 rounded-full bg-white animate-ping"></div>
                 </div>
             </div>
-            <!-- Double Tap Instruction -->
-            <p class="mt-5 text-sm font-medium text-white animate-pulse absolute bottom-6 left-[50%] transform -translate-x-[50%] lang-english text-center">
-                Double tap to change background Image.
-            </p>
-            <p class="mt-5 text-sm font-medium text-white animate-pulse absolute bottom-6 left-[50%] transform -translate-x-[50%] lang-arabic hidden text-center">
-                انقر مرتين لتغيير صورة الخلفية.
-            </p>
         </div>
     </div>
 </div>
 
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    isHome = true;
-    let heroImages = ["assets/images/hero1.webp", "assets/images/hero2.webp", "assets/images/hero3.webp", "assets/images/hero4.webp"];
+    $(document).ready(function() {
+        const englishText = "Redefining Construction Excellence in Dubai";
+        const englishHeading = '#heading-english';
+        typeWriter(englishHeading, englishText, 100);
 
-    function preloadImages(imageUrls) {
-        imageUrls.forEach(url => {
-            const img = new Image();
-            img.src = url;
-        });
-    }
-
-    function changeBackgroundImage() {
-        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
-        const heroSection = $('#hero-section');
-        $('body').addClass('overflow-x-hidden');
-        heroSection.addClass('zoom-out');
-        setTimeout(() => {
-            heroSection.css('background-image', `url('${heroImages[currentImageIndex]}')`);
-            heroSection.removeClass('zoom-out').addClass('zoom-in');
-            // setTimeout(() => {
-            //     $('body').removeClass('overflow-x-hidden');
-            // }, 1000);
-        }, 300);
-    }
-    preloadImages(heroImages);
+        const arabicText = "إعادة تعريف البناء بالتميز في دبي";
+        const arabicHeading = '#heading-arabic';
+        typeWriter(arabicHeading, arabicText, 100);
+    });
 
     function typeWriter(element, text, delay) {
         let index = 0;
@@ -132,17 +98,8 @@
         }
         type();
     }
-
-    $(document).ready(function() {
-        const englishText = "Redefining Construction Excellence in Dubai";
-        const englishHeading = '#heading-english';
-        typeWriter(englishHeading, englishText, 100);
-
-        const arabicText = "إعادة تعريف البناء بالتميز في دبي";
-        const arabicHeading = '#heading-arabic';
-        typeWriter(arabicHeading, arabicText, 100);
-    });
 </script>
+
 
 
 <section id="about" class="py-24 bg-bgPrimary relative">
@@ -150,27 +107,28 @@
         <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
             <div class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
                 <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                    <img class="rounded-xl object-cover cursor-pointer hover:ring-primary ring-2 ring-transparent ring-offset-2" src="<?= getAsset('about-img1.webp', 'images/'); ?>" alt="About Us Image 1" data-aos="fade-right" data-aos-duration="1000" />
+                    <img class="rounded-xl object-cover cursor-pointer hover:ring-primary ring-2 ring-transparent ring-offset-2" src="<?= getAsset('about-img2.webp', 'images/'); ?>" alt="About Us Image 1" data-aos="fade-right" data-aos-duration="1000" />
                 </div>
-                <img class="sm:ml-0 ml-auto rounded-xl object-cover cursor-pointer hover:ring-primary ring-2 ring-transparent ring-offset-2" src="<?= getAsset('about-img2.webp', 'images/'); ?>" alt="About Us Image 2" data-aos="fade-up" data-aos-duration="1000" />
+                <img class="sm:ml-0 ml-auto rounded-xl object-cover cursor-pointer hover:ring-primary ring-2 ring-transparent ring-offset-2" src="<?= getAsset('about-img1.webp', 'images/'); ?>" alt="About Us Image 2" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
                 <div class="w-full flex-col justify-center items-start gap-8 flex">
                     <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                         <!-- English Version -->
                         <h2 class="text-textPrimary text-4xl font-bold leading-2 lg:text-start text-center lang-english" data-aos="fade-up" data-aos-duration="1000">
-                            Building Tomorrow's Infrastructure Today
+                            Let’s Build the Future Together
                         </h2>
                         <p class="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center lang-english" data-aos="fade-up" data-aos-duration="1200">
-                            Green Fort provides one of the best services in the fields of Villas and Service Blocks Constructions, General Maintenance, Modification and Extension Works, Renovation, Tiling, Ceiling, Painting Works, Gypsum Partitions and Ceiling, Interior Design and Fit-out Works, Parquet, Laminate and Vinyl Floorings, Warehouse Construction, Epoxy Flooring, Parking Marking and Signage Works, Aluminium and Glazing works, Pergolas, Canopies, Parking Sheds, Carpentry and Joinery Works, Electrical, Plumbing and Air-conditioning Works, External Pavings and Interlocks, annual maintenance for residential and corporate premises.
+                            Green Fort provides exceptional services in the fields of villa and service block construction, general maintenance, modification and extension works, renovation, tiling, ceiling, painting works, gypsum partitions and ceilings, interior design and fit-out works, parquet, laminate and vinyl floorings, warehouse construction, epoxy flooring, parking marking and signage works, aluminium and glazing works, pergolas, canopies, parking sheds, carpentry and joinery works, electrical, plumbing and air-conditioning works, external pavings and interlocks, and annual maintenance for residential and corporate premises.
                         </p>
 
                         <!-- Arabic Version -->
                         <h2 class="text-textPrimary text-4xl font-bold leading-2 lg:text-start text-center lang-arabic hidden" data-aos="fade-up" data-aos-duration="1000">
-                            بناء بنية تحتية الغد اليوم
+                            دعونا نبني المستقبل معًا
                         </h2>
+
                         <p class="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center lang-arabic hidden" data-aos="fade-up" data-aos-duration="1200">
-                            تقدم جرين فورت أفضل الخدمات في مجالات بناء الفيلات والكتل الخدمية، الصيانة العامة، أعمال التعديل والتوسيع، التجديد، أعمال التبليط والأسقف، الدهانات، الجبس والقواطع، التصميم الداخلي والأعمال التكميلية، الأرضيات الخشبية، اللامينيت والفينيل، بناء المستودعات، الأرضيات الإيبوكسية، علامات مواقف السيارات وأعمال الألمنيوم والزجاج، المظلات، السقائف، مواقف السيارات، النجارة وأعمال الجوينري، الأعمال الكهربائية، السباكة وأعمال التكييف، الرصف الخارجي والإنترلوك، والصيانة السنوية للعقارات السكنية والشركات.
+                            تقدم جرين فورت خدمات استثنائية في مجالات بناء الفيلات والكتل الخدمية، الصيانة العامة، أعمال التعديل والتوسيع، التجديد، أعمال التبليط والأسقف، الدهانات، الجبس والقواطع، التصميم الداخلي والأعمال التكميلية، الأرضيات الخشبية، اللامينيت والفينيل، بناء المستودعات، الأرضيات الإيبوكسية، علامات مواقف السيارات وأعمال الألمنيوم والزجاج، المظلات، السقائف، مواقف السيارات، النجارة وأعمال الجوينري، الأعمال الكهربائية، السباكة وأعمال التكييف، الرصف الخارجي والإنترلوك، والصيانة السنوية للعقارات السكنية والشركات.
                         </p>
                     </div>
 
@@ -178,29 +136,29 @@
 
                         <!-- English Version Stats -->
                         <div class="flex-col justify-start items-start inline-flex lang-english">
-                            <h3 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="33">0+</h3>
+                            <h3 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="10">10+</h3>
                             <h6 class="text-textSecondary text-base font-normal leading-relaxed">Years of Experience</h6>
                         </div>
                         <div class="flex-col justify-start items-start inline-flex lang-english">
-                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="125">0+</h4>
-                            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Successful Projects</h6>
+                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="110">110+</h4>
+                            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Projects Completed</h6>
                         </div>
                         <div class="flex-col justify-start items-start inline-flex lang-english">
-                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="52">0+</h4>
-                            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Happy Clients</h6>
+                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="105">105+</h4>
+                            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Happy Customers</h6>
                         </div>
 
                         <!-- Arabic Version Stats -->
                         <div class="flex-col justify-start items-start inline-flex lang-arabic hidden">
-                            <h3 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="33">0+</h3>
+                            <h3 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="10">10+</h3>
                             <h6 class="text-textSecondary text-base font-normal leading-relaxed">سنوات من الخبرة</h6>
                         </div>
                         <div class="flex-col justify-start items-start inline-flex lang-arabic hidden">
-                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="125">0+</h4>
-                            <h6 class="text-textSecondary text-base font-normal leading-relaxed">مشاريع ناجحة</h6>
+                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="110">110+</h4>
+                            <h6 class="text-textSecondary text-base font-normal leading-relaxed">مشاريع مكتملة</h6>
                         </div>
                         <div class="flex-col justify-start items-start inline-flex lang-arabic hidden">
-                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="52">0+</h4>
+                            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="105">105+</h4>
                             <h6 class="text-textSecondary text-base font-normal leading-relaxed">عملاء سعداء</h6>
                         </div>
                     </div>
@@ -208,29 +166,16 @@
 
                 <!-- Buttons -->
                 <div class="flex gap-4 justify-center items-center w-full md:w-auto">
-                    <!-- English Button Version -->
-                    <a href="company-profile.pdf" download="Green Fort UAE (Company Profile).pdf" class="sm:w-fit w-full px-3.5 py-1.5 border-2 border-primary bg-primary hover:bg-primary/80 transition-all duration-700 ease-in-out rounded-full shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex lang-english" data-aos="fade-up" data-aos-duration="1500">
-                        <span class="px-1.5 text-white text-sm font-medium leading-6">
-                            <i class="fa fa-download"></i> Company Profile
-                        </span>
-                    </a>
                     <a href="/about" class="sm:w-fit w-full px-3.5 py-1.5 border-2 border-primary text-primary hover:bg-primary/80 hover:text-white transition-all duration-700 ease-in-out rounded-full justify-center items-center flex group lang-english" data-aos="fade-up" data-aos-duration="1500">
                         <span class="px-1.5 text-sm font-semibold leading-6 flex items-center">
-                            Learn more
-                            <i class="fa fa-arrow-right ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
-                        </span>
-                    </a>
-
-                    <!-- Arabic Button Version -->
-                    <a href="company-profile.pdf" download="Green Fort UAE (Company Profile).pdf" class="sm:w-fit w-full px-3.5 py-1.5 border-2 border-primary bg-primary hover:bg-primary/80 transition-all duration-700 ease-in-out rounded-full shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex lang-arabic hidden" data-aos="fade-up" data-aos-duration="1500">
-                        <span class="px-1.5 text-white text-sm font-medium leading-6">
-                            <i class="fa fa-download"></i> الملف التعريفي للشركة
+                            <span class="mr-2">Learn more</span>
+                            <i class="fa fa-arrow-right transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
                         </span>
                     </a>
                     <a href="/about" class="sm:w-fit w-full px-3.5 py-1.5 border-2 border-primary text-primary hover:bg-primary/80 hover:text-white transition-all duration-700 ease-in-out rounded-full justify-center items-center flex group lang-arabic hidden" data-aos="fade-up" data-aos-duration="1500">
-                        <span class="px-1.5 text-sm font-semibold leading-6 flex items-center">
-                            اعرف المزيد
-                            <i class="fa fa-arrow-left mr-2 transition-transform duration-300 ease-in-out group-hover:-translate-x-1"></i>
+                        <span class="px-1.5 text-sm font-semibold leading-6 flex items-center"><span class="ml-2">
+                                اعرف المزيد
+                            </span><i class="fa fa-arrow-left ml-2 transition-transform duration-300 ease-in-out group-hover:-translate-x-1"></i>
                         </span>
                     </a>
                 </div>
@@ -238,6 +183,8 @@
         </div>
     </div>
 </section>
+
+
 
 <section class="bg-bgSecondary/30 text-textPrimary" id="vision">
     <div class="container max-w-5xl px-4 py-12 mx-auto">
@@ -260,13 +207,13 @@
                     <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-primary transition-all duration-300 ease-in-out">
                         <h3 class="text-xl font-semibold tracking-wide transition-transform duration-300 ease-in-out">Our Mission</h3>
                         <p class="mt-3 text-textSecondary transition-opacity duration-300 ease-in-out">
-                            We strive to lead the industry by adopting cutting-edge technologies, sustainable practices, and creative solutions that meet the evolving needs of our clients.
+                            We strive to lead the industry by adopting cutting-edge technologies, sustainable practices, and creative solutions that meet the evolving needs of our clients. Our commitment to excellence ensures that we deliver projects on time and within budget while exceeding client expectations.
                         </p>
                     </div>
                     <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-primary transition-all duration-300 ease-in-out">
                         <h3 class="text-xl font-semibold tracking-wide transition-transform duration-300 ease-in-out">Our Goal</h3>
                         <p class="mt-3 text-textSecondary transition-opacity duration-300 ease-in-out">
-                            Our goal is to create lasting value through excellence in construction, fostering long-term relationships with our clients, partners, and communities, while contributing to a greener and more sustainable future for generations to come.
+                            Our goal is to create lasting value through excellence in construction, fostering long-term relationships with our clients, partners, and communities, while contributing to a greener and more sustainable future for generations to come. We believe in utilizing innovative and eco-friendly practices to achieve these aims.
                         </p>
                     </div>
                 </div>
@@ -290,13 +237,13 @@
                     <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:right-[-35px] sm:before:z-[1] before:bg-primary transition-all duration-300 ease-in-out">
                         <h3 class="text-xl font-semibold tracking-wide transition-transform duration-300 ease-in-out">مهمتنا</h3>
                         <p class="mt-3 text-textSecondary transition-opacity duration-300 ease-in-out">
-                            نسعى إلى قيادة الصناعة من خلال تبني أحدث التقنيات، والممارسات المستدامة، والحلول الإبداعية التي تلبي الاحتياجات المتطورة لعملائنا.
+                            نسعى إلى قيادة الصناعة من خلال تبني أحدث التقنيات، والممارسات المستدامة، والحلول الإبداعية التي تلبي الاحتياجات المتطورة لعملائنا. إن التزامنا بالتميز يضمن لنا تقديم مشاريع في الوقت المحدد وضمن الميزانية مع تجاوز توقعات العملاء.
                         </p>
                     </div>
                     <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:right-[-35px] sm:before:z-[1] before:bg-primary transition-all duration-300 ease-in-out">
                         <h3 class="text-xl font-semibold tracking-wide transition-transform duration-300 ease-in-out">هدفنا</h3>
                         <p class="mt-3 text-textSecondary transition-opacity duration-300 ease-in-out">
-                            هدفنا هو خلق قيمة مستدامة من خلال التميز في البناء، وتطوير علاقات طويلة الأمد مع عملائنا وشركائنا ومجتمعاتنا، والمساهمة في مستقبل أكثر خضرة واستدامة للأجيال القادمة.
+                            هدفنا هو خلق قيمة مستدامة من خلال التميز في البناء، وتطوير علاقات طويلة الأمد مع عملائنا وشركائنا ومجتمعاتنا، والمساهمة في مستقبل أكثر خضرة واستدامة للأجيال القادمة. نحن نؤمن باستخدام ممارسات مبتكرة وصديقة للبيئة لتحقيق هذه الأهداف.
                         </p>
                     </div>
                 </div>
@@ -304,7 +251,6 @@
         </div>
     </div>
 </section>
-
 
 
 
@@ -316,172 +262,195 @@
         </h1>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-10 mt-10">
-        <!-- Service Item -->
-        <div class="flex gap-4 items-start" data-aos="fade-up">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full transition-transform duration-300 transform hover:scale-110">
-                <i class="fas fa-tasks text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <h3 class="font-semibold text-xl">
-                    <span class="lang-english">Project Management</span>
-                    <span class="lang-arabic hidden">إدارة المشاريع</span>
-                </h3>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Efficient planning and execution of projects to ensure on-time delivery and exceptional quality.</span>
-                    <span class="lang-arabic hidden">تخطيط وتنفيذ المشاريع بكفاءة لضمان التسليم في الوقت المحدد وجودة استثنائية.</span>
-                </p>
+    <div class="flex flex-wrap -mx-4 mt-16">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Project Management</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">إدارة المشاريع</h4>
             </div>
         </div>
-
-        <!-- Repeat for other service items -->
-        <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="100">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full transition-transform duration-300 transform hover:scale-110">
-                <i class="fas fa-drafting-compass text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <h3 class="font-semibold text-xl">
-                    <span class="lang-english">Architectural Design</span>
-                    <span class="lang-arabic hidden">التصميم المعماري</span>
-                </h3>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Innovative designs that reflect our clients' visions, balancing aesthetics and functionality.</span>
-                    <span class="lang-arabic hidden">تصاميم مبتكرة تعكس رؤى عملائنا وتوازن بين الجمالية والوظيفة.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Architectural Design</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">التصميم المعماري</h4>
             </div>
         </div>
-
-        <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="200">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full transition-transform duration-300 transform hover:scale-110">
-                <i class="fas fa-hammer text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <h3 class="font-semibold text-xl">
-                    <span class="lang-english">General Contracting</span>
-                    <span class="lang-arabic hidden">المقاولات العامة</span>
-                </h3>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Full-scale construction services from foundation to finish, delivering comprehensive building solutions.</span>
-                    <span class="lang-arabic hidden">خدمات بناء شاملة من الأساس إلى التشطيب، تقدم حلول بناء متكاملة.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">General Contracting</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">المقاولة العامة</h4>
             </div>
         </div>
-
-        <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="300">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full transition-transform duration-300 transform hover:scale-110">
-                <i class="fas fa-paint-roller text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <h3 class="font-semibold text-xl">
-                    <span class="lang-english">Renovations and Fit-Outs</span>
-                    <span class="lang-arabic hidden">التجديدات والتشطيبات</span>
-                </h3>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Transforming spaces to meet modern standards, tailored to your specific requirements.</span>
-                    <span class="lang-arabic hidden">تحويل المساحات لتلبية المعايير الحديثة وتخصيصها وفقًا لمتطلباتك الخاصة.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-red-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Renovations and Fit-Outs</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">التجديدات والتجهيزات الداخلية</h4>
             </div>
         </div>
-
-        <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="400">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full transition-transform duration-300 transform hover:scale-110">
-                <i class="fas fa-lightbulb text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <h3 class="font-semibold text-xl">
-                    <span class="lang-english">Consulting Services</span>
-                    <span class="lang-arabic hidden">خدمات استشارية</span>
-                </h3>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Expert advice on construction best practices and regulations to ensure smooth project execution.</span>
-                    <span class="lang-arabic hidden">نصائح خبراء حول أفضل الممارسات واللوائح في مجال البناء لضمان تنفيذ سلس للمشاريع.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-purple-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Consulting Services</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">خدمات الاستشارات</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-indigo-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Interior Design and Fit-Out Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال التصميم الداخلي والتجهيزات</h4>
             </div>
         </div>
     </div>
 
-    <div class="text-center mt-12">
-        <a href="/services" class="group text-primary font-semibold py-1 px-6 rounded-full transition-all duration-300 border border-2 border-primary inline-flex items-center lang-english">
-            <span>Explore All</span>
-            <i class="ml-2 fa fa-arrow-right transform transition-transform duration-300 group-hover:translate-x-2"></i>
-        </a>
+    <!-- View All Services Button -->
+<div class="text-center mt-12">
+    <a href="/services" class="group text-primary font-semibold py-1 px-6 rounded-full transition-all duration-300 border border-2 border-primary inline-flex items-center lang-english">
+        <span class="mr-2">All Services</span>
+        <i class="ml-2 fa fa-arrow-right transform transition-transform duration-300 group-hover:translate-x-2"></i>
+    </a>
 
-        <a href="/services" class="group text-primary font-semibold py-1 px-6 rounded-full transition-all duration-300 border border-2 border-primary inline-flex items-center lang-arabic hidden">
-            <span>استكشاف الكل</span>
-            <i class="mr-2 fa fa-arrow-left transform transition-transform duration-300 group-hover:-translate-x-2"></i>
-        </a>
+    <a href="/services" class="group text-primary font-semibold py-1 px-6 rounded-full transition-all duration-300 border border-2 border-primary inline-flex items-center lang-arabic hidden">
+        <span>جميع الخدمات</span>
+        <i class="mr-2 fa fa-arrow-left transform transition-transform duration-300 group-hover:-translate-x-2"></i>
+    </a>
+</div>
+
+</div>
+
+
+
+<div class="bg-bgSecondary/30 mx-auto p-10 mt-16" id="portfolio">
+    <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
+            <span class="lang-english">Our Portfolio</span>
+            <span class="lang-arabic hidden">محفظتنا</span>
+        </h1>
+    </div>
+
+    <div class="flex flex-wrap -mx-4 mt-16 max-w-7xl">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Barsha South</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء الجنوبية</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Barsha 2nd and 3rd</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء 2 و 3</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Quoz 2 and 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">القصيص 2 و 4</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Warqa 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الورقاء 4</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Mizhar 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">المزهر 1</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Muhaisnah 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">المحيصنة 1</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Oud al Muteena 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">عود المطنقة 1</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Umm Suqiem 2nd</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">أم سقيم 2</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Safa 2</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الصفا 2</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Madinat Hind 4th</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">مدينة الهند 4</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Khawaneej</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الخوانيج</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Aweer</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">العوير</h4>
+            </div>
+        </div>
     </div>
 </div>
 
 
 
-<section class="bg-bgSecondary/30 py-16 mt-12" data-aos="fade-up">
+
+<section class="py-16 mt-12" data-aos="fade-up">
     <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center mb-8">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
-            <span class="lang-english">Our Portfolio</span>
-            <span class="lang-arabic hidden">محفظة مشاريعنا</span>
+            <span class="lang-english">Projects Gallery</span>
+            <span class="lang-arabic hidden">معرض المشاريع</span>
+
         </h1>
     </div>
 
     <div class="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
             <!-- Project 1: Al Barsha South -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+            <div class="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
                 <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                    <img src="<?= getAsset('portfolio-1.webp', 'images/'); ?>" alt="Al Barsha South Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Barsha South Project</span>
-                        <span class="lang-arabic hidden">مشروع البرشاء جنوب</span>
-                    </h3>
+                    <img src="<?= getAsset('portfolio-1.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                 </a>
             </div>
 
             <!-- Project 2: Al Barsha 2nd and 3rd -->
             <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
                 <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                    <img src="<?= getAsset('portfolio-2.webp', 'images/'); ?>" alt="Al Barsha 2nd and 3rd Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Barsha 2nd and 3rd Project</span>
-                        <span class="lang-arabic hidden">مشروع البرشاء الثانية والثالثة</span>
-                    </h3>
+                    <img src="<?= getAsset('portfolio-11.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                 </a>
             </div>
 
             <!-- Project 3: Al Warqa 4 -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+            <div class="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
                 <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-3.webp', 'images/'); ?>" alt="Al Warqa 4 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Warqa 4 Project</span>
-                        <span class="lang-arabic hidden">مشروع الورقاء 4</span>
-                    </h3>
+                    <img src="<?= getAsset('portfolio-12.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
                 </a>
             </div>
 
             <!-- Project 4: Al Quoz 2 and 4 -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50">
+            <div class="col-span-2 sm:col-span-1 md:col-span-2">
                 <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-4.webp', 'images/'); ?>" alt="Al Quoz 2 and 4 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Quoz 2 and 4 Project</span>
-                        <span class="lang-arabic hidden">مشروع القوز الثانية والرابعة</span>
-                    </h3>
+                    <img src="<?= getAsset('portfolio-4.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
                 </a>
             </div>
 
             <!-- Project 5: Al Mizhar 1st -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+            <div class="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
                 <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-5.webp', 'images/'); ?>" alt="Al Warqa 4 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Mizhar 1st Project</span>
-                        <span class="lang-arabic hidden">مشروع المزهر 1</span>
-                    </h3>
+                    <img src="<?= getAsset('portfolio-5.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
                 </a>
             </div>
 
@@ -489,12 +458,8 @@
 
             <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
                 <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                    <img src="<?= getAsset('portfolio-6.webp', 'images/'); ?>" alt="Al Mizhar 1st Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Muhaisnah 1st Project</span>
-                        <span class="lang-arabic hidden">مشروع محيصنة 1</span>
-                    </h3>
+                    <img src="<?= getAsset('portfolio-6.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
                 </a>
             </div>
         </div>
@@ -514,7 +479,25 @@
     </div>
 </section>
 
-
+<div class="relative bg-transparent text-white py-16" data-aos="fade-up">
+    <div class="absolute inset-0 bg-cover bg-center bg-[url('<?= getAsset('cta-bg.webp', 'images/'); ?>')]"></div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+            <span class="lang-english">Join Us in Making a Difference</span>
+            <span class="lang-arabic hidden">انضم إلينا في إحداث فرق</span>
+        </h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+            <span class="lang-english">Together, we can create a brighter future for our communities. Discover how you can get involved in our initiatives.</span>
+            <span class="lang-arabic hidden">معًا، يمكننا إنشاء مستقبل مشرق لمجتمعاتنا. اكتشف كيف يمكنك المشاركة في مبادراتنا.</span>
+        </p>
+        <a href="/contact" class="inline-flex items-center justify-center bg-white text-primary font-semibold rounded-full px-6 py-3 transition-all duration-300 hover:bg-gray-100">
+            <span class="lang-english mr-2">Contact Us</span>
+            <span class="lang-arabic hidden ml-2">تواصل معنا</span>
+            <i class="fa fa-arrow-right lang-english"></i>
+            <i class="fa fa-arrow-left lang-arabic hidden"></i>
+        </a>
+    </div>
+</div>
 
 
 <div class="py-12 mt-20" data-aos="fade-up" data-aos-duration="800">
@@ -596,26 +579,6 @@
     </div>
 </div>
 
-
-<div class="bg-primary text-white py-16" data-aos="fade-up">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-            <span class="lang-english">Join Us in Making a Difference</span>
-            <span class="lang-arabic hidden">انضم إلينا في إحداث فرق</span>
-        </h2>
-        <p class="text-lg mb-8 max-w-2xl mx-auto">
-            <span class="lang-english">Together, we can create a brighter future for our communities. Discover how you can get involved in our initiatives.</span>
-            <span class="lang-arabic hidden">معًا، يمكننا إنشاء مستقبل مشرق لمجتمعاتنا. اكتشف كيف يمكنك المشاركة في مبادراتنا.</span>
-        </p>
-        <a href="/contact" class="inline-flex items-center justify-center bg-white text-amber-600 font-semibold rounded-full px-6 py-3 transition-all duration-300 hover:bg-gray-100">
-            <span class="lang-english mr-2">Contact Us</span>
-            <span class="lang-arabic hidden ml-2">تواصل معنا</span>
-            <i class="fa fa-arrow-right lang-english"></i>
-            <i class="fa fa-arrow-left lang-arabic hidden"></i>
-        </a>
-    </div>
-</div>
-
 <!-- REVIEWS SECTION -->
 <div id="reviews"></div>
 <div class="bg-bgSecondary/30 mx-auto mt-12 px-4 py-16">
@@ -640,42 +603,6 @@
                     </blockquote>
                 </figure>
             </div>
-            <!-- Review Slide 2 -->
-            <div class="swiper-slide">
-                <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-                    </svg>
-                    <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort construction company has been an absolute pleasure. Their attention to detail, adherence to timelines, and commitment to quality surpassed our expectations."<br> — <strong>Salma Salem Mohammed Darwish</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان العمل مع شركة Green Fort للبناء متعة مطلقة. لقد تجاوزت انتباههم للتفاصيل والالتزام بالمواعيد النهائية والالتزام بالجودة توقعاتنا."<br> — <strong>سلامة سالم محمد دارويش</strong></p>
-                    </blockquote>
-                </figure>
-            </div>
-            <!-- Review Slide 3 -->
-            <div class="swiper-slide">
-                <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-                    </svg>
-                    <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort UAE was a fantastic experience. They delivered on time and exceeded our expectations."<br> — <strong>Younis Ali Mahmood Mohammed</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت تجربة العمل مع [اسم شركتكم] تجربة رائعة. لقد قاموا بالتسليم في الوقت المحدد وتجاوزوا توقعاتنا."<br> — <strong>يونس علي محمود محمد</strong></p>
-                    </blockquote>
-                </figure>
-            </div>
-            <!-- Review Slide 4 -->
-            <div class="swiper-slide">
-                <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-                    </svg>
-                    <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their professionalism and attention to detail made a significant difference in our project."<br> — <strong>Ibrahim Fairooz Moosa</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت احترافيتهم واهتمامهم بالتفاصيل فارقًا كبيرًا في مشروعنا."<br> — <strong>إبراهيم فيروز موسى</strong></p>
-                    </blockquote>
-                </figure>
-            </div>
             <!-- Review Slide 5 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
@@ -688,6 +615,20 @@
                     </blockquote>
                 </figure>
             </div>
+
+            <!-- Review Slide 4 -->
+            <div class="swiper-slide">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                    </svg>
+                    <blockquote>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their professionalism and attention to detail made a significant difference in our project."<br> — <strong>Ibrahim Fairooz Moosa</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت احترافيتهم واهتمامهم بالتفاصيل فارقًا كبيرًا في مشروعنا."<br> — <strong>إبراهيم فيروز موسى</strong></p>
+                    </blockquote>
+                </figure>
+            </div>
+
             <!-- Review Slide 6 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
@@ -697,6 +638,18 @@
                     <blockquote>
                         <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"They understood our needs and delivered beyond our expectations."<br> — <strong>Moosa Abbas Ghuloom Maroof</strong></p>
                         <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"فهموا احتياجاتنا وقدموا ما يتجاوز توقعاتنا."<br> — <strong>موسى عباس غلوم معروف</strong></p>
+                    </blockquote>
+                </figure>
+            </div>
+            <!-- Review Slide 3 -->
+            <div class="swiper-slide">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                    </svg>
+                    <blockquote>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort UAE was a fantastic experience. They delivered on time and exceeded our expectations."<br> — <strong>Younis Ali Mahmood Mohammed</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت تجربة العمل مع [اسم شركتكم] تجربة رائعة. لقد قاموا بالتسليم في الوقت المحدد وتجاوزوا توقعاتنا."<br> — <strong>يونس علي محمود محمد</strong></p>
                     </blockquote>
                 </figure>
             </div>
@@ -733,6 +686,18 @@
                     <blockquote>
                         <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their innovative approach and focus on sustainability were crucial for our project. They exceeded our expectations in terms of design, execution, and overall project management. We couldn't have asked for a more dedicated team."<br> — <strong>Ibrahim Khamis Saeed</strong></p>
                         <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان نهجهم المبتكر وتركيزهم على الاستدامة حاسمين لمشروعنا. لقد تجاوزوا توقعاتنا من حيث التصميم والتنفيذ والإدارة العامة للمشروع. لم نكن لنطلب فريقًا أكثر تفانيًا."<br> — <strong>إبراهيم خميس سعيد</strong></p>
+                    </blockquote>
+                </figure>
+            </div>
+            <!-- Review Slide 2 -->
+            <div class="swiper-slide">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                    </svg>
+                    <blockquote>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort construction company has been an absolute pleasure. Their attention to detail, adherence to timelines, and commitment to quality surpassed our expectations."<br> — <strong>Salma Salem Mohammed Darwish</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان العمل مع شركة Green Fort للبناء متعة مطلقة. لقد تجاوزت انتباههم للتفاصيل والالتزام بالمواعيد النهائية والالتزام بالجودة توقعاتنا."<br> — <strong>سلامة سالم محمد دارويش</strong></p>
                     </blockquote>
                 </figure>
             </div>

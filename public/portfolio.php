@@ -1,7 +1,7 @@
 <!-- HERO SECTION -->
 <div class="relative isolate px-6 lg:px-8">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-secondary to-primary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-amber-500 to-rose-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
     </div>
     <div class="mx-auto h-2/4 max-w-2xl mt-10 py-32 sm:py-48 lg:py-36">
         <div class="text-center">
@@ -40,155 +40,153 @@
             من الفيلات الفاخرة إلى المرافق التجارية، قمنا بتسليم المشاريع بنجاح لعملائنا. لقد عملنا وأكملنا بنجاح مشاريعنا في المناطق والأحياء التالية، حيث تم تطوير قاعدة بيانات معظم عملائنا من المناطق أدناه؛</span>
     </div>
 
-    <div class="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
-            <!-- Project 1: Al Barsha South -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                    <img src="<?= getAsset('portfolio-1.webp', 'images/'); ?>" alt="Al Barsha South Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Barsha South Project</span>
-                        <span class="lang-arabic hidden">مشروع البرشاء جنوب</span>
-                    </h3>
-                </a>
+    <div class="flex flex-wrap -mx-4 mt-16 max-w-7xl mx-auto">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Barsha South</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء الجنوبية</h4>
             </div>
-
-            <!-- Project 2: Al Barsha 2nd and 3rd -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                    <img src="<?= getAsset('portfolio-2.webp', 'images/'); ?>" alt="Al Barsha 2nd and 3rd Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Barsha 2nd and 3rd Project</span>
-                        <span class="lang-arabic hidden">مشروع البرشاء الثانية والثالثة</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Barsha 2nd and 3rd</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء 2 و 3</h4>
             </div>
-
-            <!-- Project 3: Al Warqa 4 -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-3.webp', 'images/'); ?>" alt="Al Warqa 4 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Warqa 4 Project</span>
-                        <span class="lang-arabic hidden">مشروع الورقاء 4</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Quoz 2 and 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">القصيص 2 و 4</h4>
             </div>
-
-            <!-- Project 4: Al Quoz 2 and 4 -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-4.webp', 'images/'); ?>" alt="Al Quoz 2 and 4 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Quoz 2 and 4 Project</span>
-                        <span class="lang-arabic hidden">مشروع القوز الثانية والرابعة</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Warqa 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الورقاء 4</h4>
             </div>
-
-            <!-- Project 5: Al Mizhar 1st -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-5.webp', 'images/'); ?>" alt="Al Warqa 4 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Mizhar 1st Project</span>
-                        <span class="lang-arabic hidden">مشروع المزهر 1</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Mizhar 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">المزهر 1</h4>
             </div>
-
-            <!-- Project 6: Muhaisnah 1st -->
-
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                    <img src="<?= getAsset('portfolio-6.webp', 'images/'); ?>" alt="Al Mizhar 1st Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Muhaisnah 1st Project</span>
-                        <span class="lang-arabic hidden">مشروع محيصنة 1</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Muhaisnah 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">المحيصنة 1</h4>
             </div>
-
-            <!-- Project 7: Oud Al Muteena 1st -->
-
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-7.webp', 'images/'); ?>" alt="Muhaisnah 1st Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Oud Al Muteena 1st Project</span>
-                        <span class="lang-arabic hidden">مشروع عود المطينة 1</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Oud al Muteena 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">عود المطنقة 1</h4>
             </div>
-
-            <!-- Project 8: Umm Suqiem 2nd -->
-
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-8.webp', 'images/'); ?>" alt="Oud Al Muteena 1st Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Umm Suqiem 2nd Project</span>
-                        <span class="lang-arabic hidden">مشروع أم سقيم 2</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Umm Suqiem 2nd</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">أم سقيم 2</h4>
             </div>
-
-            <!-- Project 9: Al Safa 2 -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                    <img src="<?= getAsset('portfolio-9.webp', 'images/'); ?>" alt="Al Safa 2 Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Safa 2 Project</span>
-                        <span class="lang-arabic hidden">مشروع الصفا 2</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Safa 2</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الصفا 2</h4>
             </div>
-
-            <!-- Project 10: Al Aweer -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-10.webp', 'images/'); ?>" alt="Al Khawaneej Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Aweer Project</span>
-                        <span class="lang-arabic hidden">مشروع العوير</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Madinat Hind 4th</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">مدينة الهند 4</h4>
             </div>
-
-            <!-- Project 11: Al Khawaneej -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-11.webp', 'images/'); ?>" alt="Al Khawaneej Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Al Khawaneej Project</span>
-                        <span class="lang-arabic hidden">مشروع الخوانيج</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Khawaneej</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الخوانيج</h4>
             </div>
-            <!-- Project 12: Madinat Hind 4th -->
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                    <img src="<?= getAsset('portfolio-12.webp', 'images/'); ?>" alt="Madinat Hind 4th Project" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
-                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                    <h3 class="z-10 text-2xl font-semibold text-white absolute top-0 left-0 p-4 xs:text-xl md:text-2xl">
-                        <span class="lang-english">Madinat Hind 4th Project</span>
-                        <span class="lang-arabic hidden">مشروع مدينة هند 4</span>
-                    </h3>
-                </a>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] rounded-lg border-double border-gray-400 text-textPrimary text-center">
+                <h4 class="font-semibold text-xl lang-english">Al Aweer</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">العوير</h4>
             </div>
-
         </div>
     </div>
+    </div>
+</section>
 
+<section class="py-16 mt-12" data-aos="fade-up">
+    <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
+            <span class="lang-english">Projects Gallery</span>
+            <span class="lang-arabic hidden">معرض المشاريع</span>
+
+        </h1>
+    </div>
+
+    <div class="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+            <div class="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+                    <img src="<?= getAsset('portfolio-1.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+                    <img src="<?= getAsset('portfolio-11.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                    <img src="<?= getAsset('portfolio-12.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+                    <img src="<?= getAsset('portfolio-8.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                    <img src="<?= getAsset('portfolio-9.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-2">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                    <img src="<?= getAsset('portfolio-10.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                    <img src="<?= getAsset('portfolio-5.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-2">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                    <img src="<?= getAsset('portfolio-4.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
+                </a>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                <a class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+                    <img src="<?= getAsset('portfolio-6.webp', 'images/'); ?>" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+
+                </a>
+            </div>
+        </div>
+    </div>
 </section>

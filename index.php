@@ -13,7 +13,7 @@ if (array_key_exists($pageKey, $routes)) {
     // ob_start('compress_output');
     include INCLUDES . "public-layout.php";
     // ob_end_flush();
-} elseif ($pageKey === ADMIN_SLUG || $pageKey === API_SLUG) {
+} elseif ($pageKey === API_SLUG) {
     $slug = $urlPath[1] ?? 'home';
     if ($pageKey === ADMIN_SLUG && array_key_exists($slug, $adminRoutes)) {
         session_start();

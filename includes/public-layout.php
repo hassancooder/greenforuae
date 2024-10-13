@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= $pageDetails['meta']; ?>
     <?php include INCLUDES . "header.php"; ?>
+    <?php if (empty($pageKey)) {
+        $textColor = "text-white";
+        echo '<script>let isHome = true;</script>';
+        echo '<link rel="prefetch" href="' . getAsset('home-bg.mp4', 'videos/') . '" as="video">';
+    } else {
+        $textColor = "text-textPrimary";
+        echo '<script>let isHome = false;</script>';
+    } ?>
 </head>
 <?php
 $EnglishLinks = [
@@ -34,15 +42,7 @@ foreach ($EnglishLinks as $englishText => $link) {
         }
     }
 }
-if (empty($pageKey)) {
-    $textColor = "text-white";
-} else {
-    $textColor = "text-textPrimary";
-}
 ?>
-<script>
-    let isHome = false;
-</script>
 
 
 

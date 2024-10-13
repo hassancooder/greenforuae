@@ -1,7 +1,7 @@
 <!-- HERO SECTION -->
 <div class="relative isolate px-6 lg:px-8">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-secondary to-primary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-amber-500 to-rose-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
     </div>
     <div class="mx-auto h-2/4 max-w-2xl mt-10 py-32 sm:py-48 lg:py-36">
         <div class="text-center">
@@ -34,97 +34,96 @@
         <span class="text-textSecondary lang-arabic hidden">نحن نقدم مجموعة واسعة من خدمات البناء المصممة لتلبية الاحتياجات الفريدة لعملائنا. تشمل خبرتنا البناء السكني، والتطوير التجاري، والتجديد وإعادة التصميم، بالإضافة إلى خدمات إدارة المشاريع. نفخر بتسليم المشاريع في الوقت المحدد وفي حدود الميزانية مع الحفاظ على أعلى معايير الجودة. يعمل فريقنا المخلص بشكل وثيق مع العملاء لضمان تحقيق رؤيتهم في كل مشروع، سواء كان كبيرًا أو صغيرًا.</span>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-10 mt-10">
-
-        <!-- Service 1: Project Management -->
-        <div class="flex gap-4 items-start">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full">
-                <i class="fas fa-tasks text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <a href="/service-project-management" class="font-semibold text-textPrimary hover:text-primary transform transition duration-300 ease-in-out text-xl">
-                    <span class="lang-english">Project Management</span>
-                    <span class="lang-arabic hidden">إدارة المشاريع</span>
-                    <i class="fa fa-external-link-alt text-primary text-sm"></i>
-                </a>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Efficient planning and execution of projects to ensure on-time delivery and exceptional quality.</span>
-                    <span class="lang-arabic hidden">التخطيط والتنفيذ الفعال للمشاريع لضمان التسليم في الوقت المحدد والجودة الاستثنائية.</span>
-                </p>
+    <div class="flex flex-wrap -mx-4 mt-16">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Project Management</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">إدارة المشاريع</h4>
             </div>
         </div>
-
-        <!-- Service 2: Architectural Design -->
-        <div class="flex gap-4 items-start">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full">
-                <i class="fas fa-drafting-compass text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <a href="/service-architectural-design" class="font-semibold text-textPrimary hover:text-primary transform transition duration-300 ease-in-out text-xl">
-                    <span class="lang-english">Architectural Design</span>
-                    <span class="lang-arabic hidden">التصميم المعماري</span>
-                    <i class="fa fa-external-link-alt text-primary text-sm"></i>
-                </a>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Innovative designs that reflect our clients' visions, balancing aesthetics and functionality.</span>
-                    <span class="lang-arabic hidden">تصاميم مبتكرة تعكس رؤى عملائنا وتوازن بين الجماليات والوظائف.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Architectural Design</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">التصميم المعماري</h4>
             </div>
         </div>
-
-        <!-- Service 3: General Contracting -->
-        <div class="flex gap-4 items-start">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full">
-                <i class="fas fa-hammer text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <a href="/service-general-contracting" class="font-semibold text-textPrimary hover:text-primary transform transition duration-300 ease-in-out text-xl">
-                    <span class="lang-english">General Contracting</span>
-                    <span class="lang-arabic hidden">المقاولات العامة</span>
-                    <i class="fa fa-external-link-alt text-primary text-sm"></i>
-                </a>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Full-scale construction services from foundation to finish, delivering comprehensive building solutions.</span>
-                    <span class="lang-arabic hidden">خدمات البناء الشاملة من الأساس إلى النهاية، تقدم حلول بناء متكاملة.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">General Contracting</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">المقاولة العامة</h4>
             </div>
         </div>
-
-        <!-- Service 4: Renovations and Fit-Outs -->
-        <div class="flex gap-4 items-start">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full">
-                <i class="fas fa-paint-roller text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <a href="/service-renovations-and-fit-outs" class="font-semibold text-textPrimary hover:text-primary transform transition duration-300 ease-in-out text-xl">
-                    <span class="lang-english">Renovations and Fit-Outs</span>
-                    <span class="lang-arabic hidden">التجديدات والتشطيبات</span>
-                    <i class="fa fa-external-link-alt text-primary text-sm"></i>
-                </a>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Transforming spaces to meet modern standards, tailored to your specific requirements.</span>
-                    <span class="lang-arabic hidden">تحويل المساحات لتلبية المعايير الحديثة، مخصصة لاحتياجاتك المحددة.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-red-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Renovations and Fit-Outs</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">التجديدات والتجهيزات الداخلية</h4>
             </div>
         </div>
-
-        <!-- Service 5: Consulting Services -->
-        <div class="flex gap-4 items-start">
-            <span class="text-primary bg-primary/10 py-2 px-4 rounded-full">
-                <i class="fas fa-lightbulb text-primary w-5 h-5"></i>
-            </span>
-            <div>
-                <a href="/service-consulting-services" class="font-semibold text-textPrimary hover:text-primary transform transition duration-300 ease-in-out text-xl">
-                    <span class="lang-english">Consulting Services</span>
-                    <span class="lang-arabic hidden">خدمات الاستشارات</span>
-                    <i class="fa fa-external-link-alt text-primary text-sm"></i>
-                </a>
-                <p class="mt-1 text-textSecondary">
-                    <span class="lang-english">Expert advice on construction best practices and regulations to ensure smooth project execution.</span>
-                    <span class="lang-arabic hidden">نصائح الخبراء حول أفضل الممارسات واللوائح في البناء لضمان التنفيذ السلس للمشاريع.</span>
-                </p>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-purple-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Consulting Services</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">خدمات الاستشارات</h4>
             </div>
         </div>
-
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-indigo-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Villas and Service Block Construction</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">بناء الفيلات والكتل الخدمية</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Mohammed Bin Rashid Housing Establishment Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال مؤسسة محمد بن راشد للإسكان</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Villa Maintenance, Modification, and Addition Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال صيانة الفيلات والتعديل والإضافة</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Renovation, Tiling, Ceiling, and Painting Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال التجديد والتبليط والأسقف والدهانات</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-red-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Gypsum Partitions and Ceilings</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">القواطع والأسقف الجبسية</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-purple-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Interior Design and Fit-Out Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال التصميم الداخلي والتجهيزات</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-indigo-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Warehouse Construction</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">بناء المستودعات</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Aluminium and Glazing Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال الألمنيوم والزجاج</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Electrical, Plumbing, and Air-Conditioning Works</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال الكهرباء والسباكة والتكييف</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
+                <h4 class="font-semibold text-xl text-textPrimary lang-english">Drawings Approval and Construction Permit from Dubai Municipality</h4>
+                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">موافقة الرسومات وتصريح البناء من بلدية دبي</h4>
+            </div>
+        </div>
     </div>
 </div>

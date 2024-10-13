@@ -271,7 +271,7 @@ function handleFormSubmit(
     formData.append("formtype", formtype);
 
     $.ajax({
-        url: rootURL + "/" + apiSlug + "/" + formtype,
+        url: rootURL + "/" + apiSlug + "/send-mail.php",
         method: "POST",
         data: formData,
         processData: false,

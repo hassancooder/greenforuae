@@ -1,118 +1,8 @@
-<style>
-    .swiper-wrapper {
-        height: max-content !important;
 
-        width: max-content;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: 25%;
-        z-index: 1000;
-    }
-
-    .swiper-button-next {
-        right: -0px !important;
-    }
-
-    .swiper-button-prev {
-        left: 0px !important;
-    }
-
-    .swiper-button-prev:after,
-    .swiper-rtl .swiper-button-next:after {
-        content: "" !important;
-    }
-
-    .mySwiper {
-        max-width: 320px !important;
-        margin: 0 auto !important;
-    }
-
-    .swiper-button-next:after,
-    .swiper-rtl .swiper-button-prev:after {
-        content: "" !important;
-    }
-
-    .mySwiper .swiper-slide.swiper-slide-thumb-active>.swiper-slide\:w-16 {
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-
-    .mySwiper .swiper-slide.swiper-slide-thumb-active>.swiper-slide\:border-indigo-600 {
-        --tw-border-opacity: 1;
-        border-color: rgb(79 70 229 / var(--tw-border-opacity));
-    }
-
-    .teamswiper .swiper-wrapper {
-        height: max-content !important;
-        padding-bottom: 64px !important;
-    }
-
-    .teamswiper .swiper-horizontal>.swiper-scrollbar,
-    .teamswiper .swiper-scrollbar.swiper-scrollbar-horizontal {
-        max-width: 140px !important;
-        height: 3px !important;
-        bottom: 25px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-
-    .teamswiper .swiper-pagination-fraction {
-        bottom: 0 !important;
-        padding-top: 16px !important;
-    }
-
-    .teamswiper .swiper-slide.swiper-slide-active>.slide\:border-indigo-600 {
-        --tw-border-opacity: 1;
-        border-color: rgb(79 70 229 / var(--tw-border-opacity));
-    }
-
-    .teamswiper .swiper-pagination-total {
-        color: rgb(156 163 175) !important;
-    }
-
-    .teamswiper .swiper-scrollbar-drag {
-        background: rgb(79 70 229);
-    }
-
-    .teamswiper .swiper-pagination-fraction {
-        bottom: 0 !important;
-    }
-
-    .teamswiper .swiper-button-prev:after,
-    .teamswiper .swiper-rtl .swiper-button-next:after {
-        content: '' !important;
-    }
-
-    .teamswiper .swiper-button-prev {
-        top: 93% !important;
-        left: 35% !important;
-        z-index: 100 !important;
-    }
-
-    .teamswiper .swiper-button-next {
-        top: 93% !important;
-        right: 35% !important;
-        z-index: 100 !important;
-    }
-
-    .teamswiper .swiper-button-next:after,
-    .teamswiper .swiper-rtl .swiper-button-prev:after {
-        content: '' !important;
-    }
-
-    .teamswiper .swiper-button-next svg,
-    .teamswiper .swiper-button-prev svg {
-        width: 24px !important;
-        height: 24px !important;
-    }
-</style>
 <!-- ABOUT US SECTION -->
 <div class="relative isolate px-6 lg:px-8">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-secondary to-primary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-amber-500 to-rose-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon()"></div>
     </div>
     <div class="mx-auto h-2/4 max-w-2xl mt-10 py-32 sm:py-48 lg:py-36">
         <div class="text-center">
@@ -138,9 +28,8 @@
         </div>
     </div>
 </div>
-
 <!-- About Us Section -->
-<section class="container mx-auto max-w-6xl py-14" data-aos="fade-up">
+<section class="container mx-auto max-w-7xl py-6" data-aos="fade-up">
     <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary max-lg:text-center lang-english">Green Fort UAE</h2>
     <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary my-6 hidden lang-arabic">جرين فورت الإمارات</h2>
 
@@ -157,53 +46,44 @@
         تتراوح محفظتنا من المشاريع السكنية إلى التطورات التجارية الكبيرة، وكلها تعكس التزامنا بالتميز. نحن نضمن أن كل مشروع يتم الانتهاء منه في الوقت المحدد، وفي حدود الميزانية، ووفقًا لأعلى معايير الجودة.
     </p>
 </section>
+<!-- Vision & Mission Section -->
+<section class="container px-4 mx-auto" data-aos="fade-up">
+    <h2 class="font-bold text-textPrimary md:text-left text-center text-4xl my-6 lang-english">Vision & Mission</h2>
+    <h2 class="font-bold text-textPrimary md:text-right text-center text-4xl my-6 hidden lang-arabic">الرؤية و المهمة</h2>
 
-<!-- CEO Section -->
-<section class="py-8 relative" data-aos="fade-up">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
-            <!-- CEO Image -->
-            <div class="img-box" data-aos="fade-right">
-                <img src="<?= getAsset('ceo.webp', 'images/'); ?>" alt="Waleed Ahmad - CEO"
-                    class="max-lg:mx-auto object-cover rounded-lg">
-            </div>
-            <!-- CEO Info -->
-            <div class="lg:pl-[100px] flex items-center" data-aos="fade-up">
-                <div class="data w-full">
-                    <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary max-lg:text-center lang-english">Waleed Ahmad</h2>
-                    <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary my-2 hidden lang-arabic">وليد أحمد</h2>
-                    <p class="text-textSecondary mt-2 text-xl text-center lg:text-left lang-english">Chief Executive Officer</p>
-                    <p class="text-textSecondary mt-2 text-xl text-center lg:text-left lang-arabic hidden">الرئيس التنفيذي</p>
-                    <p class="font-normal text-xl leading-8 mt-6 text-textPrimary max-lg:text-center max-w-2xl mx-auto lang-english">
-                        Under Waleed's leadership, Green Fort UAE has expanded its footprint in Dubai's competitive construction sector. His vision and dedication to excellence continue to drive the company towards innovative solutions and sustainable growth, while maintaining a commitment to client satisfaction.
-                    </p>
-                    <p class="font-normal text-xl leading-8 mt-6 text-textPrimary max-lg:text-center max-w-2xl mx-auto lang-arabic hidden">
-                        تحت قيادة وليد، وسعت جرين فورت الإمارات نطاقها في قطاع البناء التنافسي في دبي. لا تزال رؤيته والتزامه بالتميز تدفع الشركة نحو حلول مبتكرة ونمو مستدام، مع الحفاظ على الالتزام برضا العملاء.
-                    </p>
-                    <div class="flex justify-center lg:justify-start mt-6">
-                        <a href="/services" class="bg-primary text-white font-semibold rounded-full px-6 py-2 transition-all duration-300 lang-english">Explore Our Services</a>
-                        <a href="/services" class="bg-primary text-white font-semibold rounded-full px-6 py-2 transition-all duration-300 hidden lang-arabic">استكشف خدماتنا</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <p class="my-4 text-lg text-textSecondary md:text-left text-center leading-7 lang-english">
+        Our vision is to be the leading construction company in the UAE, known for delivering exceptional projects that shape the future of the built environment. We aim to enhance the lives of people by creating spaces that are sustainable, innovative, and inspiring.
+    </p>
+    <p class="my-4 text-lg text-textSecondary md:text-right text-center leading-7 lang-arabic hidden">
+        رؤيتنا هي أن نكون الشركة الرائدة في مجال البناء في الإمارات، معروفة بتنفيذ مشاريع استثنائية تشكل مستقبل البيئة المبنية. نسعى لتحسين حياة الناس من خلال إنشاء مساحات مستدامة ومبتكرة وملهمة.
+    </p>
+    <p class="my-4 text-lg text-textSecondary md:text-left text-center leading-7 lang-english">
+        Our mission is to provide top-notch construction services by adopting modern technologies, maintaining strict quality standards, and prioritizing client satisfaction. We are committed to upholding our values of transparency, safety, and excellence in every project we undertake.
+    </p>
+    <p class="my-4 text-lg text-textSecondary md:text-right text-center leading-7 lang-arabic hidden">
+        مهمتنا هي تقديم خدمات بناء عالية الجودة من خلال اعتماد تقنيات حديثة، والحفاظ على معايير الجودة الصارمة، وإعطاء الأولوية لرضا العملاء. نحن ملتزمون بالتمسك بقيمنا من الشفافية والسلامة والتميز في كل مشروع نقوم به.
+    </p>
 </section>
 
 <!-- History Section -->
-<section class="py-14 lg:py-24 relative" data-aos="fade-up">
+<section class="py-14 lg:py-0 relative" data-aos="fade-up">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
+        <div class="grid grid-cols-1 md:grid-cols-[auto,1fr] gap-9">
             <!-- History Content -->
-            <div class="lg:pr-24 flex items-center" data-aos="fade-up">
+            <div class="flex flex-col justify-center" data-aos="fade-up">
                 <div class="data w-full">
                     <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary mb-6 max-lg:text-center lang-english">Our Journey</h2>
                     <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary mb-6 hidden lang-arabic">رحلتنا</h2>
-                    <p class="font-normal text-xl leading-8 text-textPrimary max-lg:text-center max-w-2xl mx-auto lang-english">
-                        Since our founding in 2005, Green Fort UAE has been at the forefront of innovative construction solutions. We began with a simple yet ambitious goal: to redefine the construction landscape in Dubai through quality craftsmanship and sustainable practices.
+                    <p class="font-normal text-xl leading-8 text-textPrimary max-lg:text-center max-w-4xl mx-auto lang-english">
+                        We are based in market before 2015 under partnership relation with construction industry then we have founded Green Fort Building Contracting was established in 2021 to offer innovative various residential and commercial projects across UAE.</p>
+                    <p class="font-normal text-xl mt-3 leading-8 text-textPrimary max-lg:text-center max-w-4xl mx-auto lang-english">
+                        Excellence in service, cost-effective solutions, and timely completion are the qualities that have placed Green Fort Contracting as one of the emerging promising Building Contractors. We are consistent in providing quality service in every project that meets the Client’s expectations. Our commitment to providing quality work itself is a Marketing tool for future opportunities.
                     </p>
-                    <p class="font-normal text-xl leading-8 text-textPrimary max-lg:text-center max-w-2xl mx-auto hidden lang-arabic">
-                        منذ تأسيسنا في عام 2005، كانت جرين فورت الإمارات في طليعة حلول البناء المبتكرة. بدأنا بهدف بسيط ولكنه طموح: إعادة تعريف مشهد البناء في دبي من خلال الحرفية العالية والممارسات المستدامة.
+                    <p class="font-normal text-xl leading-8 text-textPrimary max-lg:text-center max-w-4xl mx-auto hidden lang-arabic">
+                        نحن موجودون في السوق منذ ما قبل عام 2015 من خلال شراكة مع صناعة البناء. في عام 2021، أسسنا شركة جرين فورت لمقاولات البناء لتقديم مشاريع سكنية وتجارية مبتكرة عبر الإمارات العربية المتحدة.
+                    </p>
+                    <p class="font-normal text-xl leading-8 text-textPrimary max-lg:text-center max-w-4xl mt-3 mx-auto hidden lang-arabic">
+                        الجودة في الخدمة، الحلول الفعالة من حيث التكلفة، والالتزام بالمواعيد هي الصفات التي جعلت جرين فورت واحدة من المقاولين الواعدين الناشئين. نحن نحرص دائمًا على تقديم خدمة عالية الجودة في كل مشروع بما يلبي توقعات العملاء. التزامنا بالجودة هو بحد ذاته أداة تسويقية لفرص المستقبل.
                     </p>
 
                     <div class="flex justify-center lg:justify-start mt-6">
@@ -214,103 +94,150 @@
                 </div>
             </div>
             <!-- Image for History Section -->
-            <div class="img-box" data-aos="fade-right">
-                <img src="<?= getAsset('workers-1.webp', 'images/'); ?>" alt="Green Fort UAE - History"
-                    class="object-cover rounded-lg">
+            <div class="img-box text-center md:text-left" data-aos="fade-right">
+                <img src="<?= getAsset('workers-1.webp', 'images/'); ?>" alt="Waleed Ahmad - General Manager"
+                    class="rounded-lg md:w-[300px] md:h-[400px] object-cover mx-auto md:mx-0"> <!-- Set image to passport size -->
             </div>
         </div>
     </div>
 </section>
 
-
-<!-- Vision & Mission Section -->
-<section class="container px-4 mx-auto py-14" data-aos="fade-up">
-    <h2 class="font-bold text-textPrimary md:text-left text-center text-4xl my-6 lang-english">Vision & Mission</h2>
-    <h2 class="font-bold text-textPrimary md:text-left text-center text-4xl my-6 hidden lang-arabic">الرؤية و المهمة</h2>
-
-    <p class="my-4 text-lg text-textSecondary md:text-left text-center leading-7 lang-english">
-        Our vision is to be the leading construction company in the UAE, known for delivering exceptional projects that shape the future of the built environment. We aim to enhance the lives of people by creating spaces that are sustainable, innovative, and inspiring.
-    </p>
-    <p class="my-4 text-lg text-textSecondary md:text-left text-center leading-7 lang-arabic hidden">
-        رؤيتنا هي أن نكون الشركة الرائدة في مجال البناء في الإمارات، معروفة بتنفيذ مشاريع استثنائية تشكل مستقبل البيئة المبنية. نسعى لتحسين حياة الناس من خلال إنشاء مساحات مستدامة ومبتكرة وملهمة.
-    </p>
-    <p class="my-4 text-lg text-textSecondary md:text-left text-center leading-7 lang-english">
-        Our mission is to provide top-notch construction services by adopting modern technologies, maintaining strict quality standards, and prioritizing client satisfaction. We are committed to upholding our values of transparency, safety, and excellence in every project we undertake.
-    </p>
-    <p class="my-4 text-lg text-textSecondary md:text-left text-center leading-7 lang-arabic hidden">
-        مهمتنا هي تقديم خدمات بناء عالية الجودة من خلال اعتماد تقنيات حديثة، والحفاظ على معايير الجودة الصارمة، وإعطاء الأولوية لرضا العملاء. نحن ملتزمون بالتمسك بقيمنا من الشفافية والسلامة والتميز في كل مشروع نقوم به.
-    </p>
-    <!-- Vision Image -->
-    <img src="<?= getAsset('workers-2.webp', 'images/'); ?>" alt="Vision & Mission" class="w-full rounded-lg shadow-lg">
-</section>
-
-
-<!-- Arabic Translations -->
-
-<!-- Green Fort UAE Section (Arabic) -->
-<section class="container mx-auto max-w-6xl py-14 hidden lang-arabic" data-aos="fade-up">
-    <h2 class="font-bold text-textPrimary text-4xl my-6">جرين فورت الإمارات</h2>
-    <p class="my-4 text-lg text-textSecondary leading-7">
-        جرين فورت الإمارات هي شركة رائدة في تنفيذ المشاريع الإنشائية عالية الجودة في دبي. منذ تأسيسها، تخصصنا في البناء المستدام والمبتكر، لتلبية متطلبات السوق المتزايدة مع الحفاظ على قيمنا الأساسية في الجودة والسلامة والنزاهة.
-    </p>
-    <p class="my-4 text-lg text-textSecondary leading-7">
-        تشمل محفظتنا مشاريع سكنية وتجارية واسعة النطاق، وكلها تعكس التزامنا بالتميز وضمان أن كل مشروع يتم تسليمه في الوقت المحدد وضمن الميزانية ووفق أعلى معايير الجودة.
-    </p>
-</section>
-
-<!-- CEO Section (Arabic) -->
-<section class="py-8 relative hidden lang-arabic">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
-            <div class="img-box" data-aos="fade-right">
-                <img src="<?= getAsset('ceo.webp', 'images/'); ?>" alt="Waleed Ahmad - CEO" class="max-lg:mx-auto object-cover rounded-lg">
+<section class="bg-bgPrimary">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-textPrimary lang-english">Our Team</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-textPrimary lang-arabic hidden">فريقنا</h2>
+        </div>
+        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+            <div class="items-center border border-2 rounded-lg flex flex-col sm:flex-row">
+                <img class="w-full lg:w-1/4 h-full object-cover rounded-lg sm:rounded-none sm:rounded-l-lg" src="<?= getAsset('owner.webp', 'images/'); ?>" alt="Owner Image">
+                <div class="p-5 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-english">Owner Name</h3>
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-arabic hidden">اسم المالك</h3>
+                    <span class="text-textSecondary font-medium lang-english">Owner</span>
+                    <span class="text-textSecondary font-medium lang-arabic hidden">المالك</span>
+                    <p class="mt-3 mb-4 text-textSecondary lang-english">With years of experience, our owner ensures that Green Fort maintains its reputation for quality in Dubai's construction industry.</p>
+                    <p class="mt-3 mb-4 text-textSecondary lang-arabic hidden">مع سنوات من الخبرة، يضمن مالكنا أن تحتفظ جرين فورت بسمعتها في جودة صناعة البناء في دبي.</p>
+                </div>
             </div>
-            <div class="lg:pl-[100px] flex items-center" data-aos="fade-up">
-                <div class="data w-full">
-                    <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary max-lg:text-center">وليد أحمد</h2>
-                    <p class="text-textSecondary mt-2 text-xl text-center lg:text-left">الرئيس التنفيذي</p>
-                    <p class="font-normal text-xl leading-8 mt-6 text-textPrimary max-lg:text-center max-w-2xl mx-auto">
-                        تحت قيادة وليد، وسعت جرين فورت الإمارات بصمتها في قطاع البناء التنافسي في دبي. رؤيته والتزامه بالتميز يستمران في دفع الشركة نحو حلول مبتكرة ونمو مستدام.
-                    </p>
+            <div class="items-center border border-2 rounded-lg flex flex-col sm:flex-row">
+                <img class="w-full lg:w-1/4 h-full object-cover rounded-lg sm:rounded-none sm:rounded-l-lg" src="<?= getAsset('general-manager.webp', 'images/'); ?>" alt="Waleed Ahmad (General Manager)">
+                <div class="p-5 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-english">Waleed Ahmad</h3>
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-arabic hidden">وليد أحمد</h3>
+                    <span class="text-textSecondary font-medium lang-english">General Manager</span>
+                    <span class="text-textSecondary font-medium lang-arabic hidden">المدير العام</span>
+                    <p class="mt-3 mb-4 text-textSecondary lang-english">Waleed drives the strategy for growth and innovation, steering the company toward success in a competitive market.</p>
+                    <p class="mt-3 mb-4 text-textSecondary lang-arabic hidden">يدفع وليد استراتيجية النمو والابتكار، موجهًا الشركة نحو النجاح في سوق تنافسي.</p>
+                </div>
+            </div>
+            <div class="items-center border border-2 rounded-lg flex flex-col sm:flex-row">
+                <img class="w-full lg:w-1/4 h-full object-cover rounded-lg sm:rounded-none sm:rounded-l-lg" src="<?= getAsset('team-member-1.webp', 'images/'); ?>" alt="Lakhvinder Singh">
+                <div class="p-5 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-english">Lakhvinder Singh</h3>
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-arabic hidden">لاكفيندر سينغ</h3>
+                    <span class="text-textSecondary font-medium lang-english">Team Member</span>
+                    <span class="text-textSecondary font-medium lang-arabic hidden">عضو الفريق</span>
+                    <p class="mt-3 mb-4 text-textSecondary lang-english">Lakhvinder brings 22 years of experience in construction, ensuring the highest standards of quality and safety.</p>
+                    <p class="mt-3 mb-4 text-textSecondary lang-arabic hidden">يتمتع لاكفيندر بخبرة 22 عامًا في البناء، مما يضمن أعلى معايير الجودة والسلامة.</p>
+                </div>
+            </div>
+            <div class="items-center border border-2 rounded-lg flex flex-col sm:flex-row">
+                <img class="w-full lg:w-1/4 h-full object-cover rounded-lg sm:rounded-none sm:rounded-l-lg" src="<?= getAsset('team-member-2.webp', 'images/'); ?>" alt="Bhagwinder Singh">
+                <div class="p-5 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-english">Bhagwinder Singh</h3>
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-arabic hidden">بغويندر سينغ</h3>
+                    <span class="text-textSecondary font-medium lang-english">Team Member</span>
+                    <span class="text-textSecondary font-medium lang-arabic hidden">عضو الفريق</span>
+                    <p class="mt-3 mb-4 text-textSecondary lang-english">With 12 years in the Gulf, Bhagwinder specializes in project execution and client satisfaction.</p>
+                    <p class="mt-3 mb-4 text-textSecondary lang-arabic hidden">مع 12 عامًا في الخليج، يتخصص بغويندر في تنفيذ المشاريع ورضا العملاء.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- History Section (Arabic) -->
-<section class="py-14 lg:py-24 relative hidden lang-arabic">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
-            <div class="img-box" data-aos="fade-right">
-                <img src="<?= getAsset('workers-1.webp', 'images/'); ?>" alt="جرين فورت الإمارات" class="block lg:hidden mb-9 mx-auto object-cover rounded-lg shadow-lg">
-            </div>
-            <div class="lg:pr-24 flex items-center" data-aos="fade-up">
-                <div class="data w-full">
-                    <h2 class="font-bold text-4xl lg:text-5xl text-textPrimary mb-6 max-lg:text-center">رحلتنا</h2>
-                    <p class="font-normal text-xl leading-8 text-textPrimary max-lg:text-center max-w-2xl mx-auto">
-                        منذ تأسيسنا في عام 2005، كانت جرين فورت الإمارات في طليعة الحلول الإنشائية المبتكرة. بدأنا بهدف بسيط ولكنه طموح: إعادة تعريف قطاع البناء في دبي من خلال جودة الحرفية والممارسات المستدامة.
-                    </p>
-                </div>
-            </div>
-            <div class="img-box hidden lg:block" data-aos="fade-up">
-                <img src="<?= getAsset('workers-1.webp', 'images/'); ?>" alt="جرين فورت الإمارات" class="object-cover rounded-lg shadow-lg">
-            </div>
+
+
+<div class="container mx-auto py-10 px-4">
+    <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
+            <span class="lang-english">Our Gallery</span>
+            <span class="lang-arabic hidden">معرض الصور</span>
+
+
+        </h1>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
+        <!-- Image 2 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-1.webp', 'images/'); ?>" alt="Portfolio Image 1" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Image 4 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-4.webp', 'images/'); ?>" alt="Portfolio Image 4" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 5 - Workers -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('workers-3.webp', 'images/'); ?>" alt="Workers Image 3" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 6 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-5.webp', 'images/'); ?>" alt="Portfolio Image 5" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 8 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-6.webp', 'images/'); ?>" alt="Portfolio Image 6" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 9 - Workers -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('workers-5.webp', 'images/'); ?>" alt="Workers Image 5" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 10 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-7.webp', 'images/'); ?>" alt="Portfolio Image 7" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Image 12 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-8.webp', 'images/'); ?>" alt="Portfolio Image 8" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 11 - Workers -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('workers-6.webp', 'images/'); ?>" alt="Workers Image 6" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 13 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-9.webp', 'images/'); ?>" alt="Portfolio Image 9" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Image 14 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-10.webp', 'images/'); ?>" alt="Portfolio Image 10" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 3 - Workers -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('workers-2.webp', 'images/'); ?>" alt="Workers Image 2" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <!-- Image 15 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-11.webp', 'images/'); ?>" alt="Portfolio Image 11" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Image 16 - Portfolio -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('portfolio-12.webp', 'images/'); ?>" alt="Portfolio Image 12" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Image 7 - Workers -->
+        <div class="overflow-hidden ring ring-2 ring-transparent ring-offset-2 hover:ring-primary rounded-lg">
+            <img src="<?= getAsset('workers-4.webp', 'images/'); ?>" alt="Workers Image 4" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
         </div>
     </div>
-</section>
+</div>
 
-<!-- Vision & Mission Section (Arabic) -->
-<section class="container px-4 mx-auto py-14 hidden lang-arabic" data-aos="fade-up">
-    <h2 class="font-bold text-textPrimary text-4xl my-6">رؤيتنا و مهمتنا</h2>
-    <p class="my-4 text-lg text-textSecondary leading-7">
-        رؤيتنا أن نكون الشركة الرائدة في مجال البناء في الإمارات، معروفة بتنفيذ مشاريع استثنائية تشكل مستقبل البيئة المبنية. نسعى لتحسين حياة الناس من خلال إنشاء مساحات مستدامة ومبتكرة وملهمة.
-    </p>
-    <p class="my-4 text-lg text-textSecondary leading-7">
-        مهمتنا هي تقديم خدمات بناء على أعلى مستوى من خلال تبني أحدث التقنيات والحفاظ على معايير الجودة الصارمة وإعطاء الأولوية لرضا العملاء.
-    </p>
-    <img src="<?= getAsset('workers-2.webp', 'images/'); ?>" alt="رؤيتنا و مهمتنا" class="w-full rounded-lg shadow-lg">
-</section>
+
 
 
 <section class="py-20 bg-white" data-aos="fade-up">
@@ -320,14 +247,14 @@
         <div class="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
             <div class="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl border border-2 shadow-gray-100">
                 <div class="flex gap-5">
-                    <div class="text-2xl font-bold text-primary">240%</div>
+                    <div class="text-2xl font-bold text-primary">10+</div>
                     <div class="flex-1">
-                        <h4 class="text-xl text-textPrimary font-semibold mb-2 lang-english">Company Growth</h4>
-                        <h4 class="text-xl text-textPrimary font-semibold mb-2 hidden lang-arabic">نمو الشركة</h4>
-                        <p class="text-xs text-gray-500 leading-5 lang-english">
+                        <h4 class="text-xl text-textPrimary font-semibold mb-2 lang-english">Years Experience</h4>
+                        <h4 class="text-xl text-textPrimary font-semibold mb-2 hidden lang-arabic">سنوات الخبرة</h4>
+                        <p class="text-xs text-textSecondary leading-5 lang-english">
                             Company's remarkable growth journey as we continually innovate and drive towards new heights of success.
                         </p>
-                        <p class="text-xs text-gray-500 leading-5 hidden lang-arabic">
+                        <p class="text-xs text-textSecondary leading-5 hidden lang-arabic">
                             الرحلة الرائعة لنمو الشركة حيث نستمر في الابتكار ونسعى لتحقيق آفاق جديدة من النجاح.
                         </p>
                     </div>
@@ -335,29 +262,30 @@
             </div>
             <div class="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl border border-2 shadow-gray-100">
                 <div class="flex gap-5">
-                    <div class="text-2xl font-bold text-primary">175+</div>
+                    <div class="text-2xl font-bold text-primary">105+</div>
                     <div class="flex-1">
-                        <h4 class="text-xl text-textPrimary font-semibold mb-2 lang-english">Talented Team Members</h4>
-                        <h4 class="text-xl text-textPrimary font-semibold mb-2 hidden lang-arabic">أعضاء فريق موهوبين</h4>
-                        <p class="text-xs text-gray-500 leading-5 lang-english">
-                            Our very talented team members are the powerhouse of Green Fort and pillars of our success.
+                        <h4 class="text-xl text-textPrimary font-semibold mb-2 lang-english">Happy Customers</h4>
+                        <h4 class="text-xl text-textPrimary font-semibold mb-2 hidden lang-arabic">عملاء سعداء</h4>
+                        <p class="text-xs text-textSecondary leading-5 lang-english">
+                            We have successfully served over 105+ happy customers, ensuring their satisfaction through our dedicated services.
                         </p>
-                        <p class="text-xs text-gray-500 leading-5 hidden lang-arabic">
-                            يعد أعضاء فريقنا الموهوبون هم القوة الدافعة لشركة جرين فورت وأعمدة نجاحنا.
+                        <p class="text-xs text-textSecondary leading-5 hidden lang-arabic">
+                            لقد قدمنا خدماتنا لأكثر من 105+ عميل سعيد، مما يضمن رضاهم من خلال خدماتنا المخصصة.
                         </p>
                     </div>
                 </div>
+
             </div>
             <div class="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl border border-2 shadow-gray-100">
                 <div class="flex gap-5">
-                    <div class="text-2xl font-bold text-primary">625+</div>
+                    <div class="text-2xl font-bold text-primary">110+</div>
                     <div class="flex-1">
                         <h4 class="text-xl text-textPrimary font-semibold mb-2 lang-english">Projects Completed</h4>
                         <h4 class="text-xl text-textPrimary font-semibold mb-2 hidden lang-arabic">المشاريع المنجزة</h4>
-                        <p class="text-xs text-gray-500 leading-5 lang-english">
+                        <p class="text-xs text-textSecondary leading-5 lang-english">
                             We have accomplished more than 625 projects worldwide and we are still counting many more.
                         </p>
-                        <p class="text-xs text-gray-500 leading-5 hidden lang-arabic">
+                        <p class="text-xs text-textSecondary leading-5 hidden lang-arabic">
                             لقد أكملنا أكثر من 625 مشروعًا في جميع أنحاء العالم وما زلنا نعد المزيد.
                         </p>
                     </div>
@@ -368,7 +296,7 @@
 </section>
 
 
-<div class="py-12 mt-20" data-aos="fade-up" data-aos-duration="800">
+<div class="py-12 mt-8" data-aos="fade-up" data-aos-duration="800">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
             <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
@@ -470,42 +398,6 @@
                     </blockquote>
                 </figure>
             </div>
-            <!-- Review Slide 2 -->
-            <div class="swiper-slide">
-                <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-                    </svg>
-                    <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort construction company has been an absolute pleasure. Their attention to detail, adherence to timelines, and commitment to quality surpassed our expectations."<br> — <strong>Salma Salem Mohammed Darwish</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان العمل مع شركة Green Fort للبناء متعة مطلقة. لقد تجاوزت انتباههم للتفاصيل والالتزام بالمواعيد النهائية والالتزام بالجودة توقعاتنا."<br> — <strong>سلامة سالم محمد دارويش</strong></p>
-                    </blockquote>
-                </figure>
-            </div>
-            <!-- Review Slide 3 -->
-            <div class="swiper-slide">
-                <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-                    </svg>
-                    <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort UAE was a fantastic experience. They delivered on time and exceeded our expectations."<br> — <strong>Younis Ali Mahmood Mohammed</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت تجربة العمل مع [اسم شركتكم] تجربة رائعة. لقد قاموا بالتسليم في الوقت المحدد وتجاوزوا توقعاتنا."<br> — <strong>يونس علي محمود محمد</strong></p>
-                    </blockquote>
-                </figure>
-            </div>
-            <!-- Review Slide 4 -->
-            <div class="swiper-slide">
-                <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-                    </svg>
-                    <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their professionalism and attention to detail made a significant difference in our project."<br> — <strong>Ibrahim Fairooz Moosa</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت احترافيتهم واهتمامهم بالتفاصيل فارقًا كبيرًا في مشروعنا."<br> — <strong>إبراهيم فيروز موسى</strong></p>
-                    </blockquote>
-                </figure>
-            </div>
             <!-- Review Slide 5 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
@@ -518,6 +410,20 @@
                     </blockquote>
                 </figure>
             </div>
+
+            <!-- Review Slide 4 -->
+            <div class="swiper-slide">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                    </svg>
+                    <blockquote>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their professionalism and attention to detail made a significant difference in our project."<br> — <strong>Ibrahim Fairooz Moosa</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت احترافيتهم واهتمامهم بالتفاصيل فارقًا كبيرًا في مشروعنا."<br> — <strong>إبراهيم فيروز موسى</strong></p>
+                    </blockquote>
+                </figure>
+            </div>
+
             <!-- Review Slide 6 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
@@ -527,6 +433,18 @@
                     <blockquote>
                         <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"They understood our needs and delivered beyond our expectations."<br> — <strong>Moosa Abbas Ghuloom Maroof</strong></p>
                         <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"فهموا احتياجاتنا وقدموا ما يتجاوز توقعاتنا."<br> — <strong>موسى عباس غلوم معروف</strong></p>
+                    </blockquote>
+                </figure>
+            </div>
+            <!-- Review Slide 3 -->
+            <div class="swiper-slide">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                    </svg>
+                    <blockquote>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort UAE was a fantastic experience. They delivered on time and exceeded our expectations."<br> — <strong>Younis Ali Mahmood Mohammed</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت تجربة العمل مع [اسم شركتكم] تجربة رائعة. لقد قاموا بالتسليم في الوقت المحدد وتجاوزوا توقعاتنا."<br> — <strong>يونس علي محمود محمد</strong></p>
                     </blockquote>
                 </figure>
             </div>
@@ -566,6 +484,18 @@
                     </blockquote>
                 </figure>
             </div>
+            <!-- Review Slide 2 -->
+            <div class="swiper-slide">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
+                    </svg>
+                    <blockquote>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort construction company has been an absolute pleasure. Their attention to detail, adherence to timelines, and commitment to quality surpassed our expectations."<br> — <strong>Salma Salem Mohammed Darwish</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان العمل مع شركة Green Fort للبناء متعة مطلقة. لقد تجاوزت انتباههم للتفاصيل والالتزام بالمواعيد النهائية والالتزام بالجودة توقعاتنا."<br> — <strong>سلامة سالم محمد دارويش</strong></p>
+                    </blockquote>
+                </figure>
+            </div>
         </div> <!-- Custom Next/Prev Buttons -->
         <div class="flex justify-center mt-5 md:mt-10 space-x-6" style="direction:ltr;">
             <!-- Previous Button -->
@@ -595,7 +525,7 @@
             <span class="lang-english">Together, we can create a brighter future for our communities. Discover how you can get involved in our initiatives.</span>
             <span class="lang-arabic hidden">معًا، يمكننا إنشاء مستقبل مشرق لمجتمعاتنا. اكتشف كيف يمكنك المشاركة في مبادراتنا.</span>
         </p>
-        <a href="/contact" class="inline-flex items-center justify-center bg-white text-amber-600 font-semibold rounded-full px-6 py-3 transition-all duration-300 hover:bg-gray-100">
+        <a href="/contact" class="inline-flex items-center justify-center bg-white text-primary font-semibold rounded-full px-6 py-3 transition-all duration-300 hover:bg-gray-100">
             <span class="lang-english mr-2">Contact Us</span>
             <span class="lang-arabic hidden ml-2">تواصل معنا</span>
             <i class="fa fa-arrow-right lang-english"></i>
@@ -610,101 +540,69 @@
         <span class="lang-english">Sustainability Practices</span>
         <span class="lang-arabic hidden">ممارسات الاستدامة</span>
     </h2>
-    <div class="grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Practice 1 -->
+    <div class="grid grid-cols-1 gap-8 px-4 sm:grid-cols-2">
+        <!-- Practice 1: Energy-Efficient Design -->
         <div class="bg-white p-6 rounded-2xl border border-2" data-aos="fade-up">
             <div class="flex flex-col items-center">
                 <div class="w-10 h-10 text-center text-green-600">
-                    <i class="fas fa-leaf"></i>
+                    <i class="fas fa-bolt"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Green Building Materials</h3>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">مواد البناء الخضراء</h3>
+                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Energy-Efficient Design</h3>
+                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">تصميم موفر للطاقة</h3>
             </div>
             <h4 class="text-center text-gray-600 mt-2 lang-english">
-                We prioritize eco-friendly and locally sourced materials to reduce our carbon footprint.
+                We prioritize energy-efficient designs to reduce energy consumption and environmental impact.
             </h4>
             <h4 class="text-center text-gray-600 mt-2 hidden lang-arabic">
-                نحن نعطي الأولوية للمواد الصديقة للبيئة والمصادر المحلية لتقليل بصمتنا الكربونية.
+                نحن نولي الأولوية للتصاميم الموفرة للطاقة لتقليل استهلاك الطاقة وتأثيرها البيئي.
             </h4>
         </div>
-        <!-- Practice 2 -->
+        <!-- Practice 2: Sustainable Materials -->
         <div class="bg-white p-6 rounded-2xl border border-2" data-aos="fade-up">
             <div class="flex flex-col items-center">
                 <div class="w-10 h-10 text-center text-blue-500">
-                    <i class="fas fa-tint"></i>
+                    <i class="fas fa-cubes"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Water Conservation</h3>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">الحفاظ على المياه</h3>
+                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Sustainable Materials</h3>
+                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">مواد مستدامة</h3>
             </div>
             <h4 class="text-center text-gray-600 mt-2 lang-english">
-                Implementing advanced water recycling systems and drought-resistant landscaping.
+                We use sustainable materials to ensure our projects are environmentally responsible.
             </h4>
             <h4 class="text-center text-gray-600 mt-2 hidden lang-arabic">
-                تنفيذ أنظمة متقدمة لإعادة تدوير المياه وتصميم المناظر الطبيعية المقاومة للجفاف.
+                نستخدم مواد مستدامة لضمان أن مشاريعنا مسؤولة بيئيًا.
             </h4>
         </div>
-        <!-- Practice 3 -->
+        <!-- Practice 3: Waste Reduction -->
         <div class="bg-white p-6 rounded-2xl border border-2" data-aos="fade-up">
             <div class="flex flex-col items-center">
-                <div class="w-10 h-10 text-center text-yellow-500">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Solar Energy Integration</h3>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">تكامل الطاقة الشمسية</h3>
-            </div>
-            <h4 class="text-center text-gray-600 mt-2 lang-english">
-                Harnessing Dubai's abundant sunlight with state-of-the-art solar panel installations.
-            </h4>
-            <h4 class="text-center text-gray-600 mt-2 hidden lang-arabic">
-                استغلال وفرة الشمس في دبي من خلال تركيب الألواح الشمسية الحديثة.
-            </h4>
-        </div>
-        <!-- Practice 4 -->
-        <div class="bg-white p-6 rounded-2xl border border-2" data-aos="fade-up">
-            <div class="flex flex-col items-center">
-                <div class="w-10 h-10 text-center text-green-500">
+                <div class="w-10 h-10 text-center text-yellow-600">
                     <i class="fas fa-recycle"></i>
                 </div>
                 <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Waste Reduction</h3>
                 <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">تقليل النفايات</h3>
             </div>
             <h4 class="text-center text-gray-600 mt-2 lang-english">
-                Comprehensive recycling programs and innovative waste management solutions on all our sites.
+                Implementing waste reduction strategies at every stage to minimize environmental impact.
             </h4>
             <h4 class="text-center text-gray-600 mt-2 hidden lang-arabic">
-                برامج إعادة تدوير شاملة وحلول مبتكرة لإدارة النفايات في جميع مواقعنا.
+                تنفيذ استراتيجيات تقليل النفايات في كل مرحلة للحد من التأثير البيئي.
             </h4>
         </div>
-        <!-- Practice 5 -->
+        <!-- Practice 4: Green Building Technologies -->
         <div class="bg-white p-6 rounded-2xl border border-2" data-aos="fade-up">
             <div class="flex flex-col items-center">
-                <div class="w-10 h-10 text-center text-purple-600">
-                    <i class="fas fa-building"></i>
+                <div class="w-10 h-10 text-center text-green-500">
+                    <i class="fas fa-solar-panel"></i>
                 </div>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Energy-Efficient Design</h3>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">تصميم موفر للطاقة</h3>
+                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Green Building Technologies</h3>
+                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">تقنيات البناء الخضراء</h3>
             </div>
             <h4 class="text-center text-gray-600 mt-2 lang-english">
-                Creating buildings that minimize energy consumption through smart design and technology.
+                We adopt green building technologies and follow international sustainability standards.
             </h4>
             <h4 class="text-center text-gray-600 mt-2 hidden lang-arabic">
-                إنشاء مباني تقلل من استهلاك الطاقة من خلال التصميم الذكي والتكنولوجيا.
-            </h4>
-        </div>
-        <!-- Practice 6 -->
-        <div class="bg-white p-6 rounded-2xl border border-2" data-aos="fade-up">
-            <div class="flex flex-col items-center">
-                <div class="w-10 h-10 text-center text-yellow-600">
-                    <i class="fas fa-award"></i>
-                </div>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary lang-english">Sustainability Certifications</h3>
-                <h3 class="mt-4 text-xl font-semibold text-textPrimary hidden lang-arabic">شهادات الاستدامة</h3>
-            </div>
-            <h4 class="text-center text-gray-600 mt-2 lang-english">
-                Committed to achieving LEED and Estidama certifications for our projects.
-            </h4>
-            <h4 class="text-center text-gray-600 mt-2 hidden lang-arabic">
-                ملتزمون بتحقيق شهادات LEED وEstidama لمشاريعنا.
+                نعتمد تقنيات البناء الخضراء ونتبع المعايير الدولية للاستدامة.
             </h4>
         </div>
     </div>
