@@ -33,83 +33,75 @@
             <span class="lang-arabic hidden">معلومات الاتصال</span>
         </h2>
         <ul>
-            <li class="flex my-4">
-                <div class="flex min-w-10 min-h-10 max-w-10 max-h-10 items-center justify-center rounded bg-primary text-bgPrimary">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <div class="mx-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">
-                        <span class="lang-english">Reach Us</span>
-                        <span class="lang-arabic hidden">تواصل معنا</span>
-                    </h3>
-                    <p class="text-textSecondary my-2">
-                        <span class="lang-english">We're here to bring your construction vision to life. Contact us to discuss your project needs and receive a personalized quote.</span>
-                        <span class="lang-arabic hidden">نحن هنا لتحقيق رؤيتك في البناء. اتصل بنا لمناقشة احتياجات مشروعك واحصل على عرض أسعار مخصص.</span>
-                    </p>
-                    <p class="text-textSecondary my-2">
-                        <span class="lang-english">Website:</span> 
-                        <a href="https://greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">
-                            <span class="lang-english">GreenFortUAE.com</span>
-                            <span class="lang-arabic hidden">جرين فورت الإمارات</span>
-                        </a>
-                    </p>
-                    <p class="text-textSecondary my-2">
-                        <span class="lang-english">WhatsApp:</span> 
-                        <a href="https://wa.me/+971504235865" class="text-primary font-medium hover:underline" target="_blank">
-                            <span class="lang-english">0504235865</span>
-                            <span class="lang-arabic hidden">0504235865</span>
-                        </a>
-                    </p>
-                    <p class="text-textSecondary my-2">
-                        <span class="lang-english">Phone Call:</span>
-                        <a href="tel:+97145543260" class="text-primary font-medium hover:underline" target="_blank">
-                            <span class="lang-english">045543260</span>
-                            <span class="lang-arabic hidden">045543260</span>
-                        </a>, 
-                        <a href="tel:+971504235865" class="text-primary font-medium hover:underline" target="_blank">
-                            <span class="lang-english">0504235865</span>
-                            <span class="lang-arabic hidden">0504235865</span>
-                        </a>
-                    </p>
-                    <p class="text-textSecondary my-2">
-                        <span class="lang-english">E-Mail:</span> 
-                        <a href="mailto:info@greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">
-                            <span class="lang-english">info@greenfortuae.com</span>
-                            <span class="lang-arabic hidden">info@greenfortuae.com</span>
-                        </a>
-                    </p>
-                </div>
-            </li>
-            <li class="flex my-4">
-                <div class="flex min-w-10 min-h-10 max-w-10 max-h-10 items-center justify-center rounded bg-primary text-bgPrimary">
-                    <i class="fa fa-location-dot"></i>
-                </div>
-                <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">
-                        <span class="lang-english">Our Address</span>
-                        <span class="lang-arabic hidden">عنواننا</span>
-                    </h3>
-                    <p class="text-textSecondary">
-                        <span class="lang-english">Office 206, AL Saud Building, AL Qusais ind 4th,</span>
-                        <span class="lang-arabic hidden">المكتب 206، مبنى السعود، القوز الصناعية 4،</span>
-                    </p>
-                    <p class="text-textSecondary">
-                        <span class="lang-english">Dubai, UAE</span> 
-                        <span class="lang-arabic hidden">دبي، الإمارات العربية المتحدة</span> 
-                        <a href="https://maps.app.goo.gl/KdeVtAJAyEwmwxDR6" target="_blank" title="Open Google Maps">
-                            <i class="fas fa-up-right-from-square text-primary"></i>
-                        </a>
-                    </p>
-                </div>
-            </li>
-        </ul>
+    <li class="flex my-4">
+        <div class="flex w-10 h-10 items-center justify-center rounded bg-primary text-bgPrimary">
+            <i class="fas fa-headset"></i>
+        </div>
+        <div class="mx-4 mb-4">
+            <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">
+                <span class="lang-english">Reach Us</span>
+                <span class="lang-arabic hidden">تواصل معنا</span>
+            </h3>
+            <p class="text-textSecondary my-2">
+                <span class="lang-english">We're here to bring your construction vision to life. Contact us to discuss your project needs and receive a personalized quote.</span>
+                <span class="lang-arabic hidden">نحن هنا لتحقيق رؤيتك في البناء. اتصل بنا لمناقشة احتياجات مشروعك واحصل على عرض أسعار مخصص.</span>
+            </p>
+            <p class="text-textSecondary my-2">
+                <span class="lang-english">Website:</span>
+                <span class="lang-arabic hidden">الموقع الإلكتروني:</span>
+                <a href="https://greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">
+                    <span>www.greenfortuae.com</span>
+                </a>
+            </p>
+            <p class="text-textSecondary my-2">
+                <span class="lang-english">Landline:</span>
+                <span class="lang-arabic hidden">الهاتف الأرضي:</span>
+                <a href="tel:+97145543260" class="text-primary font-medium hover:underline" target="_blank">
+                    <span class="lang-english">045543260</span>
+                    <span class="lang-arabic hidden">045543260</span>
+                </a>
+            </p>
+            <p class="text-textSecondary my-2">
+                <span class="lang-english">Email:</span>
+                <span class="lang-arabic hidden">البريد الإلكتروني:</span>
+                <a href="mailto:info@greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">
+                    <span class="lang-english">info@greenfortuae.com</span>
+                    <span class="lang-arabic hidden">info@greenfortuae.com</span>
+                </a>
+            </p>
+        </div>
+    </li>
+    <li class="flex my-4">
+        <div class="flex w-10 h-10 items-center justify-center rounded bg-primary text-bgPrimary">
+            <i class="fa fa-location-dot !mr-0"></i> <!-- Centered icon -->
+        </div>
+        <div class="ml-4 mb-4">
+            <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">
+                <span class="lang-english">We're Based In</span>
+                <span class="lang-arabic hidden">نحن موجودون في</span>
+            </h3>
+            <p class="text-textSecondary">
+                <span class="lang-english">AL Qusais ind 4th</span>
+                <span class="lang-arabic hidden">القوز الصناعية 4</span>
+            </p>
+            <p class="text-textSecondary">
+                <span class="lang-english">Dubai, UAE</span>
+                <span class="lang-arabic hidden">دبي، الإمارات العربية المتحدة</span>
+                <a href="https://maps.app.goo.gl/KdeVtAJAyEwmwxDR6" target="_blank" title="Open Google Maps">
+                    <i class="fas fa-up-right-from-square text-primary"></i>
+                </a>
+            </p>
+        </div>
+    </li>
+</ul>
+
     </div>
 </div>
 
 <!-- CONTACT SECTION -->
 <div class="container mx-auto px-4">
-    <div class="md:flex mt-6 mb-10 md:space-x-10 items-start z-1">
-        <div class="mt-6 md:w-6/12 md:mt-0">
+    <div class="md:flex mt-6 mb-10 md:space-x-10 items-start z-1 max-w-5xl gap-4">
+        <div class="mt-6 md:w-3/12 md:mt-0">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3607.37503499097!2d55.392244!3d25.2916008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c18a8d55ef7%3A0xc3676e6f907f357e!2sAl%20Saud%20Building%20Quasis-4!5e0!3m2!1sen!2s!4v1728452916997!5m2!1sen!2s"
                 width="600"
@@ -167,8 +159,8 @@
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
                         <span class="contact-form-btn-text font-semibold text-bgPrimary">
-                            <span class="lang-english">Let's talk</span>
-                            <span class="lang-arabic hidden">دعنا نتحدث</span>
+                            <span class="lang-english">Send</span>
+                            <span class="lang-arabic hidden">إرسال</span>
                             <i class="fa fa-send ml-2 text-bgPrimary" aria-hidden="true"></i>
                         </span>
                     </button>

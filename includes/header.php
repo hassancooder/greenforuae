@@ -4,6 +4,9 @@
 <link rel="stylesheet" href="<?= getAsset('inter-font.css', 'css/'); ?>">
 <link rel="stylesheet" href="<?= getAsset('rubik-font.css', 'css/'); ?>">
 <script src="<?= getAsset('tailwind.js', 'js/'); ?>"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 <script>
     tailwind.config = {
         theme: {

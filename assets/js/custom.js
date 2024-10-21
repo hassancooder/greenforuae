@@ -150,19 +150,6 @@ function closeGallery() {
         $(this).addClass('hidden');
     });
 }
-new Swiper('.reviews-swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    navigation: {
-        nextEl: '.custom-next',
-        prevEl: '.custom-prev',
-    },
-    breakpoints: {
-        768: { slidesPerView: 1, spaceBetween: 30 },
-    },
-});
-
 // Function to start stats counters with animation
 function startCounters() {
     $('.count').each(function () {

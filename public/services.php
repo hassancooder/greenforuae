@@ -34,102 +34,410 @@
         <span class="text-textSecondary lang-arabic hidden">نحن نقدم مجموعة واسعة من خدمات البناء المصممة لتلبية الاحتياجات الفريدة لعملائنا. تشمل خبرتنا البناء السكني، والتطوير التجاري، والتجديد وإعادة التصميم، بالإضافة إلى خدمات إدارة المشاريع. نفخر بتسليم المشاريع في الوقت المحدد وفي حدود الميزانية مع الحفاظ على أعلى معايير الجودة. يعمل فريقنا المخلص بشكل وثيق مع العملاء لضمان تحقيق رؤيتهم في كل مشروع، سواء كان كبيرًا أو صغيرًا.</span>
     </div>
 
-    <div class="flex flex-wrap -mx-4 mt-16">
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Project Management</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">إدارة المشاريع</h4>
-            </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-6xl mx-auto">
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Project Management</span>
+            <span class="lang-arabic hidden">إدارة المشاريع</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Architectural Design</span>
+            <span class="lang-arabic hidden">التصميم المعماري</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">General Contracting</span>
+            <span class="lang-arabic hidden">المقاولات العامة</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Renovations & Fit-Outs</span>
+            <span class="lang-arabic hidden">التجديدات والتشطيبات</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Consulting Services</span>
+            <span class="lang-arabic hidden">خدمات الاستشارات</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Villa Construction</span>
+            <span class="lang-arabic hidden">بناء الفلل</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Muhammad Bin Rashid Housing Establishment Works</span>
+            <span class="lang-arabic hidden">أعمال مؤسسة محمد بن راشد للإسكان</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Villa Maintenance & Modifications</span>
+            <span class="lang-arabic hidden">صيانة الفلل والتعديلات</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Renovation, Tiling & Painting</span>
+            <span class="lang-arabic hidden">التجديد، والبلاط، والدهان</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Gypsum Partitions & Ceilings</span>
+            <span class="lang-arabic hidden">تقسيمات وأسقف الجبس</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Interior Design & Fit-Outs</span>
+            <span class="lang-arabic hidden">التصميم الداخلي والتشطيبات</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Warehouse Construction</span>
+            <span class="lang-arabic hidden">بناء المستودعات</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Aluminium & Glazing Works</span>
+            <span class="lang-arabic hidden">أعمال الألمنيوم والزجاج</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Electrical, Plumbing & AC Works</span>
+            <span class="lang-arabic hidden">أعمال الكهرباء والسباكة والتكييف</span>
+        </p>
+    </div>
+    <div class="py-2 px-3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-yellow-300">
+        <p class="font-semibold text-yellow-600">
+            <span class="lang-english">Dubai Municipality Permits</span>
+            <span class="lang-arabic hidden">تصاريح بلدية دبي</span>
+        </p>
+    </div>
+</div>
+
+    </div>
+
+    <div class="text-center mt-12 px-4 max-w-3xl mx-auto">
+        <!-- English Version -->
+        <h1 class="text-2xl sm:text-4xl font-bold bg-clip-text text-transparent animate-gradient-text lang-english">
+            Customer Confidence We Have Attained and Satisfaction
+        </h1>
+        <!-- Arabic Version -->
+        <h1 class="text-2xl sm:text-4xl font-bold bg-clip-text text-transparent mt-4 lang-arabic hidden animate-gradient-text">
+            الثقة التي اكتسبناها ورضا العملاء
+        </h1>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mb-8 max-w-6xl mx-auto">
+        <div class="chart-container w-full md:w-1/2 pr-0 md:pr-2 mb-4 md:mb-0 px-4">
+            <canvas id="barChart" class="h-72 w-full"></canvas> <!-- Height set to 18rem (72) -->
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Architectural Design</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">التصميم المعماري</h4>
-            </div>
+        <div class="chart-container w-full md:w-1/2 pl-0 md:pl-2 px-4">
+            <canvas id="lineChart" class="h-72 w-full"></canvas> <!-- Height set to 18rem (72) -->
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">General Contracting</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">المقاولة العامة</h4>
-            </div>
+    </div>
+
+
+    <div class="max-w-6xl mx-auto sm:gap-10 gap-5 flex flex-col sm:flex-row justify-center my-12" id="stats" data-aos="fade-up" data-aos-duration="500">
+        <!-- English Version Stats -->
+        <div class="flex flex-col justify-start items-start text-left lang-english mx-2">
+            <h3 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="10">10+</h3>
+            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Years of Experience</h6>
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-red-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Renovations and Fit-Outs</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">التجديدات والتجهيزات الداخلية</h4>
-            </div>
+        <div class="flex flex-col justify-start items-start text-left lang-english mx-2">
+            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="110">110+</h4>
+            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Projects Completed</h6>
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-purple-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Consulting Services</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">خدمات الاستشارات</h4>
-            </div>
+        <div class="flex flex-col justify-start items-start text-left lang-english mx-2">
+            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="105">105+</h4>
+            <h6 class="text-textSecondary text-base font-normal leading-relaxed">Happy Customers</h6>
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-indigo-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Villas and Service Block Construction</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">بناء الفيلات والكتل الخدمية</h4>
-            </div>
+
+        <!-- Arabic Version Stats -->
+        <div class="flex flex-col justify-start items-start text-right lang-arabic hidden mx-2">
+            <h3 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="10">10+</h3>
+            <h6 class="text-textSecondary text-base font-normal leading-relaxed">سنوات من الخبرة</h6>
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Mohammed Bin Rashid Housing Establishment Works</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال مؤسسة محمد بن راشد للإسكان</h4>
-            </div>
+        <div class="flex flex-col justify-start items-start text-right lang-arabic hidden mx-2">
+            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="110">110+</h4>
+            <h6 class="text-textSecondary text-base font-normal leading-relaxed">مشاريع مكتملة</h6>
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Villa Maintenance, Modification, and Addition Works</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال صيانة الفيلات والتعديل والإضافة</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Renovation, Tiling, Ceiling, and Painting Works</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال التجديد والتبليط والأسقف والدهانات</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-red-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Gypsum Partitions and Ceilings</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">القواطع والأسقف الجبسية</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-purple-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Interior Design and Fit-Out Works</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال التصميم الداخلي والتجهيزات</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-indigo-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Warehouse Construction</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">بناء المستودعات</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-blue-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Aluminium and Glazing Works</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال الألمنيوم والزجاج</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-green-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Electrical, Plumbing, and Air-Conditioning Works</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">أعمال الكهرباء والسباكة والتكييف</h4>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 border-[5px] border-double border-yellow-500 rounded-lg text-center">
-                <h4 class="font-semibold text-xl text-textPrimary lang-english">Drawings Approval and Construction Permit from Dubai Municipality</h4>
-                <h4 class="font-semibold text-xl text-textPrimary lang-arabic hidden">موافقة الرسومات وتصريح البناء من بلدية دبي</h4>
-            </div>
+        <div class="flex flex-col justify-start items-start text-right lang-arabic hidden mx-2">
+            <h4 class="text-textPrimary text-4xl font-bold leading-2 count" data-count="105">105+</h4>
+            <h6 class="text-textSecondary text-base font-normal leading-relaxed">عملاء سعداء</h6>
         </div>
     </div>
 </div>
+
+<section class="py-16 mt-12 max-w-5xl mx-auto" data-aos="fade-up">
+    <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
+            <span class="lang-english">Our Gallery</span>
+            <span class="lang-arabic hidden">معرض الصور</span>
+        </h1>
+    </div>
+
+    <div class="gallery-swiper-container overflow-hidden px-3 mt-10">
+        <div class="swiper-wrapper">
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-12-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-6-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-8-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-15-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-11-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-14-hr.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-2-sq.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-1-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-3-vr.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-7-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-4-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-5-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-13-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-9-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-10-hr.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-16-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-17-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-18-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-20-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-19-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-21-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-27-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-22-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-23-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 9 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-29-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-24-hr.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-25-hr.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 10 -->
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-31-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-26-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-28-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-33-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-30-hr.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-32-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-35-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-34-hr.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-36-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="flex h-full w-full overflow-hidden gap-2">
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="<?= getAsset('gallery-37-vr.webp', 'images/'); ?>" alt="Vertical Image" class="h-full rounded-lg w-full object-cover">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between gap-2">
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-38-sq.webp', 'images/'); ?>" alt="Top Image" class="h-full rounded-lg w-full object-cover">
+                        </div>
+                        <div class="h-1/2 w-full flex items-center justify-center">
+                            <img src="<?= getAsset('gallery-39-sq.webp', 'images/'); ?>" alt="Bottom Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="flex justify-center mt-5 md:mt-10 space-x-6" style="direction:ltr;"> -->
+            <!-- Previous Button -->
+            <!-- <button class="custom-prev w-8 h-8 flex items-center border-2 border-primary justify-center rounded-full hover:bg-primary text-primary transition z-30 duration-300 ease-in-out hover:text-bgPrimary lang-english">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+            </button> -->
+
+            <!-- Next Button -->
+            <!-- <button class="custom-next w-8 h-8 flex items-center border-2 border-primary justify-center rounded-full hover:bg-primary text-primary transition z-30 duration-300 ease-in-out hover:text-bgPrimary lang-english">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12l-4.58-4.59L10 6l6 6-6 6z" />
+                </svg>
+            </button>
+        </div> -->
+        <!-- Custom Next/Prev Buttons -->
+        <div class="absolute top-1/2 left-0 right-0 flex justify-between px-4 z-30" style="transform: translateY(-50%);">
+            <!-- Previous Button -->
+            <button class="custom-prev w-10 h-10 flex items-center justify-center">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain">
+            </button>
+
+            <!-- Next Button -->
+            <button class="custom-next w-10 h-10 flex items-center justify-center">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Next" class="w-full h-full object-contain">
+            </button>
+        </div>
+    </div>
+</section>
+
 <!-- REVIEWS SECTION -->
 <div id="reviews"></div>
-<div class="bg-bgSecondary/30 mx-auto mt-12 px-4 py-16">
+<div class="bg-bgSecondary/30 mx-auto px-4 py-16">
     <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
             <span class="lang-english">Customer Reviews</span>
@@ -267,7 +575,102 @@
         </div>
     </div>
 </div>
-<div class="py-12 mt-8" data-aos="fade-up" data-aos-duration="800">
+
+<div class="max-w-7xl mx-auto px-5 my-16" id="porfolio">
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-left w-full flex justify-between">
+            <span class="lang-english">GreenFort Has Completed Various Projects in the Following Dubai's Communities</span>
+            <span class="lang-arabic text-3xl hidden">قامت شركة GreenFort بتنفيذ مشاريع مختلفة في المجتمعات التالية في دبي</span>
+        </h1>
+    </div>
+
+    <div class="flex flex-wrap mt-16 max-w-7xl">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Barsha South</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء الجنوبية</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Barsha 2nd and 3rd</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء 2 و 3</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Quoz 2 and 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">القصيص 2 و 4</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Warqa 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الورقاء 4</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Mizhar 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">المزهر 1</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Muhaisnah 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">المحيصنة 1</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Oud al Muteena 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">عود المطنقة 1</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Umm Suqiem 2nd</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">أم سقيم 2</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Safa 2</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الصفا 2</h4>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Madinat Hind 4th</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">مدينة الهند 4</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Khawaneej</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">الخوانيج</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english">Al Aweer</h4>
+                <h4 class="font-semibold text-xl lang-arabic hidden">العوير</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 mt-20" data-aos="fade-up" data-aos-duration="800">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
             <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
@@ -310,7 +713,7 @@
                     </div>
                 </div>
                 <!-- Item 3 -->
-                <div class="relative ps-16 rtl:pe-16 rtl:ps-0" data-aos="fade-up" data-aos-duration="800">
+                <div class="relative ps-16 rtl:pe-16 rtl:ps-0" data-aos="fade-left" data-aos-duration="800">
                     <div class="text-base font-semibold leading-7 text-textPrimary flex items-center">
                         <div class="absolute start-0 rtl:end-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-primary">
                             <i class="fas fa-clipboard-check flex justify-center items-center text-white h-6 w-6"></i>
@@ -326,7 +729,7 @@
                     </div>
                 </div>
                 <!-- Item 4 -->
-                <div class="relative ps-16 rtl:pe-16 rtl:ps-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="relative ps-16 rtl:pe-16 rtl:ps-0" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                     <div class="text-base font-semibold leading-7 text-textPrimary flex items-center">
                         <div class="absolute start-0 rtl:end-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-primary">
                             <i class="fas fa-arrow-up flex justify-center items-center text-white h-6 w-6"></i>
@@ -345,3 +748,35 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        const items = $('.grid div p:visible'); // Select only visible service names
+        let index = 0;
+
+        function typeWriterEffect() {
+            if (index < items.length) {
+                let text = $(items[index]).find('.lang-english:visible, .lang-arabic:visible').text(); // Get the visible text
+                $(items[index]).text(''); // Clear the text
+
+                let charIndex = 0;
+
+                // Function to write each character
+                function writeChar() {
+                    if (charIndex < text.length) {
+                        $(items[index]).text($(items[index]).text() + text.charAt(charIndex)); // Append character
+                        charIndex++;
+                        setTimeout(writeChar, 20); // Adjust speed here
+                    } else {
+                        index++; // Move to the next item
+                        setTimeout(typeWriterEffect, 70); // Wait before starting next item
+                    }
+                }
+
+                writeChar();
+            }
+        }
+
+        typeWriterEffect(); // Start the typewriter effect
+    });
+</script>

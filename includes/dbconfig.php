@@ -1,9 +1,9 @@
 <?php
 // Database Credentials for Production
-// $server = "fdb1029.awardspace.net";
-// $username = "3742499_greenfortuae";
-// $password = "3@.S9wreHaLchnB";
-// $database = "3742499_greenfortuae";
+// $server = "localhost";
+// $username = "greenfortuae_current_main";
+// $password = "uaeFg345(^%";
+// $database = "greenfortuae_current_main";
 // Database Credentials for LocalHost development
 $server = "localhost";
 $username = "root";

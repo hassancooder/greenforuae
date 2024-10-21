@@ -25,47 +25,12 @@ $routes = [
                    <meta name="description" content="Discover the wide range of construction services offered by Green Fort UAE.">
                    <meta name="keywords" content="services, construction, building, Green Fort UAE">',
     ],
-    'service-project-management' => [
-        'file' => 'project-management.php',
-        'meta' => '<title>Project Management | Green Fort UAE</title>
-                   <meta name="description" content="Efficient planning and execution of projects to ensure on-time delivery and exceptional quality.">
-                   <meta name="keywords" content="project management, construction planning, project execution">',
-    ],
-    'service-architectural-design' => [
-        'file' => 'architectural-design.php',
-        'meta' => '<title>Architectural Design | Green Fort UAE</title>
-                   <meta name="description" content="Innovative designs that reflect our clients\' visions, balancing aesthetics and functionality.">
-                   <meta name="keywords" content="architectural design, innovative design, aesthetics, functionality">',
-    ],
-    'service-general-contracting' => [
-        'file' => 'general-contracting.php',
-        'meta' => '<title>General Contracting | Green Fort UAE</title>
-                   <meta name="description" content="Full-scale construction services from foundation to finish, delivering comprehensive building solutions.">
-                   <meta name="keywords" content="general contracting, construction services, building solutions">',
-    ],
-    'service-renovations-and-fit-outs' => [
-        'file' => 'renovations-fit-outs.php',
-        'meta' => '<title>Renovations and Fit-Outs | Green Fort UAE</title>
-                   <meta name="description" content="Transforming spaces to meet modern standards, tailored to your specific requirements.">
-                   <meta name="keywords" content="renovations, fit-outs, modern standards, construction">',
-    ],
-    'service-consulting-services' => [
-        'file' => 'consulting-services.php',
-        'meta' => '<title>Consulting Services | Green Fort UAE</title>
-                   <meta name="description" content="Expert advice on construction best practices and regulations to ensure smooth project execution.">
-                   <meta name="keywords" content="consulting services, construction advice, best practices, regulations">',
-    ],
+
     'contact' => [
         'file' => 'contact.php',
         'meta' => '<title>Contact Us | Green Fort UAE</title>
                    <meta name="description" content="Get in touch with Green Fort UAE for inquiries and quotes.">
                    <meta name="keywords" content="contact, inquiries, Green Fort UAE, quote">',
-    ],
-    'chairman-message' => [
-        'file' => 'chairman-message.php',
-        'meta' => '<title>Chairman\'s Message | Green Fort UAE</title>
-                   <meta name="description" content="Read the message from our Chairman, outlining our vision and commitment to quality.">
-                   <meta name="keywords" content="chairman, message, vision, commitment, Green Fort UAE">',
     ],
     'careers' => [ // New careers section
         'file' => 'careers.php',
@@ -79,6 +44,13 @@ $routes = [
                <meta name="description" content="Apply for a job at Green Fort UAE and become a part of our innovative team.">
                <meta name="keywords" content="job application, careers, apply, Green Fort UAE, construction jobs">',
     ],
+    'privacy-policy' => [ // Privacy Policy section
+        'file' => 'privacy-policy.php',
+        'meta' => '<title>Privacy Policy | Green Fort UAE</title>
+               <meta name="description" content="Read the privacy policy of Green Fort UAE to understand how we collect, use, and protect your personal information.">
+               <meta name="keywords" content="privacy policy, data protection, personal information, Green Fort UAE, user privacy">',
+    ],
+
 ];
 
 $adminRoutes = [
