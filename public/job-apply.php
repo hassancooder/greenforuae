@@ -7,8 +7,8 @@
         <div class="text-center">
             <!-- Title -->
             <h1 class="text-4xl font-bold tracking-tight text-textPrimary sm:text-6xl">
-                <span class="lang-english">Job Application</span>
-                <span class="lang-arabic hidden">طلب وظيفة</span>
+                <span class="lang-english hidden">Job Application</span>
+                <span class="lang-arabic">طلب وظيفة</span>
             </h1>
 
             <!-- Breadcrumb -->
@@ -19,8 +19,8 @@
                     </svg>
                     <?php
                     $url = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-                    echo '<span class="lang-english">Home / ' . ucwords(str_replace('-', ' ', implode(' / ', $url))) . '</span>';
-                    echo '<span class="lang-arabic hidden">الرئيسية / الوظائف</span>';
+                    echo '<span class="lang-english hidden">Home / ' . ucwords(str_replace('-', ' ', implode(' / ', $url))) . '</span>';
+                    echo '<span class="lang-arabic">الرئيسية / الوظائف</span>';
                     ?>
                 </span>
             </p>
@@ -35,8 +35,8 @@
             <div class="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
                 <div class="sm:col-span-2">
                     <label for="full-name" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Full Name *</span>
-                        <span class="lang-arabic hidden">الاسم الكامل *</span>
+                        <span class="lang-english hidden">Full Name *</span>
+                        <span class="lang-arabic">الاسم الكامل *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="text" name="full-name" id="full-name" required class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6">
@@ -44,8 +44,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="job-title" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Job Title *</span>
-                        <span class="lang-arabic hidden">المسمى الوظيفي *</span>
+                        <span class="lang-english hidden">Job Title *</span>
+                        <span class="lang-arabic">المسمى الوظيفي *</span>
                     </label>
                     <div class="mb-2.5">
                         <select name="job-title" id="job-title" required class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6">
@@ -56,8 +56,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="email" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Email *</span>
-                        <span class="lang-arabic hidden">البريد الإلكتروني *</span>
+                        <span class="lang-english hidden">Email *</span>
+                        <span class="lang-arabic">البريد الإلكتروني *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="email" name="email" id="email" required class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6">
@@ -65,8 +65,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="phone" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Phone *</span>
-                        <span class="lang-arabic hidden">الهاتف *</span>
+                        <span class="lang-english hidden">Phone *</span>
+                        <span class="lang-arabic">الهاتف *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="tel" name="phone" id="phone" required class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6">
@@ -74,8 +74,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="education" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Education *</span>
-                        <span class="lang-arabic hidden">التعليم *</span>
+                        <span class="lang-english hidden">Education *</span>
+                        <span class="lang-arabic">التعليم *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="text" name="education" id="education" required class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6">
@@ -83,8 +83,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="work-experience" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Work Experience *</span>
-                        <span class="lang-arabic hidden">الخبرة العملية *</span>
+                        <span class="lang-english hidden">Work Experience *</span>
+                        <span class="lang-arabic">الخبرة العملية *</span>
                     </label>
                     <div class="mb-2.5">
                         <textarea name="work-experience" id="work-experience" rows="4" required class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6"></textarea>
@@ -92,8 +92,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="cv" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Upload CV *</span>
-                        <span class="lang-arabic hidden">تحميل السيرة الذاتية *</span>
+                        <span class="lang-english hidden">Upload CV *</span>
+                        <span class="lang-arabic">تحميل السيرة الذاتية *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="file" name="cv" id="cv" accept=".pdf,.doc,.docx" required class="block w-full text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
@@ -107,8 +107,8 @@
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
-                        <span class="job-apply-btn-text font-semibold text-bgPrimary lang-english">Apply Now <i class="fa fa-send ml-2 text-bgPrimary" aria-hidden="true"></i></span>
-                        <span class="job-apply-btn-text-ar font-semibold text-bgPrimary lang-arabic hidden">قدّم الآن <i class="fa fa-send ml-2 text-bgPrimary" aria-hidden="true"></i></span>
+                        <span class="job-apply-btn-text font-semibold text-bgPrimary lang-english hidden">Apply Now <i class="fa fa-send ml-2 text-bgPrimary" aria-hidden="true"></i></span>
+                        <span class="job-apply-btn-text-ar font-semibold text-bgPrimary lang-arabic">قدّم الآن <i class="fa fa-send ml-2 text-bgPrimary" aria-hidden="true"></i></span>
                     </button>
                     <div class="ml-2">
                         <p class="job-apply-response-text font-semibold text-sm text-textPrimary"></p>

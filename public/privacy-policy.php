@@ -3,7 +3,7 @@
         <div class="container mx-auto px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
                 <!-- English Version -->
-                <div class="lang-english">
+                <div class="lang-english hidden">
                     <h1 class="text-4xl font-bold text-gray-800 mb-6">Privacy Policy</h1>
                     <p class="text-gray-600 mb-8">
                         This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website, submit a job application, or contact us. By using our website, you consent to the terms of this policy.
@@ -87,7 +87,7 @@
                 </div>
                 
                 <!-- Arabic Version -->
-                <div class="lang-arabic hidden">
+                <div class="lang-arabic">
                     <h1 class="text-4xl font-bold text-gray-800 mb-6">سياسة الخصوصية</h1>
                     <p class="text-gray-600 mb-8">
                         تحدد سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك الشخصية عند زيارة موقعنا الإلكتروني، أو تقديم طلب وظيفة، أو الاتصال بنا. باستخدامك لموقعنا، فإنك توافق على شروط هذه السياسة.

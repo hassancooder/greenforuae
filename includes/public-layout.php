@@ -16,7 +16,17 @@
     } ?>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden arabic">
+    <script>
+        const savedLang = localStorage.getItem('selectedLanguage') || 'العربية';
+        if (savedLang === 'العربية') {
+            document.documentElement.setAttribute('dir', 'rtl');
+            document.body.classList.add('arabic');
+        } else {
+            document.documentElement.setAttribute('dir', 'ltr');
+            document.body.classList.remove('arabic');
+        }
+    </script>
     <header class="fixed inset-x-0 top-0 z-[45] border-bgSecondary navbar" x-data="{ open: false }" @open-menu.window="open = true; $('body').addClass('overflow-hidden')" @close-menu.window="open = false; $('body').removeClass('overflow-hidden')">
         <nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
@@ -35,51 +45,55 @@
                 </button>
             </div>
             <div class="desktop-nav hidden lg:flex lg:gap-x-12">
-                <div class="relative group">
-                    <a href="/about" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english">About</a>
-                    <a href="/about" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic hidden">من نحن</a>
-                    <!-- Dropdown for Chairman's Message -->
-                    <div class="absolute left-0 mt-0 hidden w-44 bg-bgPrimary rounded-md group-hover:block">
-                        <ul class="py-2">
+                <div class="relative group flex items-center space-x-1">
+                    <a href="/about" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english hidden">
+                        About
+                    </a>
+                    <a href="/about" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic">
+                        من نحن
+                    </a>
+                    <div class="absolute left-0 top-6 mt-0 hidden w-44 border bg-bgPrimary rounded-md group-hover:block">
+                        <ul class="py-1">
                             <li>
-                                <a href="/about#chairman-message" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-english">
+                                <a href="/about#chairman-message" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-english hidden">
                                     Chairman's Message
                                 </a>
-                                <a href="/about#chairman-message" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-arabic hidden">
+                                <a href="/about#chairman-message" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-arabic">
                                     رسالة الرئيس
                                 </a>
                             </li>
                             <li>
-                                <a href="/about#mission-vision" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-english">
+                                <a href="/about#mission-vision" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-english hidden">
                                     Mission & Vision
                                 </a>
-                                <a href="/about#mission-vision" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-arabic hidden">
+                                <a href="/about#mission-vision" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-arabic">
                                     مهمتنا ورؤيتنا
                                 </a>
                             </li>
                             <li>
-                                <a href="/about#our-team" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-english">
+                                <a href="/about#our-team" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-english hidden">
                                     Our Team
                                 </a>
-                                <a href="/about#our-team" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-arabic hidden">
+                                <a href="/about#our-team" class="block px-4 py-2 text-sm leading-6 text-textPrimary hover:bg-bgSecondary lang-arabic">
                                     فريقنا
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <a href="/services" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english">Services</a>
-                <a href="/services" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic hidden">الخدمات</a>
-                <a href="/portfolio" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english">Portfolio</a>
-                <a href="/portfolio" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic hidden">المعرض</a>
-                <a href="/careers" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english">Careers</a>
-                <a href="/careers" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic hidden">الوظائف</a>
-                <a href="/contact" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english">Contact</a>
-                <a href="/contact" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic hidden">اتصل بنا</a>
+
+                <a href="/services" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english hidden">Services</a>
+                <a href="/services" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic">الخدمات</a>
+                <a href="/portfolio" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english hidden">Portfolio</a>
+                <a href="/portfolio" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic">المعرض</a>
+                <a href="/careers" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english hidden">Careers</a>
+                <a href="/careers" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic">الوظائف</a>
+                <a href="/contact" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english hidden">Contact</a>
+                <a href="/contact" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic">اتصل بنا</a>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
                     <div class="relative">
                         <button id="langDropdownBtnDesktop" class="text-sm font-semibold <?= $textColor; ?> hero-text focus:outline-none flex items-center">
-                            <span id="selectedLangDesktop">العربية</span> <!-- Changed to Arabic -->
+                            <span id="selectedLangDesktop">لغة</span> <!-- Changed to Arabic -->
                             <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.585l3.71-3.355a.75.75 0 111.02 1.1l-4 3.615a.75.75 0 01-1.02 0l-4-3.615a.75.75 0 01.02-1.1z" clip-rule="evenodd" />
                             </svg>
@@ -89,7 +103,7 @@
                         <div id="langDropdownDesktop" class="hidden absolute right-0 mt-2 w-40 rounded-md bg-bgPrimary ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div class="py-1">
                                 <a href="#" class="block px-4 py-2 text-textPrimary hover:bg-bgSecondary" data-lang="en">English</a>
-                                <a href="#" class="block px-4 py-2 text-textPrimary hover:bg-bgSecondary" data-lang="ar">العربية</a>
+                                <a href="#" class="block px-4 py-2 text-textPrimary font-[Rubik] hover:bg-bgSecondary" data-lang="ar">العربية</a>
                             </div>
                         </div>
                     </div>
@@ -98,8 +112,8 @@
 
 
             <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
-                <a href="/portal-login" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english">Portal Login</a> <!-- New Portal Login Link -->
-                <a href="/portal-login" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic hidden">تسجيل الدخول للبوابة</a> <!-- New Portal Login Link in Arabic -->
+                <a href="/portal-login" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-english hidden">Portal Login</a> <!-- New Portal Login Link -->
+                <a href="/portal-login" class="text-sm font-semibold leading-6 <?= $textColor; ?> hero-text lang-arabic">تسجيل الدخول للبوابة</a> <!-- New Portal Login Link in Arabic -->
             </div>
 
         </nav>
@@ -149,43 +163,54 @@
                                 <!-- Merged Mobile Navigation with English and Arabic -->
                                 <div class="mobile-nav">
                                     <a href="/about" class="block px-3 py-2 text-base font-semibold leading-7 text-textPrimary">
-                                        About / من نحن
+                                        <span class="lang-english hidden">About</span>
+                                        <span class="lang-arabic">من نحن</span>
                                     </a>
                                     <a href="/about#chairman-message" class="block pl-6 py-2 text-sm font-semibold leading-6 text-textPrimary">
-                                        Chairman's Message / رسالة الرئيس
+                                        <span class="lang-english hidden">Chairman's Message</span>
+                                        <span class="lang-arabic">رسالة الرئيس</span>
                                     </a>
                                     <a href="/about#mission-vision" class="block pl-6 py-2 text-sm font-semibold leading-6 text-textPrimary">
-                                        Mission & Vision / مهمتنا ورؤيتنا
+                                        <span class="lang-english hidden">Mission & Vision</span>
+                                        <span class="lang-arabic">مهمتنا ورؤيتنا</span>
                                     </a>
                                     <a href="/about#our-team" class="block pl-6 py-2 text-sm font-semibold leading-6 text-textPrimary">
-                                        Our Team / فريقنا
+                                        <span class="lang-english hidden">Our Team</span>
+                                        <span class="lang-arabic">فريقنا</span>
                                     </a>
                                     <!-- <a href="/about#our-journey" class="block pl-6 py-2 text-sm font-semibold leading-6 text-textPrimary">
-                                        Our Journey / رحلتنا
-                                    </a> -->
+        <span class="lang-english hidden">Our Journey</span>
+        <span class="lang-arabic">رحلتنا</span>
+    </a> -->
                                     <a href="/services" class="block px-3 py-2 text-base font-semibold leading-7 text-textPrimary">
-                                        Services / الخدمات
+                                        <span class="lang-english hidden">Services</span>
+                                        <span class="lang-arabic">الخدمات</span>
                                     </a>
                                     <a href="/portfolio" class="block px-3 py-2 text-base font-semibold leading-7 text-textPrimary">
-                                        Portfolio / المعرض
+                                        <span class="lang-english hidden">Portfolio</span>
+                                        <span class="lang-arabic">المعرض</span>
                                     </a>
                                     <a href="/careers" class="block px-3 py-2 text-base font-semibold leading-7 text-textPrimary">
-                                        Careers / الوظائف
-                                    </a> <!-- New Careers Link -->
+                                        <span class="lang-english hidden">Careers</span>
+                                        <span class="lang-arabic">الوظائف</span>
+                                    </a>
                                     <a href="/portal-login" class="block px-3 py-2 text-base font-semibold leading-7 text-textPrimary">
-                                        Portal Login / تسجيل الدخول إلى البوابة
-                                    </a> <!-- New Portal Login Link -->
+                                        <span class="lang-english hidden">Portal Login</span>
+                                        <span class="lang-arabic">تسجيل الدخول إلى البوابة</span>
+                                    </a>
                                     <a href="/contact" class="block px-3 py-2 text-base font-semibold leading-7 text-textPrimary">
-                                        Contact / اتصل بنا
+                                        <span class="lang-english hidden">Contact</span>
+                                        <span class="lang-arabic">اتصل بنا</span>
                                     </a>
                                 </div>
+
 
 
                             </div>
 
                             <div class="relative">
                                 <button id="langDropdownBtnMobile" class="text-base font-semibold text-textPrimary hover:bg-bgSecondary focus:outline-none flex items-center justify-between w-full px-3 py-2 rounded-lg">
-                                    <span id="selectedLangMobile">العربية</span> <!-- Changed to Arabic -->
+                                    <span id="selectedLangMobile">لغة</span> <!-- Changed to Arabic -->
                                     <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.585l3.71-3.355a.75.75 0 111.02 1.1l-4 3.615a.75.75 0 01-1.02 0l-4-3.615a.75.75 0 01.02-1.1z" clip-rule="evenodd" />
                                     </svg>
@@ -195,7 +220,7 @@
                                 <div id="langDropdownMobile" class="hidden absolute left-0 mt-2 w-full rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
                                     <div class="py-1">
                                         <a href="#" class="block px-4 py-2 text-textPrimary hover:bg-bgSecondary" data-lang="en">English</a>
-                                        <a href="#" class="block px-4 py-2 text-textPrimary hover:bg-bgSecondary" data-lang="ar">العربية</a>
+                                        <a href="#" class="block px-4 py-2 text-textPrimary font-[Rubik] hover:bg-bgSecondary" data-lang="ar">العربية</a>
                                     </div>
                                 </div>
                             </div>
@@ -212,68 +237,68 @@
             <!-- Contact Section -->
             <div class="mb-8 md:mb-0">
                 <h2 class="text-2xl font-bold mb-4">
-                    <span class="lang-english">Contact</span>
-                    <span class="lang-arabic hidden">تواصل</span>
+                    <span class="lang-english hidden">Contact</span>
+                    <span class="lang-arabic">تواصل</span>
                 </h2>
                 <p class="font-bold mb-2">
-                    <span class="lang-english">Green Fort UAE</span>
-                    <span class="lang-arabic hidden">جرين فورت الإمارات</span>
+                    <span class="lang-english hidden">Green Fort UAE</span>
+                    <span class="lang-arabic">جرين فورت الإمارات</span>
                 </p>
                 <p class="flex items-center mb-2">
                     <i class="fa fa-location-dot mx-2"></i>
-                    <span class="lang-english">AL Qusais ind 4th, Dubai, UAE.</span>
-                    <span class="lang-arabic hidden">القصيص الصناعية 4، دبي، الإمارات.</span>
+                    <span class="lang-english hidden">AL Qusais ind 4th, Dubai, UAE.</span>
+                    <span class="lang-arabic">القصيص الصناعية 4، دبي، الإمارات.</span>
                 </p>
                 <p class="flex items-center mb-2">
                     <i class="fas fa-mobile-screen-button mx-2"></i>
-                    <span class="lang-english">050 423 5865</span>
-                    <span class="lang-arabic hidden">050 423 5865</span>
+                    <span class="lang-english hidden">0504235865</span>
+                    <span class="lang-arabic">0504235865</span>
                 </p>
                 <p class="flex items-center mb-2">
                     <i class="fas fa-phone-alt rotate-90 mx-2"></i>
-                    <span class="lang-english">045543260</span>
-                    <span class="lang-arabic hidden">045543260</span>
+                    <span class="lang-english hidden">045543260</span>
+                    <span class="lang-arabic">045543260</span>
                 </p>
                 <p class="flex items-center">
                     <i class="fas fa-envelope mx-2"></i>
-                    <span class="lang-english">info@greenfortuae.com</span>
-                    <span class="lang-arabic hidden">info@greenfortuae.com</span>
+                    <span class="lang-english hidden">info@greenfortuae.com</span>
+                    <span class="lang-arabic">info@greenfortuae.com</span>
                 </p>
             </div>
 
 
             <!-- Key Links Section -->
             <div class="mb-8 md:mb-0">
-                <h2 class="text-2xl font-bold mb-4"><span class="lang-english">Key Links</span><span class="lang-arabic hidden">روابط هامة</span></h2>
+                <h2 class="text-2xl font-bold mb-4"><span class="lang-english hidden">Key Links</span><span class="lang-arabic">روابط هامة</span></h2>
                 <ul class="space-y-2">
                     <li>
                         <a href="/" class="hover:underline">
-                            <span class="lang-english">Home</span>
-                            <span class="lang-arabic hidden">الرئيسية</span>
+                            <span class="lang-english hidden">Home</span>
+                            <span class="lang-arabic">الرئيسية</span>
                         </a>
                     </li>
                     <li>
                         <a href="/services" class="hover:underline">
-                            <span class="lang-english">Services</span>
-                            <span class="lang-arabic hidden">الخدمات</span>
+                            <span class="lang-english hidden">Services</span>
+                            <span class="lang-arabic">الخدمات</span>
                         </a>
                     </li>
                     <li>
                         <a href="/portfolio" class="hover:underline">
-                            <span class="lang-english">Portfolio</span>
-                            <span class="lang-arabic hidden">محفظة الأعمال</span>
+                            <span class="lang-english hidden">Portfolio</span>
+                            <span class="lang-arabic">محفظة الأعمال</span>
                         </a>
                     </li>
                     <li>
                         <a href="/careers" class="hover:underline">
-                            <span class="lang-english hidden">Careers</span>
-                            <span class="lang-arabic hidden">وظائف</span>
+                            <span class="lang-english hidden hidden">Careers</span>
+                            <span class="lang-arabic">وظائف</span>
                         </a>
                     </li>
                     <li>
                         <a href="/contact" class="hover:underline">
-                            <span class="lang-english">Contact</span>
-                            <span class="lang-arabic hidden">اتصل بنا</span>
+                            <span class="lang-english hidden">Contact</span>
+                            <span class="lang-arabic">اتصل بنا</span>
                         </a>
                     </li>
                 </ul>
@@ -282,7 +307,7 @@
 
             <!-- Follow Us Section -->
             <div>
-                <h2 class="text-2xl font-bold mb-4"><span class="lang-english">Follow Us</span><span class="lang-arabic hidden">تابعنا</span></h2>
+                <h2 class="text-2xl font-bold mb-4"><span class="lang-english hidden">Follow Us</span><span class="lang-arabic">تابعنا</span></h2>
                 <div class="flex mb-6">
                     <!-- Facebook Icon -->
                     <a href="https://www.facebook.com/ConstructionWorksinDubai" target="_blank" class="group transition-all duration-500 hover:-translate-y-1">
@@ -319,24 +344,24 @@
 
                 <!-- Download Brochure Button -->
                 <a href="https://wa.me/971504235865?text=Please%20provide%20the%20company%20profile%20for%20Green%20Fort%20UAE." class="bg-primary text-white text-sm px-4 py-2 rounded-full inline-flex items-center hover:bg-opacity-90 transition duration-300">
-                    <span class="lang-english">DOWNLOAD BROCHURE</span>
-                    <span class="lang-arabic hidden">تحميل الكتيب</span>
-                    <i class="fas fa-download ml-2"></i>
+                    <span class="lang-english hidden">DOWNLOAD BROCHURE</span>
+                    <span class="lang-arabic">تحميل الكتيب</span>
+                    <i class="fas fa-download m-2"></i>
                 </a>
             </div>
         </div>
         <!-- Footer Bottom -->
         <div class="mt-6 pt-2 text-center text-sm border-t-2 border-textSecondary/30">
             <p>
-                &copy; 2024 <span class="lang-english">Green Fort UAE. All rights reserved.</span>
-                <span class="lang-arabic hidden">جرين فورت الإمارات. جميع الحقوق محفوظة.</span>
+                &copy; 2024 <span class="lang-english hidden">Green Fort UAE. All rights reserved.</span>
+                <span class="lang-arabic">جرين فورت الإمارات. جميع الحقوق محفوظة.</span>
             </p>
             <!-- <p>
-                <span class="lang-english">Developed by</span>
-                <span class="lang-arabic hidden">تم تطويره بواسطة</span>
+                <span class="lang-english hidden">Developed by</span>
+                <span class="lang-arabic">تم تطويره بواسطة</span>
                 <a href="https://upsoltech.com/" target="_blank" rel="dofollow" class="text-bgPrimary underline hover:text-bgSecondary">
-                    <span class="lang-english">Upsol Technologies</span>
-                    <span class="lang-arabic hidden">أبسل تكنولوجيز</span>
+                    <span class="lang-english hidden">Upsol Technologies</span>
+                    <span class="lang-arabic">أبسل تكنولوجيز</span>
                 </a>
             </p> -->
         </div>
@@ -345,27 +370,27 @@
         class="fixed sm:max-w-md p-4 mx-auto bg-amber-50 border border-amber-300 left-2 bottom-2 sm:left-6 sm:bottom-6 rounded-2xl z-30"
         style="display: none;">
         <h2 class="font-semibold text-gray-800">
-            <span class="lang-english">🍪 Cookie Notice!</span>
-            <span class="lang-arabic hidden">🍪 إشعار الكوكيز!</span>
+            <span class="lang-english hidden">🍪 Cookie Notice!</span>
+            <span class="lang-arabic">🍪 إشعار الكوكيز!</span>
         </h2>
         <p class="mt-4 text-sm text-gray-600">
-            <span class="lang-english">We use cookies to ensure that we give you the best experience on our website. </span>
-            <span class="lang-arabic hidden">نستخدم الكوكيز لضمان توفير أفضل تجربة لك على موقعنا.</span>
+            <span class="lang-english hidden">We use cookies to ensure that we give you the best experience on our website. </span>
+            <span class="lang-arabic">نستخدم الكوكيز لضمان توفير أفضل تجربة لك على موقعنا.</span>
             <a href="/privacy-policy" class="text-blue-500 hover:underline">
-                <span class="lang-english">Read privacy policy</span>
-                <span class="lang-arabic hidden">اقرأ سياسة الخصوصية</span>
+                <span class="lang-english hidden">Read privacy policy</span>
+                <span class="lang-arabic">اقرأ سياسة الخصوصية</span>
             </a>.
         </p>
         <div class="flex items-center justify-between mt-4 gap-x-4 shrink-0">
             <button id="cancelCookies"
                 class="text-xs bg-gray-800 font-medium rounded-lg hover:bg-slate-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-                <span class="lang-english">Cancel</span>
-                <span class="lang-arabic hidden">إلغاء</span>
+                <span class="lang-english hidden">Cancel</span>
+                <span class="lang-arabic">إلغاء</span>
             </button>
             <button id="acceptCookies"
                 class="text-xs bg-gray-800 font-medium rounded-lg hover:bg-slate-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-                <span class="lang-english">Accept</span>
-                <span class="lang-arabic hidden">قبول</span>
+                <span class="lang-english hidden">Accept</span>
+                <span class="lang-arabic">قبول</span>
             </button>
         </div>
     </section>
@@ -492,43 +517,62 @@
         }
 
         function updateLanguage(dropdownId, selectedLangId, lang) {
-            $('#' + selectedLangId).text(lang);
+            // Update UI language indicator
+            $('#' + selectedLangId).text(lang === 'العربية' ? 'لغة' : 'Language');
             toggleDropdown(dropdownId);
-            // Array of element tags that might contain language-specific text
-            const elementsToCheck = ['a', 'p', 'td', 'div', 'span', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'i'];
 
-            const isMobile = window.innerWidth < 1024;
+            // Retrieve saved language
+            const savedLang = localStorage.getItem('selectedLanguage');
+
+            // Save new language preference
+            localStorage.setItem('selectedLanguage', lang);
+
+            // Toggle visibility for English and Arabic elements
+            const elementsToCheck = ['a', 'p', 'td', 'div', 'span', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'i'];
             elementsToCheck.forEach(tag => {
-                if (!(isMobile && $(tag).hasClass('desktop-nav'))) {
-                    const isEnglishSelected = lang !== 'العربية';
-                    if (isMobile) {
-                        $(tag + '.lang-english').toggle(isEnglishSelected);
-                        $(tag + '.lang-arabic').toggle(lang === 'العربية');
-                    } else {
-                        // Show/Hide logic for desktop elements
-                        $(tag + '.lang-english').toggle(isEnglishSelected);
-                        $(tag + '.lang-arabic').toggle(!isEnglishSelected);
-                    }
+                if (lang === 'العربية') {
+                    $(tag + '.lang-english').addClass('hidden');
+                    $(tag + '.lang-arabic').removeClass('hidden');
+                } else {
+                    $(tag + '.lang-english').removeClass('hidden');
+                    $(tag + '.lang-arabic').addClass('hidden');
                 }
             });
 
-            // Set the direction and classes based on the selected language
-            if (lang === 'العربية') {
-                $('body').css('direction', 'rtl');
-                $('body').addClass('arabic');
-                $('.fa').css('margin-left', '10px').css('margin-right', '0');
-            } else {
-                $('body').css('direction', 'ltr');
-                $('body').removeClass('arabic');
-                $('.fa').css('margin-right', '10px').css('margin-left', '0');
-            }
+            // Toggle arrow images based on language
+            $('.custom-prev .lang-english').toggleClass('hidden', lang === 'العربية');
+            $('.custom-prev .lang-arabic').toggleClass('hidden', lang !== 'العربية');
+            $('.custom-next .lang-english').toggleClass('hidden', lang === 'العربية');
+            $('.custom-next .lang-arabic').toggleClass('hidden', lang !== 'العربية');
 
-            // Change the language direction for each Swiper instance
-            if (clientsSwiper) clientsSwiper.changeLanguageDirection(lang === 'العربية' ? 'rtl' : 'ltr');
-            if (gallerySwiper) gallerySwiper.changeLanguageDirection(lang === 'العربية' ? 'rtl' : 'ltr');
-            if (homeAboutSlider) homeAboutSlider.changeLanguageDirection(lang === 'العربية' ? 'rtl' : 'ltr');
-            if (reviewsSlider) reviewsSlider.changeLanguageDirection(lang === 'العربية' ? 'rtl' : 'ltr');
+            // Set direction and body classes
+            document.documentElement.setAttribute('dir', lang === 'العربية' ? 'rtl' : 'ltr');
+            $('body').toggleClass('arabic', lang === 'العربية');
+            $('.fa').css(lang === 'العربية' ? {
+                'margin-left': '10px',
+                'margin-right': '0'
+            } : {
+                'margin-right': '10px',
+                'margin-left': '0'
+            });
+
+            // Adjust Swiper instances based on language direction
+            const direction = lang === 'العربية' ? 'rtl' : 'ltr';
+            clientsSwiper?.changeLanguageDirection(direction);
+            gallerySwiper?.changeLanguageDirection(direction);
+            homeAboutSlider?.changeLanguageDirection(direction);
+            reviewsSlider?.changeLanguageDirection(direction);
+
+            // Reload the page if switching from Arabic to English
+            if (savedLang === 'العربية' && lang !== 'العربية') {
+                location.reload();
+            }
+            // if(isHome === false){
+            //     location.reload();
+            // }
         }
+
+
 
         // Language dropdown functionality for desktop
         $('#langDropdownBtnDesktop').click(function(e) {
@@ -569,10 +613,12 @@
 
         // Default language display on page load
         $(document).ready(function() {
-            const defaultLang = 'العربية'; // Set Arabic as default language
-            updateLanguage('', 'selectedLangDesktop', defaultLang); // Update default for desktop
-            updateLanguage('', 'selectedLangMobile', defaultLang); // Update default for mobile
+            const savedLang = localStorage.getItem('selectedLanguage') || 'العربية';
+            updateLanguage('', 'selectedLangDesktop', savedLang);
+            updateLanguage('', 'selectedLangMobile', savedLang);
         });
+
+
 
 
         const years = [2015, 2017, 2019, 2021, 2024]; // 5 years
@@ -697,7 +743,7 @@
     </script>
 
     <!-- WhatsApp Button -->
-    <div class="fixed bottom-6 right-6 z-40 lang-english">
+    <div class="fixed bottom-6 right-6 z-40 lang-english hidden">
         <a href="https://wa.me/+971504235865" target="_blank"
             class="group flex items-center bg-[#25D366] text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 hover:bg-[#20b258] relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mr-2" viewBox="0 0 64 64" fill="currentColor">
@@ -708,7 +754,7 @@
         </a>
     </div>
 
-    <div class="fixed bottom-6 right-6 z-40 lang-arabic hidden">
+    <div class="fixed bottom-6 right-6 z-40 lang-arabic">
         <a href="https://wa.me/+971504235865" target="_blank"
             class="group flex items-center bg-[#25D366] text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 hover:bg-[#20b258]">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 ml-2" viewBox="0 0 64 64" fill="currentColor">

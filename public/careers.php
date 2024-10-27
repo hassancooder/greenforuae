@@ -7,8 +7,8 @@
         <div class="text-center">
             <!-- Title -->
             <h1 class="text-4xl font-bold tracking-tight text-textPrimary sm:text-6xl">
-                <span class="lang-english">Careers</span>
-                <span class="lang-arabic hidden">الوظائف</span>
+                <span class="lang-english hidden">Careers</span>
+                <span class="lang-arabic">الوظائف</span>
             </h1>
 
             <!-- Breadcrumb -->
@@ -19,8 +19,8 @@
                     </svg>
                     <?php
                     $url = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-                    echo '<span class="lang-english">Home / ' . ucwords(str_replace('-', ' ', implode(' / ', $url))) . '</span>';
-                    echo '<span class="lang-arabic hidden">الرئيسية / الوظائف</span>';
+                    echo '<span class="lang-english hidden">Home / ' . ucwords(str_replace('-', ' ', implode(' / ', $url))) . '</span>';
+                    echo '<span class="lang-arabic">الرئيسية / الوظائف</span>';
                     ?>
                 </span>
             </p>
@@ -29,7 +29,7 @@
 </div>
 
 <!-- JOB POSTING SECTION (CIVIL FOREMAN) -->
-<div class="relative isolate px-6 lg:px-8 lang-english">
+<div class="relative isolate px-6 lg:px-8 lang-english hidden">
     <div class="max-w-6xl mt-10 py-32 sm:py-48 lg:py-36">
         <div>
             <h2 class="text-3xl font-bold tracking-tight text-textPrimary">(1) Job Title: Civil Foreman</h2>
@@ -63,7 +63,7 @@
 </div>
 
 <!-- JOB POSTING SECTION (CIVIL FOREMAN) - ARABIC -->
-<div class="relative isolate px-6 lg:px-8 lang-arabic hidden">
+<div class="relative isolate px-6 lg:px-8 lang-arabic">
     <div class="max-w-6xl mt-10 py-32 sm:py-48 lg:py-36">
         <div>
         <h2 class="text-3xl font-bold tracking-tight text-textPrimary">(1) المسمى الوظيفي: مشرف مدني</h2>

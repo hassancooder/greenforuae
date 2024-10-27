@@ -6,8 +6,8 @@
     <div class="mx-auto h-2/4 max-w-2xl mt-10 py-32 sm:py-48 lg:py-36">
         <div class="text-center">
             <h1 class="text-4xl font-bold tracking-tight text-textPrimary sm:text-6xl">
-                <span class="lang-english">Contact Us</span>
-                <span class="lang-arabic hidden">تواصل معنا</span>
+                <span class="lang-english hidden">Contact Us</span>
+                <span class="lang-arabic">تواصل معنا</span>
             </h1>
 
             <p class="mt-6 text-lg leading-8 text-textSecondary">
@@ -17,8 +17,8 @@
                     </svg>
                     <?php
                     $url = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-                    echo '<span class="lang-english">Home / ' . ucwords(str_replace('-', ' ', implode(' / ', $url))) . '</span>';
-                    echo '<span class="lang-arabic hidden">الرئيسية / تواصل معنا</span>';
+                    echo '<span class="lang-english hidden">Home / ' . ucwords(str_replace('-', ' ', implode(' / ', $url))) . '</span>';
+                    echo '<span class="lang-arabic">الرئيسية / تواصل معنا</span>';
                     ?>
                 </span>
             </p>
@@ -29,8 +29,8 @@
 <div class="container px-4 mx-auto">
     <div class="md:mb-0">
         <h2 class="text-xl font-semibold text-textPrimary mb-4">
-            <span class="lang-english">Contact Information</span>
-            <span class="lang-arabic hidden">معلومات الاتصال</span>
+            <span class="lang-english hidden">Contact Information</span>
+            <span class="lang-arabic">معلومات الاتصال</span>
         </h2>
         <ul>
     <li class="flex my-4">
@@ -39,34 +39,34 @@
         </div>
         <div class="mx-4 mb-4">
             <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">
-                <span class="lang-english">Reach Us</span>
-                <span class="lang-arabic hidden">تواصل معنا</span>
+                <span class="lang-english hidden">Reach Us</span>
+                <span class="lang-arabic">تواصل معنا</span>
             </h3>
             <p class="text-textSecondary my-2">
-                <span class="lang-english">We're here to bring your construction vision to life. Contact us to discuss your project needs and receive a personalized quote.</span>
-                <span class="lang-arabic hidden">نحن هنا لتحقيق رؤيتك في البناء. اتصل بنا لمناقشة احتياجات مشروعك واحصل على عرض أسعار مخصص.</span>
+                <span class="lang-english hidden">We're here to bring your construction vision to life. Contact us to discuss your project needs and receive a personalized quote.</span>
+                <span class="lang-arabic">نحن هنا لتحقيق رؤيتك في البناء. اتصل بنا لمناقشة احتياجات مشروعك واحصل على عرض أسعار مخصص.</span>
             </p>
             <p class="text-textSecondary my-2">
-                <span class="lang-english">Website:</span>
-                <span class="lang-arabic hidden">الموقع الإلكتروني:</span>
+                <span class="lang-english hidden">Website:</span>
+                <span class="lang-arabic">الموقع الإلكتروني:</span>
                 <a href="https://greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">
                     <span>www.greenfortuae.com</span>
                 </a>
             </p>
             <p class="text-textSecondary my-2">
-                <span class="lang-english">Landline:</span>
-                <span class="lang-arabic hidden">الهاتف الأرضي:</span>
+                <span class="lang-english hidden">Landline:</span>
+                <span class="lang-arabic">الهاتف الأرضي:</span>
                 <a href="tel:+97145543260" class="text-primary font-medium hover:underline" target="_blank">
-                    <span class="lang-english">045543260</span>
-                    <span class="lang-arabic hidden">045543260</span>
+                    <span class="lang-english hidden">045543260</span>
+                    <span class="lang-arabic">045543260</span>
                 </a>
             </p>
             <p class="text-textSecondary my-2">
-                <span class="lang-english">Email:</span>
-                <span class="lang-arabic hidden">البريد الإلكتروني:</span>
+                <span class="lang-english hidden">Email:</span>
+                <span class="lang-arabic">البريد الإلكتروني:</span>
                 <a href="mailto:info@greenfortuae.com" class="text-primary font-medium hover:underline" target="_blank">
-                    <span class="lang-english">info@greenfortuae.com</span>
-                    <span class="lang-arabic hidden">info@greenfortuae.com</span>
+                    <span class="lang-english hidden">info@greenfortuae.com</span>
+                    <span class="lang-arabic">info@greenfortuae.com</span>
                 </a>
             </p>
         </div>
@@ -77,16 +77,16 @@
         </div>
         <div class="ml-4 mb-4">
             <h3 class="mb-2 text-lg font-medium leading-6 text-textPrimary">
-                <span class="lang-english">We're Based In</span>
-                <span class="lang-arabic hidden">نحن موجودون في</span>
+                <span class="lang-english hidden">We're Based In</span>
+                <span class="lang-arabic">نحن موجودون في</span>
             </h3>
             <p class="text-textSecondary">
-                <span class="lang-english">AL Qusais ind 4th</span>
-                <span class="lang-arabic hidden">القوز الصناعية 4</span>
+                <span class="lang-english hidden">AL Qusais ind 4th</span>
+                <span class="lang-arabic">القوز الصناعية 4</span>
             </p>
             <p class="text-textSecondary">
-                <span class="lang-english">Dubai, UAE</span>
-                <span class="lang-arabic hidden">دبي، الإمارات العربية المتحدة</span>
+                <span class="lang-english hidden">Dubai, UAE</span>
+                <span class="lang-arabic">دبي، الإمارات العربية المتحدة</span>
                 <a href="https://maps.app.goo.gl/KdeVtAJAyEwmwxDR6" target="_blank" title="Open Google Maps">
                     <i class="fas fa-up-right-from-square text-primary"></i>
                 </a>
@@ -116,8 +116,8 @@
             <div class="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
                 <div class="sm:col-span-2">
                     <label for="name" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Name *</span>
-                        <span class="lang-arabic hidden">الاسم *</span>
+                        <span class="lang-english hidden">Name *</span>
+                        <span class="lang-arabic">الاسم *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="text" name="name" id="name" autocomplete="given-name" class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6" required>
@@ -125,8 +125,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="email" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Email (Optional)</span>
-                        <span class="lang-arabic hidden">البريد الإلكتروني (اختياري)</span>
+                        <span class="lang-english hidden">Email (Optional)</span>
+                        <span class="lang-arabic">البريد الإلكتروني (اختياري)</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6">
@@ -134,8 +134,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="phone" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Phone *</span>
-                        <span class="lang-arabic hidden">الهاتف *</span>
+                        <span class="lang-english hidden">Phone *</span>
+                        <span class="lang-arabic">الهاتف *</span>
                     </label>
                     <div class="mb-2.5">
                         <input type="tel" name="phone" id="phone" autocomplete="phone" class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6" required>
@@ -143,8 +143,8 @@
                 </div>
                 <div class="sm:col-span-2">
                     <label for="message" class="block text-sm font-semibold leading-6 text-textPrimary">
-                        <span class="lang-english">Message *</span>
-                        <span class="lang-arabic hidden">الرسالة *</span>
+                        <span class="lang-english hidden">Message *</span>
+                        <span class="lang-arabic">الرسالة *</span>
                     </label>
                     <div class="">
                         <textarea name="message" id="message" rows="4" class="block w-full rounded-md border border-textSecondary px-3.5 py-2 text-textPrimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-sm sm:leading-6" required></textarea>
@@ -159,8 +159,8 @@
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
                         <span class="contact-form-btn-text font-semibold text-bgPrimary">
-                            <span class="lang-english">Send</span>
-                            <span class="lang-arabic hidden">إرسال</span>
+                            <span class="lang-english hidden">Send</span>
+                            <span class="lang-arabic">إرسال</span>
                             <i class="fa fa-send ml-2 text-bgPrimary" aria-hidden="true"></i>
                         </span>
                     </button>

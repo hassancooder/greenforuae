@@ -5,24 +5,24 @@
     <div class="flex justify-center items-center w-full h-screen">
         <div class="mx-auto max-w-screen-sm text-center">
             <h1 class="mb-4 text-7xl tracking-tight font-bold lg:text-9xl text-primary">
-                <span class="lang-english">404</span>
-                <span class="lang-arabic hidden">٤٠٤</span>
+                <span class="lang-english hidden">404</span>
+                <span class="lang-arabic">٤٠٤</span>
             </h1>
             <p class="mb-4 text-3xl tracking-tight font-bold text-textPrimary md:text-4xl">
-                <span class="lang-english">Something's missing.</span>
-                <span class="lang-arabic hidden">شيء مفقود.</span>
+                <span class="lang-english hidden">Something's missing.</span>
+                <span class="lang-arabic">شيء مفقود.</span>
             </p>
             <p class="mb-4 text-md font-semibold text-textSecondary">
-                <span class="lang-english">Sorry, we can't find that page. You'll find lots to explore on the home page.</span>
-                <span class="lang-arabic hidden">عذرًا، لا يمكننا العثور على هذه الصفحة. ستجد الكثير لتستكشفه في الصفحة الرئيسية.</span>
+                <span class="lang-english hidden">Sorry, we can't find that page. You'll find lots to explore on the home page.</span>
+                <span class="lang-arabic">عذرًا، لا يمكننا العثور على هذه الصفحة. ستجد الكثير لتستكشفه في الصفحة الرئيسية.</span>
             </p>
             <a href="<?= ROOT_URL; ?>"
-                class="inline-flex items-center text-bgPrimary bg-primary hover:bg-primary/80 focus:ring-[3px] focus:outline-none focus:ring-primary focus:ring-offset-2 font-bold rounded-lg px-5 py-2.5 text-center my-4 transition group lang-english">
+                class="inline-flex items-center text-bgPrimary bg-primary hover:bg-primary/80 focus:ring-[3px] focus:outline-none focus:ring-primary focus:ring-offset-2 font-bold rounded-lg px-5 py-2.5 text-center my-4 transition group lang-english hidden">
                 <i
                     class="fa fa-arrow-left text-bgPrimary mr-2 mt-0.5 transition-transform duration-300 transform group-hover:-translate-x-1"></i>Back to Homepage
             </a>
             <a href="<?= ROOT_URL; ?>"
-                class="inline-flex items-center text-bgPrimary bg-primary hover:bg-primary/80 focus:ring-[3px] focus:outline-none focus:ring-primary focus:ring-offset-2 font-bold rounded-lg px-5 py-2.5 text-center my-4 transition group lang-arabic hidden">
+                class="inline-flex items-center text-bgPrimary bg-primary hover:bg-primary/80 focus:ring-[3px] focus:outline-none focus:ring-primary focus:ring-offset-2 font-bold rounded-lg px-5 py-2.5 text-center my-4 transition group lang-arabic">
                 <i
                     class="fa fa-arrow-right text-bgPrimary ml-2 mt-0.5 transition-transform duration-300 transform group-hover:-translate-x-1"></i>
                 العودة إلى الصفحة الرئيسية

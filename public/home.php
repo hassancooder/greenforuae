@@ -12,23 +12,23 @@
                 <img src="<?= getAsset('weblogo-white.webp', 'images/'); ?>" alt="Logo" class="w-64 mb-5 mt-16 brightness-125 mx-auto rounded-full object-cover" data-aos="fade-up" data-aos-delay="100">
 
                 <!-- English Headings -->
-                <h1 id="heading-english" class="text-4xl font-bold tracking-tight text-white sm:text-6xl lang-english" data-aos="fade-up" data-aos-delay="200"></h1>
-                <p class="mt-4 text-md leading-5 text-white/90 lang-english" data-aos="fade-up" data-aos-delay="300">
+                <h1 id="heading-english" class="text-4xl font-bold tracking-tight text-white sm:text-6xl lang-english hidden" data-aos="fade-up" data-aos-delay="200"></h1>
+                <p class="mt-4 text-md leading-5 text-white/90 lang-english hidden" data-aos="fade-up" data-aos-delay="300">
                     At Green Fort, we shape Dubai's skyline with leading construction solutions focused on innovation, quality, and sustainability.
                 </p>
 
                 <!-- Arabic Headings -->
-                <h1 id="heading-arabic" class="text-4xl font-bold tracking-tight text-white sm:text-6xl lang-arabic hidden" data-aos="fade-up" data-aos-delay="200"></h1>
-                <p class="mt-4 text-md leading-5 text-white/90 lang-arabic hidden" data-aos="fade-up" data-aos-delay="300">في جرين فورت، نصنع أفق دبي من خلال حلول بناء رائدة تركز على الابتكار والجودة والاستدامة.</p>
+                <h1 id="heading-arabic" class="text-4xl font-bold tracking-tight text-white sm:text-6xl lang-arabic" data-aos="fade-up" data-aos-delay="200"></h1>
+                <p class="mt-4 text-md leading-5 text-white/90 lang-arabic" data-aos="fade-up" data-aos-delay="300">في جرين فورت، نصنع أفق دبي من خلال حلول بناء رائدة تركز على الابتكار والجودة والاستدامة.</p>
             </div>
 
             <!-- Buttons -->
             <div class="mt-8 flex items-center justify-center gap-x-6" data-aos="fade-up" data-aos-delay="400">
-                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-english">
+                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-english hidden">
                     Learn more
                     <i class="fa fa-arrow-down ml-2 transition-transform duration-300 transform group-hover:translate-y-1"></i>
                 </a>
-                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-arabic hidden">
+                <a href="/#about" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bgPrimary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary transition group lang-arabic">
                     اعرف المزيد
                     <i class="fa fa-arrow-down ml-2 transition-transform duration-300 transform group-hover:translate-y-1"></i>
                 </a>
@@ -120,60 +120,63 @@
         <div class="absolute top-1/2 left-0 right-0 flex justify-between px-4 z-30" style="transform: translateY(-50%);">
             <!-- Previous Button -->
             <button class="custom-prev w-10 h-10 flex items-center justify-center">
-                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-english hidden">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-arabic">
             </button>
 
             <!-- Next Button -->
             <button class="custom-next w-10 h-10 flex items-center justify-center">
-                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Next" class="w-full h-full object-contain">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Next" class="w-full h-full object-contain lang-english hidden">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-arabic">
+
             </button>
         </div>
 
     </div>
 </div>
 
-<section class="py-16 container mx-auto max-w-6xl" id="about">
+<section class="py-16 container px-4 mx-auto max-w-6xl" id="about">
     <div>
-        <h2 class="text-textPrimary text-4xl font-bold leading-2 lg:text-start text-center mb-2 lang-english" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-textPrimary text-4xl font-bold leading-2 lg:text-start text-center mb-2 lang-english hidden" data-aos="fade-up" data-aos-duration="1000">
             Let’s Build the Future Together
         </h2>
-        <p class="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center lang-english" data-aos="fade-up" data-aos-duration="1200">
+        <p class="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center lang-english hidden" data-aos="fade-up" data-aos-duration="1200">
             With over 10 years of experience spanning diverse sectors, GreenFortUAE.com delivers unparalleled service to our esteemed clients. Green Fort provides exceptional services in the fields of villa and service block construction, general maintenance, modification and extension works, renovation, tiling, ceiling, painting works, gypsum partitions and ceilings, interior design and fit-out works, parquet, laminate and vinyl floorings, warehouse construction, epoxy flooring, parking marking and signage works, aluminium and glazing works, pergolas, canopies, parking sheds, carpentry and joinery works, electrical, plumbing and air-conditioning works, external pavings and interlocks, and annual maintenance for residential and corporate premises.
         </p>
 
         <!-- Arabic Version -->
-        <h2 class="text-textPrimary text-4xl font-bold leading-2 lg:text-start text-center mb-2 lang-arabic hidden" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-textPrimary text-4xl font-bold leading-2 lg:text-start text-center mb-2 lang-arabic" data-aos="fade-up" data-aos-duration="1000">
             دعونا نبني المستقبل معًا
         </h2>
 
-        <p class="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center lang-arabic hidden" data-aos="fade-up" data-aos-duration="1200"> مع أكثر من 10 سنوات من الخبرة التي تغطي قطاعات متنوعة، تقدم GreenFortUAE.com خدمات لا مثيل لها لعملائنا الكرام. توفر Green Fort خدمات استثنائية في مجالات بناء الفيلات والكتل الخدمية، والصيانة العامة، وأعمال التعديل والإضافة، والتجديد، والتبليط، والأسقف، وأعمال الطلاء، والقواطع والأسقف الجبسية، والتصميم الداخلي وأعمال التجهيز، والأرضيات الخشبية، واللامينيت، والفينيل، وبناء المستودعات، وأعمال الأرضيات الإيبوكسية، وعلامات وطلاء مواقف السيارات، وأعمال الألمنيوم والزجاج، والمظلات، والأغطية، وأعمال الخشب والتركيب، وأعمال الكهرباء والسباكة والتكييف، وأعمال paving الخارجية، والأرصفة، والصيانة السنوية للمباني السكنية والتجارية. </p>
+        <p class="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center lang-arabic" data-aos="fade-up" data-aos-duration="1200"> مع أكثر من 10 سنوات من الخبرة التي تغطي قطاعات متنوعة، تقدم GreenFortUAE.com خدمات لا مثيل لها لعملائنا الكرام. توفر Green Fort خدمات استثنائية في مجالات بناء الفيلات والكتل الخدمية، والصيانة العامة، وأعمال التعديل والإضافة، والتجديد، والتبليط، والأسقف، وأعمال الطلاء، والقواطع والأسقف الجبسية، والتصميم الداخلي وأعمال التجهيز، والأرضيات الخشبية، واللامينيت، والفينيل، وبناء المستودعات، وأعمال الأرضيات الإيبوكسية، وعلامات وطلاء مواقف السيارات، وأعمال الألمنيوم والزجاج، والمظلات، والأغطية، وأعمال الخشب والتركيب، وأعمال الكهرباء والسباكة والتكييف، وأعمال paving الخارجية، والأرصفة، والصيانة السنوية للمباني السكنية والتجارية. </p>
 
         <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex mt-10" id="stats" data-aos="fade-up" data-aos-duration="500">
 
             <!-- English Version Stats -->
-            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-english">
+            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-english hidden">
                 <h3 class="text-textPrimary text-4xl font-bold leading-2 count ml-7 md:m-0" data-count="10">10+</h3>
                 <h6 class="text-textSecondary text-base font-normal leading-relaxed">Years of Experience</h6>
             </div>
-            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-english">
+            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-english hidden">
                 <h4 class="text-textPrimary text-4xl font-bold leading-2 count ml-7 md:m-0" data-count="110">110+</h4>
                 <h6 class="text-textSecondary text-base font-normal leading-relaxed">Projects Completed</h6>
             </div>
-            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-english">
+            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-english hidden">
                 <h4 class="text-textPrimary text-4xl font-bold leading-2 count ml-7 md:m-0" data-count="105">105+</h4>
                 <h6 class="text-textSecondary text-base font-normal leading-relaxed">Happy Customers</h6>
             </div>
 
             <!-- Arabic Version Stats -->
-            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-arabic hidden">
+            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-arabic">
                 <h3 class="text-textPrimary text-4xl font-bold leading-2 count ml-7 md:m-0" data-count="10">10+</h3>
                 <h6 class="text-textSecondary text-base font-normal leading-relaxed">سنوات من الخبرة</h6>
             </div>
-            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-arabic hidden">
+            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-arabic">
                 <h4 class="text-textPrimary text-4xl font-bold leading-2 count ml-7 md:m-0" data-count="110">110+</h4>
                 <h6 class="text-textSecondary text-base font-normal leading-relaxed">مشاريع مكتملة</h6>
             </div>
-            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-arabic hidden">
+            <div class="flex-col justify-start items-start inline-flex md:text-left text-center lang-arabic">
                 <h4 class="text-textPrimary text-4xl font-bold leading-2 count ml-7 md:m-0" data-count="105">105+</h4>
                 <h6 class="text-textSecondary text-base font-normal leading-relaxed">عملاء سعداء</h6>
             </div>
@@ -182,24 +185,24 @@
 </section>
 <section class="py-16 bg-bgSecondary/30" id="partners">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-8 lang-english">WE'RE WORKING WITH</h2>
-        <h2 class="text-3xl font-bold mb-8 lang-arabic hidden">نحن نعمل مع</h2>
+        <h2 class="text-3xl font-bold mb-8 lang-english hidden">WE'RE WORKING WITH</h2>
+        <h2 class="text-3xl font-bold mb-8 lang-arabic">نحن نعمل مع</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <!-- Partner Logo 1 -->
             <div class="flex justify-center">
-                <img loading="lazy" src="<?= getAsset('company-1.webp', 'images/'); ?>" alt="Company 1" class="h-24 rounded-xl object-contain">
+                <img loading="lazy" src="<?= getAsset('company-1.webp', 'images/'); ?>" alt="Company 1" class="h-full md:h-24 rounded-xl object-contain">
             </div>
             <!-- Partner Logo 4 -->
             <div class="flex justify-center">
-                <img loading="lazy" src="<?= getAsset('company-4.webp', 'images/'); ?>" alt="Company 4" class="h-24 rounded-xl object-contain">
+                <img loading="lazy" src="<?= getAsset('company-4.webp', 'images/'); ?>" alt="Company 4" class="h-full md:h-24 rounded-xl object-contain">
             </div>
             <!-- Partner Logo 2 -->
             <div class="flex justify-center">
-                <img loading="lazy" src="<?= getAsset('company-2.webp', 'images/'); ?>" alt="Company 2" class="h-24 rounded-xl object-contain">
+                <img loading="lazy" src="<?= getAsset('company-2.webp', 'images/'); ?>" alt="Company 2" class="h-full md:h-24 rounded-xl object-contain">
             </div>
             <!-- Partner Logo 3 -->
             <div class="flex justify-center">
-                <img loading="lazy" src="<?= getAsset('company-3.webp', 'images/'); ?>" alt="Company 3" class="h-24 rounded-xl object-contain">
+                <img loading="lazy" src="<?= getAsset('company-3.webp', 'images/'); ?>" alt="Company 3" class="h-full md:h-24 rounded-xl object-contain">
             </div>
         </div>
     </div>
@@ -208,11 +211,11 @@
 <div class="mx-auto px-4 py-16">
     <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
-            <span class="lang-english">Our Clients</span>
-            <span class="lang-arabic hidden">عملاؤنا</span>
+            <span class="lang-english hidden">Our Clients</span>
+            <span class="lang-arabic">عملاؤنا</span>
         </h1>
     </div>
-    <div class="projects-swiper-container px-4 overflow-hidden mt-10">
+    <div class="projects-swiper-container px-4 overflow-hidden mt-10 relative">
         <div class="swiper-wrapper m-2">
             <div class="swiper-slide p-3 bg-gradient-to-r from-cyan-50 via-blue-50 to-cyan-50 rounded-lg ring-1 ring-cyan-700 transform transition duration-500 hover:scale-105">
                 <p class="text-center"><span class="block text-md text-nowrap font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-cyan-800">Al Safa</span><span class="block text-md text-nowrap font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-cyan-800 font-[Rubik]">الصفا</span>
@@ -522,18 +525,18 @@
                 </p>
             </div>
         </div> <!-- Custom Next/Prev Buttons -->
-        <div class="flex justify-center mt-5 md:mt-10 space-x-6" style="direction:ltr;">
+        <div class="absolute top-1/2 left-0 right-0 flex justify-between px-4 z-30" style="transform: translateY(-50%);">
             <!-- Previous Button -->
-            <button class="custom-prev w-8 h-8 flex items-center border-2 border-primary justify-center rounded-full hover:bg-primary text-primary transition z-30 duration-300 ease-in-out hover:text-bgPrimary lang-english">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
-                </svg>
+            <button class="custom-prev w-10 h-10 flex items-center justify-center">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-english hidden">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-arabic">
             </button>
+
             <!-- Next Button -->
-            <button class="custom-next w-8 h-8 flex items-center border-2 border-primary justify-center rounded-full hover:bg-primary text-primary transition z-30 duration-300 ease-in-out hover:text-bgPrimary lang-english">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12l-4.58-4.59L10 6l6 6-6 6z" />
-                </svg>
+            <button class="custom-next w-10 h-10 flex items-center justify-center">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Next" class="w-full h-full object-contain lang-english hidden">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-arabic">
+
             </button>
         </div>
     </div>
@@ -541,93 +544,93 @@
 
 <div class="max-w-7xl mx-auto px-5 my-16" id="porfolio">
     <div class="flex flex-col justify-center items-center">
-        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-left w-full flex justify-between">
-            <span class="lang-english">GreenFort Has Completed Various Projects in the Following Dubai's Communities</span>
-            <span class="lang-arabic text-3xl hidden">قامت شركة GreenFort بتنفيذ مشاريع مختلفة في المجتمعات التالية في دبي</span>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary w-full flex justify-between">
+            <span class="lang-english text-left hidden">GreenFort Has Completed Various Projects in the Following Dubai's Communities</span>
+            <span class="lang-arabic text-right text-3xl">قامت شركة GreenFort بتنفيذ مشاريع مختلفة في المجتمعات التالية في دبي</span>
         </h1>
     </div>
 
     <div class="flex flex-wrap mt-16 max-w-7xl">
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Barsha South</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء الجنوبية</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Barsha South</h4>
+                <h4 class="font-semibold text-xl lang-arabic">البرشاء الجنوبية</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Barsha 2nd and 3rd</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">البرشاء 2 و 3</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Barsha 2nd and 3rd</h4>
+                <h4 class="font-semibold text-xl lang-arabic">البرشاء 2 و 3</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Quoz 2 and 4</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">القصيص 2 و 4</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Quoz 2 and 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic">القصيص 2 و 4</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Warqa 4</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">الورقاء 4</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Warqa 4</h4>
+                <h4 class="font-semibold text-xl lang-arabic">الورقاء 4</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Mizhar 1st</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">المزهر 1</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Mizhar 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic">المزهر 1</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Muhaisnah 1st</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">المحيصنة 1</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Muhaisnah 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic">المحيصنة 1</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Oud al Muteena 1st</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">عود المطنقة 1</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Oud al Muteena 1st</h4>
+                <h4 class="font-semibold text-xl lang-arabic">عود المطنقة 1</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Umm Suqiem 2nd</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">أم سقيم 2</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Umm Suqiem 2nd</h4>
+                <h4 class="font-semibold text-xl lang-arabic">أم سقيم 2</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Safa 2</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">الصفا 2</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Safa 2</h4>
+                <h4 class="font-semibold text-xl lang-arabic">الصفا 2</h4>
             </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Madinat Hind 4th</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">مدينة الهند 4</h4>
-            </div>
-        </div>
-
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
-            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Khawaneej</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">الخوانيج</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Madinat Hind 4th</h4>
+                <h4 class="font-semibold text-xl lang-arabic">مدينة الهند 4</h4>
             </div>
         </div>
 
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
             <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
-                <h4 class="font-semibold text-xl lang-english">Al Aweer</h4>
-                <h4 class="font-semibold text-xl lang-arabic hidden">العوير</h4>
+                <h4 class="font-semibold text-xl lang-english hidden">Al Khawaneej</h4>
+                <h4 class="font-semibold text-xl lang-arabic">الخوانيج</h4>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="p-6 rounded-lg text-white text-center bg-gradient-to-r from-amber-300 to-amber-500">
+                <h4 class="font-semibold text-xl lang-english hidden">Al Aweer</h4>
+                <h4 class="font-semibold text-xl lang-arabic">العوير</h4>
             </div>
         </div>
     </div>
@@ -638,18 +641,18 @@
     <div class="absolute inset-0 bg-primary opacity-60"></div> <!-- Overlay with opacity -->
     <div class="container mx-auto px-4 text-center relative z-10">
         <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-            <span class="lang-english">Join Us in Making a Difference</span>
-            <span class="lang-arabic hidden">انضم إلينا في إحداث فرق</span>
+            <span class="lang-english hidden">Join Us in Making a Difference</span>
+            <span class="lang-arabic">انضم إلينا في إحداث فرق</span>
         </h2>
         <p class="text-lg mb-8 max-w-2xl mx-auto">
-            <span class="lang-english">Together, we can create a brighter future for our communities. Discover how you can get involved in our initiatives.</span>
-            <span class="lang-arabic hidden">معًا، يمكننا إنشاء مستقبل مشرق لمجتمعاتنا. اكتشف كيف يمكنك المشاركة في مبادراتنا.</span>
+            <span class="lang-english hidden">Together, we can create a brighter future for our communities. Discover how you can get involved in our initiatives.</span>
+            <span class="lang-arabic">معًا، يمكننا إنشاء مستقبل مشرق لمجتمعاتنا. اكتشف كيف يمكنك المشاركة في مبادراتنا.</span>
         </p>
         <a href="/contact" class="inline-flex items-center justify-center bg-white text-primary font-semibold rounded-full px-6 py-3 transition-all duration-300 hover:bg-gray-100">
-            <span class="lang-english mr-2">Contact Us</span>
-            <span class="lang-arabic hidden ml-2">تواصل معنا</span>
-            <i class="fa fa-arrow-right lang-english"></i>
-            <i class="fa fa-arrow-left lang-arabic hidden"></i>
+            <span class="lang-english hidden mr-2">Contact Us</span>
+            <span class="lang-arabic ml-2">تواصل معنا</span>
+            <i class="fa fa-arrow-right lang-english hidden"></i>
+            <i class="fa fa-arrow-left lang-arabic"></i>
         </a>
     </div>
 </div>
@@ -657,8 +660,8 @@
 <section class="py-16 mt-12 max-w-5xl mx-auto" data-aos="fade-up">
     <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center mb-8">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
-            <span class="lang-english">Our Gallery</span>
-            <span class="lang-arabic hidden">معرض الصور</span>
+            <span class="lang-english hidden">Our Gallery</span>
+            <span class="lang-arabic">معرض الصور</span>
         </h1>
     </div>
 
@@ -896,12 +899,12 @@
 <div class="bg-bgSecondary/30 mx-auto px-4 py-16">
     <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
         <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
-            <span class="lang-english">Customer Reviews</span>
-            <span class="lang-arabic hidden">آراء العملاء</span>
+            <span class="lang-english hidden">Customer Reviews</span>
+            <span class="lang-arabic">آراء العملاء</span>
         </h1>
     </div>
     <!-- Swiper Slider for Reviews -->
-    <div class="reviews-swiper-container overflow-hidden mt-10">
+    <div class="reviews-swiper-container overflow-hidden mt-10 relative">
         <div class="swiper-wrapper">
             <!-- Review Slide 1 -->
             <div class="swiper-slide">
@@ -910,20 +913,20 @@
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"From planning to completion, they maintained a high standard of professionalism and delivered the project well within the timeline. Their ability to manage challenges efficiently was truly commendable, and we’re very satisfied with the results."<br> — <strong>Salama Mohammed Humaidan</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"من التخطيط إلى الإنجاز، حافظوا على مستوى عالٍ من الاحترافية وسلموا المشروع في الوقت المحدد. كانت قدرتهم على إدارة التحديات بكفاءة جديرة بالتقدير، ونحن راضون جداً عن النتائج."<br> — <strong>سلامة محمد حمدان</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"From planning to completion, they maintained a high standard of professionalism and delivered the project well within the timeline. Their ability to manage challenges efficiently was truly commendable, and we’re very satisfied with the results."<br> — <strong>Salama Mohammed Humaidan</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"من التخطيط إلى الإنجاز، حافظوا على مستوى عالٍ من الاحترافية وسلموا المشروع في الوقت المحدد. كانت قدرتهم على إدارة التحديات بكفاءة جديرة بالتقدير، ونحن راضون جداً عن النتائج."<br> — <strong>سلامة محمد حمدان</strong></p>
                     </blockquote>
                 </figure>
             </div>
             <!-- Review Slide 5 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"The professionalism and quality of work from Green Fort UAE are unmatched."<br> — <strong>Shahnaz Abdul Hamid</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"إن الاحترافية وجودة العمل من Green Fort UAE لا مثيل لها."<br> — <strong>شهناز عبد الحميد</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"The professionalism and quality of work from Green Fort UAE are unmatched."<br> — <strong>Shahnaz Abdul Hamid</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"إن الاحترافية وجودة العمل من Green Fort UAE لا مثيل لها."<br> — <strong>شهناز عبد الحميد</strong></p>
                     </blockquote>
                 </figure>
             </div>
@@ -931,12 +934,12 @@
             <!-- Review Slide 4 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their professionalism and attention to detail made a significant difference in our project."<br> — <strong>Ibrahim Fairooz Moosa</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت احترافيتهم واهتمامهم بالتفاصيل فارقًا كبيرًا في مشروعنا."<br> — <strong>إبراهيم فيروز موسى</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"Their professionalism and attention to detail made a significant difference in our project."<br> — <strong>Ibrahim Fairooz Moosa</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"كانت احترافيتهم واهتمامهم بالتفاصيل فارقًا كبيرًا في مشروعنا."<br> — <strong>إبراهيم فيروز موسى</strong></p>
                     </blockquote>
                 </figure>
             </div>
@@ -944,89 +947,88 @@
             <!-- Review Slide 6 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"They understood our needs and delivered beyond our expectations."<br> — <strong>Moosa Abbas Ghuloom Maroof</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"فهموا احتياجاتنا وقدموا ما يتجاوز توقعاتنا."<br> — <strong>موسى عباس غلوم معروف</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"They understood our needs and delivered beyond our expectations."<br> — <strong>Moosa Abbas Ghuloom Maroof</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"فهموا احتياجاتنا وقدموا ما يتجاوز توقعاتنا."<br> — <strong>موسى عباس غلوم معروف</strong></p>
                     </blockquote>
                 </figure>
             </div>
             <!-- Review Slide 3 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort UAE was a fantastic experience. They delivered on time and exceeded our expectations."<br> — <strong>Younis Ali Mahmood Mohammed</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كانت تجربة العمل مع [اسم شركتكم] تجربة رائعة. لقد قاموا بالتسليم في الوقت المحدد وتجاوزوا توقعاتنا."<br> — <strong>يونس علي محمود محمد</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"Working with Green Fort UAE was a fantastic experience. They delivered on time and exceeded our expectations."<br> — <strong>Younis Ali Mahmood Mohammed</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"كانت تجربة العمل مع [اسم شركتكم] تجربة رائعة. لقد قاموا بالتسليم في الوقت المحدد وتجاوزوا توقعاتنا."<br> — <strong>يونس علي محمود محمد</strong></p>
                     </blockquote>
                 </figure>
             </div>
             <!-- Review Slide 7 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"They managed our complex project with remarkable efficiency and precision. Their proactive communication and problem-solving approach made the process smooth and stress-free. The final result is a testament to their craftsmanship and dedication to excellence."<br> — <strong>Laila Abbas Ghuloom Maroof Ahmad</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"أداروا مشروعنا المعقد بكفاءة ودقة ملحوظتين. جعلت اتصالاتهم الاستباقية ونهجهم في حل المشكلات العملية سلسة وخالية من التوتر. النتيجة النهائية شهادة على حرفيتهم وولائهم للتميز."<br> — <strong>ليلى عباس غلوم معروف أحمد</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"They managed our complex project with remarkable efficiency and precision. Their proactive communication and problem-solving approach made the process smooth and stress-free. The final result is a testament to their craftsmanship and dedication to excellence."<br> — <strong>Laila Abbas Ghuloom Maroof Ahmad</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"أداروا مشروعنا المعقد بكفاءة ودقة ملحوظتين. جعلت اتصالاتهم الاستباقية ونهجهم في حل المشكلات العملية سلسة وخالية من التوتر. النتيجة النهائية شهادة على حرفيتهم وولائهم للتميز."<br> — <strong>ليلى عباس غلوم معروف أحمد</strong></p>
                     </blockquote>
                 </figure>
             </div>
             <!-- Review Slide 8 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"We’ve partnered with several construction firms, but this team stands out for their exceptional work ethic and commitment to client satisfaction. The quality of the build was impressive, and they delivered on time without compromising on any detail."<br> — <strong>Saeed Khamis Saeed Ali Alhamdani</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"لقد شاركنا مع عدة شركات بناء، لكن هذا الفريق يبرز بأخلاقيات عملهم الاستثنائية والتزامهم برضا العملاء. كانت جودة البناء مثيرة للإعجاب، وسلموا في الوقت المحدد دون التنازل عن أي تفاصيل."<br> — <strong>سعيد خميس سعيد علي الحمداني</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"We’ve partnered with several construction firms, but this team stands out for their exceptional work ethic and commitment to client satisfaction. The quality of the build was impressive, and they delivered on time without compromising on any detail."<br> — <strong>Saeed Khamis Saeed Ali Alhamdani</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"لقد شاركنا مع عدة شركات بناء، لكن هذا الفريق يبرز بأخلاقيات عملهم الاستثنائية والتزامهم برضا العملاء. كانت جودة البناء مثيرة للإعجاب، وسلموا في الوقت المحدد دون التنازل عن أي تفاصيل."<br> — <strong>سعيد خميس سعيد علي الحمداني</strong></p>
                     </blockquote>
                 </figure>
             </div>
             <!-- Review Slide 9 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Their innovative approach and focus on sustainability were crucial for our project. They exceeded our expectations in terms of design, execution, and overall project management. We couldn't have asked for a more dedicated team."<br> — <strong>Ibrahim Khamis Saeed</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان نهجهم المبتكر وتركيزهم على الاستدامة حاسمين لمشروعنا. لقد تجاوزوا توقعاتنا من حيث التصميم والتنفيذ والإدارة العامة للمشروع. لم نكن لنطلب فريقًا أكثر تفانيًا."<br> — <strong>إبراهيم خميس سعيد</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"Their innovative approach and focus on sustainability were crucial for our project. They exceeded our expectations in terms of design, execution, and overall project management. We couldn't have asked for a more dedicated team."<br> — <strong>Ibrahim Khamis Saeed</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"كان نهجهم المبتكر وتركيزهم على الاستدامة حاسمين لمشروعنا. لقد تجاوزوا توقعاتنا من حيث التصميم والتنفيذ والإدارة العامة للمشروع. لم نكن لنطلب فريقًا أكثر تفانيًا."<br> — <strong>إبراهيم خميس سعيد</strong></p>
                     </blockquote>
                 </figure>
             </div>
             <!-- Review Slide 2 -->
             <div class="swiper-slide">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-textSecondary" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-12 mx-auto mb-3 text-textPrimary/20" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
                     </svg>
                     <blockquote>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english" data-aos="fade-up">"Working with Green Fort construction company has been an absolute pleasure. Their attention to detail, adherence to timelines, and commitment to quality surpassed our expectations."<br> — <strong>Salma Salem Mohammed Darwish</strong></p>
-                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic hidden" data-aos="fade-up">"كان العمل مع شركة Green Fort للبناء متعة مطلقة. لقد تجاوزت انتباههم للتفاصيل والالتزام بالمواعيد النهائية والالتزام بالجودة توقعاتنا."<br> — <strong>سلامة سالم محمد دارويش</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-english hidden" data-aos="fade-up">"Working with Green Fort construction company has been an absolute pleasure. Their attention to detail, adherence to timelines, and commitment to quality surpassed our expectations."<br> — <strong>Salma Salem Mohammed Darwish</strong></p>
+                        <p class="text-md md:text-lg font-semibold text-textPrimary text-center lang-arabic" data-aos="fade-up">"كان العمل مع شركة Green Fort للبناء متعة مطلقة. لقد تجاوزت انتباههم للتفاصيل والالتزام بالمواعيد النهائية والالتزام بالجودة توقعاتنا."<br> — <strong>سلامة سالم محمد دارويش</strong></p>
                     </blockquote>
                 </figure>
             </div>
         </div> <!-- Custom Next/Prev Buttons -->
-        <div class="flex justify-center mt-5 md:mt-10 space-x-6" style="direction:ltr;">
+        <div class="absolute top-1/2 left-0 right-0 flex justify-between px-4 z-30" style="transform: translateY(-50%);">
             <!-- Previous Button -->
-            <button class="custom-prev w-8 h-8 flex items-center border-2 border-primary justify-center rounded-full hover:bg-primary text-primary transition z-30 duration-300 ease-in-out hover:text-bgPrimary lang-english">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
-                </svg>
+            <button class="custom-prev w-10 h-10 flex items-center justify-center">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-english hidden">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-arabic">
             </button>
 
             <!-- Next Button -->
-            <button class="custom-next w-8 h-8 flex items-center border-2 border-primary justify-center rounded-full hover:bg-primary text-primary transition z-30 duration-300 ease-in-out hover:text-bgPrimary lang-english">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12l-4.58-4.59L10 6l6 6-6 6z" />
-                </svg>
+            <button class="custom-next w-10 h-10 flex items-center justify-center">
+                <img src="<?= getAsset('slider-arrow-right.png', 'images/'); ?>" alt="Next" class="w-full h-full object-contain lang-english hidden">
+                <img src="<?= getAsset('slider-arrow-left.png', 'images/'); ?>" alt="Previous" class="w-full h-full object-contain lang-arabic">
+
             </button>
         </div>
     </div>
@@ -1047,8 +1049,8 @@
     <div class="container mx-auto">
         <div class="mx-auto max-w-5xl mb-12 lg:text-center flex flex-col justify-center items-center">
             <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-textPrimary text-center">
-                <span class="lang-english">Frequently Asked Questions</span>
-                <span class="lang-arabic hidden">الأسئلة الشائعة</span>
+                <span class="lang-english hidden">Frequently Asked Questions</span>
+                <span class="lang-arabic">الأسئلة الشائعة</span>
             </h1>
         </div>
         <div class="flex flex-wrap mx-1">
@@ -1059,13 +1061,13 @@
                         @click="openFaq1 = !openFaq1"
                         data-aos="fade-in">
                         <div class="text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg">
-                            <i :class="openFaq1 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english"></i>
-                            <i :class="openFaq1 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic hidden"></i>
+                            <i :class="openFaq1 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english hidden"></i>
+                            <i :class="openFaq1 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic"></i>
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-textPrimary">
-                                <span class="lang-english">How long does it take to complete a project?</span>
-                                <span class="lang-arabic hidden">كم يستغرق إكمال المشروع؟</span>
+                                <span class="lang-english hidden">How long does it take to complete a project?</span>
+                                <span class="lang-arabic">كم يستغرق إكمال المشروع؟</span>
                             </h4>
                         </div>
                     </button>
@@ -1078,10 +1080,10 @@
                         x-transition:leave="transform transition-opacity"
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0">
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english hidden">
                             The completion time depends on the project’s scale and complexity. However, we ensure timely delivery with consistent communication.
                         </p>
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic hidden">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic">
                             يعتمد وقت الانتهاء على حجم وتعقيد المشروع. ومع ذلك، نضمن التسليم في الوقت المناسب مع التواصل المستمر.
                         </p>
                     </div>
@@ -1093,13 +1095,13 @@
                         @click="openFaq2 = !openFaq2"
                         data-aos="fade-in">
                         <div class="text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg">
-                            <i :class="openFaq2 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english"></i>
-                            <i :class="openFaq2 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic hidden"></i>
+                            <i :class="openFaq2 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english hidden"></i>
+                            <i :class="openFaq2 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic"></i>
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-textPrimary">
-                                <span class="lang-english">What types of construction services do you offer?</span>
-                                <span class="lang-arabic hidden">ما أنواع خدمات البناء التي تقدمها؟</span>
+                                <span class="lang-english hidden">What types of construction services do you offer?</span>
+                                <span class="lang-arabic">ما أنواع خدمات البناء التي تقدمها؟</span>
                             </h4>
                         </div>
                     </button>
@@ -1112,10 +1114,10 @@
                         x-transition:leave="transform transition-opacity"
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0">
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english hidden">
                             We offer project management, general contracting, architectural design, renovations, fit-outs, and consulting services.
                         </p>
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic hidden">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic">
                             نقدم إدارة المشاريع، والمقاولات العامة، والتصميم المعماري، والتجديدات، والتجهيزات، وخدمات الاستشارات.
                         </p>
                     </div>
@@ -1127,13 +1129,13 @@
                         @click="openFaq3 = !openFaq3"
                         data-aos="fade-in">
                         <div class="text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg">
-                            <i :class="openFaq3 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english"></i>
-                            <i :class="openFaq3 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic hidden"></i>
+                            <i :class="openFaq3 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english hidden"></i>
+                            <i :class="openFaq3 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic"></i>
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-textPrimary">
-                                <span class="lang-english">How do you ensure quality in your projects?</span>
-                                <span class="lang-arabic hidden">كيف تضمن الجودة في مشاريعك؟</span>
+                                <span class="lang-english hidden">How do you ensure quality in your projects?</span>
+                                <span class="lang-arabic">كيف تضمن الجودة في مشاريعك؟</span>
                             </h4>
                         </div>
                     </button>
@@ -1146,10 +1148,10 @@
                         x-transition:leave="transform transition-opacity"
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0">
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english hidden">
                             We follow strict quality assurance processes, utilize the best materials, and ensure ongoing supervision to deliver excellence.
                         </p>
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic hidden">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic">
                             نتبع عمليات ضمان الجودة الصارمة، ونستخدم أفضل المواد، ونضمن الإشراف المستمر لتقديم التميز.
                         </p>
                     </div>
@@ -1163,13 +1165,13 @@
                         @click="openFaq4 = !openFaq4"
                         data-aos="fade-in">
                         <div class="text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg">
-                            <i :class="openFaq4 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english"></i>
-                            <i :class="openFaq4 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic hidden"></i>
+                            <i :class="openFaq4 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english hidden"></i>
+                            <i :class="openFaq4 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic"></i>
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-textPrimary">
-                                <span class="lang-english">Do you offer post-construction support?</span>
-                                <span class="lang-arabic hidden">هل تقدم دعمًا بعد البناء؟</span>
+                                <span class="lang-english hidden">Do you offer post-construction support?</span>
+                                <span class="lang-arabic">هل تقدم دعمًا بعد البناء؟</span>
                             </h4>
                         </div>
                     </button>
@@ -1182,10 +1184,10 @@
                         x-transition:leave="transform transition-opacity"
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0">
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english hidden">
                             Yes, we provide maintenance and support services even after the project is completed to ensure everything functions smoothly.
                         </p>
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic hidden">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic">
                             نعم، نقدم خدمات الصيانة والدعم حتى بعد اكتمال المشروع لضمان سير كل شيء بسلاسة.
                         </p>
                     </div>
@@ -1197,13 +1199,13 @@
                         @click="openFaq5 = !openFaq5"
                         data-aos="fade-in">
                         <div class="text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg">
-                            <i :class="openFaq5 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english"></i>
-                            <i :class="openFaq5 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic hidden"></i>
+                            <i :class="openFaq5 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english hidden"></i>
+                            <i :class="openFaq5 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic"></i>
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-textPrimary">
-                                <span class="lang-english">How do you handle project delays?</span>
-                                <span class="lang-arabic hidden">كيف تتعامل مع تأخيرات المشروع؟</span>
+                                <span class="lang-english hidden">How do you handle project delays?</span>
+                                <span class="lang-arabic">كيف تتعامل مع تأخيرات المشروع؟</span>
                             </h4>
                         </div>
                     </button>
@@ -1216,10 +1218,10 @@
                         x-transition:leave="transform transition-opacity"
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0">
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english hidden">
                             We communicate transparently with clients, providing regular updates and creating contingency plans to mitigate delays.
                         </p>
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic hidden">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic">
                             نتواصل بشفافية مع العملاء، ونقدم تحديثات منتظمة ونضع خطط طوارئ للتخفيف من التأخيرات.
                         </p>
                     </div>
@@ -1231,13 +1233,13 @@
                         @click="openFaq6 = !openFaq6"
                         data-aos="fade-in">
                         <div class="text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg">
-                            <i :class="openFaq6 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english"></i>
-                            <i :class="openFaq6 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic hidden"></i>
+                            <i :class="openFaq6 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'" class="text-primary lang-english hidden"></i>
+                            <i :class="openFaq6 ? 'fa fa-chevron-down' : 'fa fa-chevron-left'" class="text-primary lang-arabic"></i>
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-textPrimary">
-                                <span class="lang-english">Can I see your previous projects?</span>
-                                <span class="lang-arabic hidden">هل يمكنني رؤية مشاريعك السابقة؟</span>
+                                <span class="lang-english hidden">Can I see your previous projects?</span>
+                                <span class="lang-arabic">هل يمكنني رؤية مشاريعك السابقة؟</span>
                             </h4>
                         </div>
                     </button>
@@ -1250,10 +1252,10 @@
                         x-transition:leave="transform transition-opacity"
                         x-transition:leave-start="opacity-100"
                         x-transition:leave-end="opacity-0">
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-english hidden">
                             While we respect our clients' privacy, we can share case studies and testimonials upon request.
                         </p>
-                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic hidden">
+                        <p class="py-3 text-base leading-relaxed text-textSecondary lang-arabic">
                             بينما نحترم خصوصية عملائنا، يمكننا مشاركة دراسات الحالة والشهادات عند الطلب.
                         </p>
                     </div>
