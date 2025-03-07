@@ -184,9 +184,15 @@
                 <img class="h-24 object-cover rounded-full" src="<?= getAsset('general-manager.webp', 'images/'); ?>" alt="Waleed Ahmad (General Manager)">
                 <div class="p-3">
                     <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-english hidden">Waleed Ahmad</h3>
-                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-arabic">وليد أحمد</h3>
-                    <span class="text-textSecondary lang-english hidden">General Manager</span>
-                    <span class="text-textSecondary lang-arabic">المدير العام</span>
+                    <h3 class="text-xl font-bold tracking-tight text-textPrimary lang-arabic hidden">وليد أحمد</h3>
+                    <span class="text-textSecondary lang-english hidden">
+                        General Manager / Civil Engineer<br>
+                        (Dubai Municipality approved engineer G+1)
+                    </span>
+                    <span class="text-textSecondary lang-arabic hidden">
+                        مدير عام / مهندس مدني<br>
+                        (مهندس معتمد من بلدية دبي G+1)
+                    </span>
                     <p class="mt-3 mb-4 font-light text-textSecondary lang-english hidden">
                         Welcome to Green Fort Building Co, where innovation meets excellence in the world of construction. With over 10 years of experience in the industry, we have established ourselves as a leading force in Dubai's dynamic construction landscape. As the General Manager, I am proud to lead a dedicated team of professionals committed to delivering top-quality projects that exceed client expectations.
                     </p>
